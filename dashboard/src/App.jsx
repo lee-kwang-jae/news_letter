@@ -3,6 +3,7 @@ import './index.css';
 import LatestNews from './components/LatestNews';
 import CalendarView from './components/CalendarView';
 import NewsModal from './components/NewsModal';
+import WeatherWidget from './components/WeatherWidget';
 
 import { supabase } from './supabaseClient';
 
@@ -70,6 +71,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="header">
+        <WeatherWidget />
         <h1>
           하남갑<br />
           <span style={{ fontSize: '0.8em', color: '#6366f1' }}>NewsLetter</span>

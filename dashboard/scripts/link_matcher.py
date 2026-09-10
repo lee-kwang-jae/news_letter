@@ -203,7 +203,6 @@ def process_html_file(file_path):
             a_tag['href'] = new_link
             updated = True
             
-    # Process naver-news list items
     news_list = soup.select(".news-list li")
     for li in news_list:
         strong = li.find("strong")
