@@ -14,3 +14,8 @@
 - 상단 배너 이미지: `./images/top01.png` (`onerror="this.src='./images/top.png'"` 지참)
 - 5대 섹션 순서, GmarketSansBold 타이틀, 카드 디자인 및 48px 프로필 아이콘(`kjicon.png`)을 엄격히 고정 유지합니다.
 - 메타태그 제목: `매일전하는 이광재의원의 하남인사이드`
+
+## 4. 유튜브 링크 처리 지침 (YouTube Embedding Rule)
+- 사용자가 유튜브 링크(Shorts 또는 일반 동영상)를 가져오면 [YOUTUBE_EMBEDDING_RULE.md](file:///d:/github/newsletter/newsletter/YOUTUBE_EMBEDDING_RULE.md) 지침을 **무조건 자동 실행**합니다.
+- `yt-dlp`로 로컬 `.mp4` 동영상을 자동 다운로드하고, 외부 차단(오류 153) 없는 인라인 HTML5 `<video>` 플레이어로 현장일지 카드를 구축합니다.
+
