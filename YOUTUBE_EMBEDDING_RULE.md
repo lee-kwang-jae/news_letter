@@ -17,7 +17,7 @@
 - 유튜브 iframe 임베드는 브라우저 보안 정책, file:// 환경, 텔레그램 미리보기 등에서 차단(오류 153)을 일으키므로, **반드시 `yt-dlp`로 로컬 미디어 파일(.mp4)을 다운로드**합니다.
 - 실행 명령어:
   ```bash
-  yt-dlp -f "mp4" "https://youtube.com/shorts/VIDEO_ID" -o "images/shorts_MMDD.mp4"
+  yt-dlp -f "bestvideo[vcodec^=avc1]+bestaudio[acodec^=mp4a]/best[ext=mp4]/mp4" "https://youtube.com/shorts/VIDEO_ID" -o "images/shorts_MMDD.mp4"
   ```
 - 다운로드한 `.mp4` 파일을 아래 두 경로에 동시에 복사/저장합니다:
   - `images/shorts_MMDD.mp4`
