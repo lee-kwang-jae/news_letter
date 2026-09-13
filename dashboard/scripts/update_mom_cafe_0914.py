@@ -15,10 +15,10 @@ new_mom_cafe_section = """<!-- ===== 섹션 3: 하남 맘카페 HOT 이슈 =====
 </div>
 
 <div class="mom-issue-card">
-<h4>2️⃣ 미사 한강공원 &amp; 당정뜰 가을맞이 '어린이 생태 탐험단' 주말 무료 체험 선착순 접수 오픈</h4>
-<div class="mom-detail"><strong>현황:</strong> 미사 한강공원과 당정뜰 야외 생태공원에서 가을철을 맞아 유아 및 초등학생 가족이 함께 참여하는 숲 체험, 야생화 탐방 및 곤충 관찰 주말 생태 프로그램 선착순 접수가 시작되었습니다.</div>
-<div class="mom-point">💡 주민 포인트: 주말 아이들과 멀리 나가지 않고 자연 속에서 무료로 즐기는 알찬 가을 야외 생태 체험활동.</div>
-<div class="mom-reaction">💬 주민 반응: "주말에 아이들과 갈 만한 무료 생태 프로그램이라 선착순 바로 신청했습니다!", "가을 나들이 겸 생태 체험하기 딱 좋네요" 맘카페 관심 폭발.</div>
+<h4>2️⃣ '2026 하남 이성산성 문화제' 가족 유적 탐험·하남 여행 버스투어 사전예약에 학부모 관심 폭발</h4>
+<div class="mom-detail"><strong>현황:</strong> 오는 9월 19일 개막하는 '2026 하남 이성산성 문화제'의 하남여행버스 및 어린이 유적 체험 프로그램 사전 접수가 오픈되었다는 소식이 전해지며 주말 나들이를 준비하는 학부모들의 예약 열기가 뜨겁습니다.</div>
+<div class="mom-point">💡 주민 포인트: 가을 주말 가족 단위 백제 역사 문화 체험 및 이성산성 야외 투어 버스 선착순 무료 참여 가능.</div>
+<div class="mom-reaction">💬 주민 반응: "작년에도 접수 광속 마감이었는데 올해는 꼭 예약 성공하고 싶네요!", "아이와 가을 주말 나들이 가기 딱 좋은 역사 축제" 기대 만발.</div>
 </div>
 
 <div class="mom-issue-card">
@@ -35,22 +35,21 @@ target_files = [
     r'd:\github\newsletter\newsletter\dashboard\news\kj_hanam_inside_20260914.html'
 ]
 
-pattern = re.compile(r'<div id="mom-cafe">.*?</div>\s*(?=\n\n?<div id="culture")', re.DOTALL)
-
+# Update index files using slice indexing
 for filepath in target_files:
     if os.path.exists(filepath):
         with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
         
-        updated_content, count = pattern.subn(new_mom_cafe_section, content)
-        if count > 0:
+        idx_mom = content.find('<div id="mom-cafe">')
+        idx_culture = content.find('<div id="culture">')
+        if idx_mom != -1 and idx_culture != -1:
+            updated_content = content[:idx_mom] + new_mom_cafe_section + '\n\n' + content[idx_culture:]
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(updated_content)
-            print(f"Successfully updated {filepath} (replaced {count} occurrence)")
+            print(f"Successfully updated {filepath}")
         else:
-            print(f"Failed to match mom-cafe section in {filepath}")
-    else:
-        print(f"File not found: {filepath}")
+            print(f"Failed to find indices in {filepath}")
 
 # Also update create_0914.py script
 create_script_path = r'd:\github\newsletter\newsletter\dashboard\scripts\create_0914.py'
