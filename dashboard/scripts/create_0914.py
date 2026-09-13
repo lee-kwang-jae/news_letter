@@ -13,6 +13,8 @@ with open(source_path, 'r', encoding='utf-8') as f:
 # 1. Update Title, Issue Number, and Date
 content = content.replace("38호 | 2026년 9월 11일 발행", "39호 | 2026년 9월 14일 발행")
 content = content.replace("2026년 9월 11일 기준", "2026년 9월 14일 기준")
+content = content.replace("images/thumbnail0911.jpg", "images/thumbnail0914.jpg")
+content = content.replace("images/thumb.jpg", "images/thumbnail0914.jpg")
 
 # 2. Section 1: 우리동네 국회의원 이광재
 section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 & 현장일지 ===== -->
