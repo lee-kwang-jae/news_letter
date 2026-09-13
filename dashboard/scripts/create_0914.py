@@ -174,9 +174,54 @@ content = re.sub(r'<div id="mom-cafe">.*?</div>\n</div>\n\n<div id="culture">', 
 section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 <div id="culture">
 <div class="section-title" style="background: linear-gradient(90deg, #319795, #4fd1c5);">🎭 ALL IN 하남라이프</div>
-<p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 14일 기준 한눈에 보는 하남시 최신 문화·행사·축제 가이드</p>
+<p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 14일 기준 한눈에 보는 하남시 최신 문화·행사·추석 시장 이벤트 가이드</p>
 
-<!-- 문화 기사 1 (2026 하남 이성산성 문화제) -->
+<!-- 문화 기사 1 (추석 연휴 전통시장 이벤트: 신장전통시장 경품 & 하남수산물전통시장 온누리 환급) -->
+<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
+<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🎁 2026.09.16~09.23 | 전통시장/추석</div>
+<h3 style="margin-top: 6px;"><a href="https://www.hanam.go.kr" target="_blank" style="color: inherit; text-decoration: none;">2026년 추석 명절 맞이 하남시 전통시장 경품 행사 &amp; 온누리상품권 최대 30% 환급 이벤트</a></h3>
+<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
+<b>"풍성한 한가위, 하남시 전통시장에서 장보고 경품과 온누리상품권 혜택 받으세요!"</b><br/>
+하남시 관내 전통시장에서 2026년 추석 명절을 맞아 시민과 상인이 함께하는 풍성한 경품 및 온누리상품권 환급 행사를 개최합니다.<br/><br/>
+<b>🛍️ 신장전통시장 『추석명절 경품 행사』</b><br/>
+&nbsp;&nbsp;• <b>기간:</b> 2026년 9월 22일(화) ~ 9월 23일(수)<br/>
+&nbsp;&nbsp;• <b>장소:</b> 신장전통시장 고객센터 1층<br/>
+&nbsp;&nbsp;• <b>내용:</b> 3만 원 이상 구매 고객 대상 경품 선착순 지급<br/><br/>
+<b>🐟 하남수산물전통시장 『온누리상품권 환급행사』</b><br/>
+&nbsp;&nbsp;• <b>기간:</b> 2026년 9월 16일(수) ~ 9월 20일(일) (11:00 ~ 19:00)<br/>
+&nbsp;&nbsp;• <b>내용:</b> 당일 구매 금액의 최대 30%를 온누리상품권으로 환급 (1인 20,000원 한도)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;— 34,000원 이상 ~ 67,000원 미만: <b>10,000원 환급</b><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;— 67,000원 이상: <b>20,000원 환급</b>
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">전통시장 행사 안내 (하남시청) →</a></div>
+</div>
+<div class="source">
+📌 출처: 신장전통시장상인회 / 하남수산물전통시장상인회 / 하남시청
+</div>
+</div>
+
+<!-- 문화 기사 2 (추석 연휴 전통시장 고객전용주차장 운영 및 덕풍주차장 무료 개방) -->
+<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
+<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🚗 2026.09.25~09.26 무료 | 교통/주차</div>
+<h3 style="margin-top: 6px;"><a href="https://www.hanam.go.kr" target="_blank" style="color: inherit; text-decoration: none;">추석 연휴 하남시 덕풍·신장 전통시장 주차장 운영 및 덕풍주차장 무료 개방 안내</a></h3>
+<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
+<b>"추석 장보기 주차 걱정 끝! 덕풍전통시장 주차장 9월 25일~26일 2일간 무료 개방"</b><br/>
+추석 연휴 전통시장을 방문하는 시민분들의 주차 편의를 위해 덕풍·신장전통시장 고객전용주차장을 24시간 운영하며, 덕풍전통시장 주차장은 추석 연휴 기간 무료로 개방합니다.<br/><br/>
+<b>🅿️ 덕풍전통시장 고객전용주차장</b><br/>
+&nbsp;&nbsp;• <b>위치:</b> 하남시 신장로154번길 57 (130면, 24시간 운영)<br/>
+&nbsp;&nbsp;• <b>🎉 무료 개방: 2026년 9월 25일(금) ~ 9월 26일(토) (2일간 전면 무료)</b><br/>
+&nbsp;&nbsp;• <b>문의:</b> 덕풍전통시장상인회 <a href="tel:031-794-3753" style="color:#3182ce; font-weight:bold;">031-794-3753</a> (관리자 근무 08:00~22:00)<br/><br/>
+<b>🅿️ 신장전통시장 고객전용주차장</b><br/>
+&nbsp;&nbsp;• <b>위치:</b> 하남시 신장1로3번길 42 (100면, 24시간 운영)<br/>
+&nbsp;&nbsp;• <b>이용요금:</b> 최초 30분 600원, 추가 10분당 200원<br/>
+&nbsp;&nbsp;• <b>문의:</b> 신장전통시장상인회 <a href="tel:031-794-4626" style="color:#3182ce; font-weight:bold;">031-794-4626</a> (관리자 근무 06:00~23:00)
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">주차장 위치 및 안내 (하남시청) →</a></div>
+</div>
+<div class="source">
+📌 출처: 덕풍전통시장상인회 / 신장전통시장상인회
+</div>
+</div>
+
+<!-- 문화 기사 3 (2026 하남 이성산성 문화제) -->
 <div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
 <div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🏛️ 2026.09.19~09.20 | 역사/축제</div>
 <h3 style="margin-top: 6px;"><a href="https://www.hanam.go.kr" target="_blank" style="color: inherit; text-decoration: none;">2026 하남 이성산성 문화제 《백제의 숨결, 이성산성 가을 나들이》 개최</a></h3>
@@ -190,42 +235,6 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 </div>
 <div class="source">
 📌 출처: 하남시청 / 하남문화재단
-</div>
-</div>
-
-<!-- 문화 기사 2 (2026 경기도자박물관 생생 국가유산 교육 - 탐정 수첩) -->
-<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
-<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🔍 2026.09.11~ 선착순 | 교육/체험</div>
-<h3 style="margin-top: 6px;"><a href="https://www.kocef.org/html/board_view.html?cate=mbb_notice_expo&amp;gubun=0&amp;b_idx=MzEzNCAg" target="_blank" style="color: inherit; text-decoration: none;">2026 경기도자박물관 [생생 국가유산 교육] 『탐정 수첩 : 도자기 속 단서들』 참여 가족 모집 (무료)</a></h3>
-<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
-<b>"우리 가족이 탐정이 되어 도자기 속 숨겨진 단서를 밝혀라!"</b><br/>
-경기도자박물관에서 초등 자녀를 둔 가족을 대상으로 생생 국가유산 교육 프로그램 『탐정 수첩 : 도자기 속 단서들』 참가 가족을 모집합니다. 가족이 함께 미션을 해결하며 역사와 도자 문화를 생생하게 체험할 수 있습니다.<br/><br/>
-<b>📅 운영기간:</b> 2026년 10월 10일(토) ~ 10월 25일(일) (주말 총 6회)<br/>
-<b>📝 모집기간:</b> 2026년 9월 11일(금) 10:00 ~ 선착순 마감 (무료)<br/>
-<b>👨‍👩‍👧‍👦 대상:</b> 초등 자녀를 둔 3~5인 가족 (회당 10가족)<br/>
-<b>📍 장소:</b> 분원백자자료관, 팔당전망대, 경기도자박물관 등
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.kocef.org/html/board_view.html?cate=mbb_notice_expo&amp;gubun=0&amp;b_idx=MzEzNCAg" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 신청하기 (한국도자재단) →</a></div>
-</div>
-<div class="source">
-📌 출처: 한국도자재단 / 경기도자박물관
-</div>
-</div>
-
-<!-- 문화 기사 3 (2026년 시니어 헬스센터 4기 참가자 모집) -->
-<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
-<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🏥 2026.09.14~09.17 | 건강/어르신</div>
-<h3 style="margin-top: 6px;"><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=502562" target="_blank" style="color: inherit; text-decoration: none;">2026년 하남시 시니어 헬스센터 《어르신 전용 스마트 헬스장》 4기 참가자 모집</a></h3>
-<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
-<b>"최신 스마트 운동기구로 안전하고 효과적인 근감소증 예방!"</b><br/>
-하남시보건소에서 60세 이상 어르신을 위한 맞춤형 스마트 헬스장(4기) 참가자를 모집합니다. 전자동 근력운동기 및 전신교차 진동운동기 등 개인별 운동부하 설정으로 안전하고 효과적인 순환운동 프로그램을 제공합니다.<br/><br/>
-<b>👴 대상:</b> 60세 이상 하남시민 (무작위 추첨)<br/>
-<b>📝 접수기간:</b> 2026년 9월 14일(월) 09:00 ~ 9월 17일(목) 18:00 (방문접수)<br/>
-<b>📍 접수장소:</b> 덕풍스포츠문화센터 2층 시니어 헬스센터 (역말로 71)<br/>
-<b>📅 이용기간:</b> 2026년 10월 1일 ~ 12월 31일 (☎ 031-5182-1640)
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=502562" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">공고문 자세히 보기 (하남시보건소) →</a></div>
-</div>
-<div class="source">
-📌 출처: 하남시보건소 건강증진과
 </div>
 </div>
 </div>"""
