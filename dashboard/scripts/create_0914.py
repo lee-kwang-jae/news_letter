@@ -37,12 +37,15 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 &
 </div>
 </div>
 
-<!-- 기사 2 (현장일지 - 네이버 블로그: [집도, 삶도 든든한 하남]) -->
+<!-- 기사 2 (현장일지 - 네이버 블로그: [집도, 삶도 든든한 하남] - 이미지 0914-3 적용) -->
 <div class="article-card card-field">
 <div class="badge badge-field">📝 현장일지</div>
 <h3><a href="https://blog.naver.com/lee_kwang_jae/224409939684" target="_blank" style="color: inherit; text-decoration: none;">[의정활동] "집도, 삶도 든든한 하남"… 미사강변복지관·신안아파트 재건축 현장 행보</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 미사강변사회복지관 개관 10주년 축하, 신안아파트 재건축 설명회 방문, 하남시 사회복지협의회 간담회 등 주말 현장 소통 소식을 공유했습니다. 신안아파트 주민들의 평생 자산이 걸린 재건축·재개발 상시 지원조직을 하남시와 협의해 마련하고, 힘들고 어려운 이웃을 지키는 사회복지 현장의 수고를 예산으로 든든히 뒷받침하겠다고 밝혔습니다.
+<div style="margin-top: 14px; text-align: center;">
+  <img src="./images/0914-3.jpg" alt="집도, 삶도 든든한 하남 현장 행보" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+</div>
 <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://blog.naver.com/lee_kwang_jae/224409939684" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">현장일지 전문 보기 (이광재 블로그) →</a></div>
 </div>
 <div class="source">
@@ -56,9 +59,6 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 &
 <h3><a href="https://blog.naver.com/lee_kwang_jae/224410224892" target="_blank" style="color: inherit; text-decoration: none;">[이광재 칼럼] “벤처 키우려면 기술보증기금 곳간부터 채워야 한다”</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 AI·바이오·로봇 등 미개척 기술을 보유한 첨단 벤처기업들이 금융 장벽을 넘을 수 있도록 기술보증기금의 재원을 대폭 확충해야 한다는 칼럼을 게재했습니다. 은행 출연요율 인상(0.135%→0.18% 이상), 정부 출연 확대, 벤처금융 실패 평가 구조 개선 등 기술 도전과 성장을 뒷받침할 3대 개혁 방안을 제시했습니다.
-<div style="margin-top: 14px; text-align: center;">
-  <img src="./images/0914-3.jpg" alt="벤처 키우려면 기술보증기금 곳간부터 채워야 한다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
 <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://blog.naver.com/lee_kwang_jae/224410224892" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">칼럼 전문 보기 (이광재 블로그 / 지디넷코리아) →</a></div>
 </div>
 <div class="source">
