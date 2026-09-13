@@ -14,7 +14,7 @@ with open(source_path, 'r', encoding='utf-8') as f:
 content = content.replace("38호 | 2026년 9월 11일 발행", "39호 | 2026년 9월 14일 발행")
 content = content.replace("2026년 9월 11일 기준", "2026년 9월 14일 기준")
 
-# 2. Section 1: 우리동네 국회의원 이광재 (언론보도 1 + 현장일지 2 + 현장일지 영상 1)
+# 2. Section 1: 우리동네 국회의원 이광재
 section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 & 현장일지 ===== -->
 <div id="lawmaker">
 <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
@@ -88,8 +88,10 @@ GTX-D 노선 확충 및 황산사거리 교통 체증 개선 등 하남시 주�
 </div>
 </div>"""
 
-# Replace Section 1
-content = re.sub(r'<div id="lawmaker">.*?</div>\n</div>\n<hr/>', section1_content + '\n<hr/>', content, flags=re.DOTALL)
+# Slice replace Section 1
+idx_lawmaker = content.find('<div id="lawmaker">')
+idx_local = content.find('<div id="local-news">')
+content = content[:idx_lawmaker] + section1_content + '\n<hr/>\n' + content[idx_local:]
 
 # 3. Section 2: 하남 지역 주요 뉴스
 section2_content = """<!-- ===== 섹션 2: 하남 지역 주요 뉴스 ===== -->
@@ -136,10 +138,12 @@ section2_content = """<!-- ===== 섹션 2: 하남 지역 주요 뉴스 ===== -->
 </div>
 </div>"""
 
-# Replace Section 2
-content = re.sub(r'<div id="local-news">.*?</div>\n</div>\n<hr/>', section2_content + '\n<hr/>', content, flags=re.DOTALL)
+# Slice replace Section 2
+idx_local = content.find('<div id="local-news">')
+idx_mom = content.find('<div id="mom-cafe">')
+content = content[:idx_local] + section2_content + '\n<hr/>\n' + content[idx_mom:]
 
-# 4. Section 3: 하남 맘카페 HOT 이슈
+# 4. Section 3: 하남 맘카페 HOT 이슈 (새로운 소식 TOP 3 전면 교체)
 section3_content = """<!-- ===== 섹션 3: 하남 맘카페 HOT 이슈 ===== -->
 <div id="mom-cafe">
 <div class="section-title pink">💬 하남 맘카페 HOT 이슈</div>
@@ -167,8 +171,10 @@ section3_content = """<!-- ===== 섹션 3: 하남 맘카페 HOT 이슈 ===== -->
 </div>
 </div>"""
 
-# Replace Section 3
-content = re.sub(r'<div id="mom-cafe">.*?</div>\n</div>\n\n<div id="culture">', section3_content + '\n\n<div id="culture">', content, flags=re.DOTALL)
+# Slice replace Section 3
+idx_mom = content.find('<div id="mom-cafe">')
+idx_culture = content.find('<div id="culture">')
+content = content[:idx_mom] + section3_content + '\n\n' + content[idx_culture:]
 
 # 5. Section 4: ALL IN 하남라이프
 section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
@@ -265,8 +271,10 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 </div>
 </div>"""
 
-# Replace Section 4
-content = re.sub(r'<div id="culture">.*?</div>\n</div>\n<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 35px 0;"/>', section4_content + '\n</div>\n<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 35px 0;"/>', content, flags=re.DOTALL)
+# Slice replace Section 4
+idx_culture = content.find('<div id="culture">')
+idx_public = content.find('<div id="public-news">')
+content = content[:idx_culture] + section4_content + '\n<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 35px 0;"/>\n\n' + content[idx_public:]
 
 # 6. Section 5: 공공기관 소식지
 section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
@@ -321,8 +329,10 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 </div>
 </div>"""
 
-# Replace Section 5
-content = re.sub(r'<div id="public-news">.*?</div>\n</div>\n\n<!-- 하단', section5_content + '\n\n<!-- 하단', content, flags=re.DOTALL)
+# Slice replace Section 5
+idx_public = content.find('<div id="public-news">')
+idx_footer = content.find('<!-- 하단')
+content = content[:idx_public] + section5_content + '\n\n' + content[idx_footer:]
 
 # 7. Update playNewsletterVideo JavaScript function
 new_script = """function playNewsletterVideo() {
