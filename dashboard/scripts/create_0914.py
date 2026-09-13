@@ -44,7 +44,7 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 &
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 미사강변사회복지관 개관 10주년 축하, 신안아파트 재건축 설명회 방문, 하남시 사회복지협의회 간담회 등 주말 현장 소통 소식을 공유했습니다. 신안아파트 주민들의 평생 자산이 걸린 재건축·재개발 상시 지원조직을 하남시와 협의해 마련하고, 힘들고 어려운 이웃을 지키는 사회복지 현장의 수고를 예산으로 든든히 뒷받침하겠다고 밝혔습니다.
 <div style="margin-top: 14px; text-align: center;">
-  <img src="./images/0914-3.jpg" alt="집도, 삶도 든든한 하남 현장 행보" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+  <img src="./images/thumbnail0914.jpg" alt="집도, 삶도 든든한 하남 현장 행보" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://blog.naver.com/lee_kwang_jae/224409939684" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">현장일지 전문 보기 (이광재 블로그) →</a></div>
 </div>
