@@ -52,7 +52,33 @@ new_culture_section = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 </div>
 </div>
 
-<!-- 문화 기사 3 (2026 하남 이성산성 문화제) -->
+<!-- 문화 기사 3 (생활문화센터 하반기 생~긋! 프로그램 참여자 모집) -->
+<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
+<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🎨 2026.10~12 | 문화/강좌</div>
+<h3 style="margin-top: 6px;"><a href="https://www.hnart.or.kr/space/selectBbsNttView.do?key=422&amp;bbsNo=68&amp;nttNo=7061" target="_blank" style="color: inherit; text-decoration: none;">하남시 생활문화센터 하반기 『생~긋!』 공예·댄스 프로그램 참여자 모집 (선착순)</a></h3>
+<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
+<div style="flex: 1;">
+<b>"일상에 향기와 즐거움을 더하는 하남시 생활문화센터 하반기 강좌!"</b><br/>
+하남시 생활문화센터에서 향기, 테라리움, 가죽공예, 코바늘 등 다양한 공예 강좌부터 부모와 아이가 함께 즐기는 비보이 댄스까지 알찬 하반기 『생~긋!』 문화 프로그램을 운영합니다.<br/><br/>
+<b>📅 운영기간:</b> 2026년 10월 ~ 12월<br/>
+<b>📝 모집기간:</b> 2026년 9월 9일(수) ~ 선착순 접수 마감<br/>
+<b>📍 운영장소:</b> 하남시 생활문화센터 4개소 (하다, 덕풍, 미사, 감일)<br/>
+<b>☎️ 센터별 문의:</b><br/>
+&nbsp;&nbsp;— 하다/덕풍 센터: <a href="tel:031-790-7930" style="color:#3182ce; font-weight:bold;">031-790-7930</a><br/>
+&nbsp;&nbsp;— 미사 센터: <a href="tel:031-790-7969" style="color:#3182ce; font-weight:bold;">031-790-7969</a><br/>
+&nbsp;&nbsp;— 감일 센터: <a href="tel:031-790-7927" style="color:#3182ce; font-weight:bold;">031-790-7927</a>
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hnart.or.kr/space/selectBbsNttView.do?key=422&amp;bbsNo=68&amp;nttNo=7061" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 신청하기 (하남문화재단) →</a></div>
+</div>
+<div class="img-box" style="width: 240px; flex-shrink: 0;">
+<img src="./images/0914-4.jpg" alt="하남시 생활문화센터 하반기 생~긋! 프로그램 모집" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+</div>
+</div>
+<div class="source">
+📌 출처: 하남문화재단 / 하남시 생활문화센터
+</div>
+</div>
+
+<!-- 문화 기사 4 (2026 하남 이성산성 문화제) -->
 <div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
 <div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🏛️ 2026.09.19~09.20 | 역사/축제</div>
 <h3 style="margin-top: 6px;"><a href="https://www.hanam.go.kr" target="_blank" style="color: inherit; text-decoration: none;">2026 하남 이성산성 문화제 《백제의 숨결, 이성산성 가을 나들이》 개최</a></h3>
