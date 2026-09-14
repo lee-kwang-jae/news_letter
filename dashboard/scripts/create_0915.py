@@ -191,25 +191,7 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 </div>
 </div>
 
-<!-- 문화 기사 2 (전통시장 경품 행사 & 온누리 환급) -->
-<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
-<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🎁 2026.09.16~09.23 | 전통시장/추석</div>
-<h3 style="margin-top: 6px;"><a href="https://www.hanam.go.kr" target="_blank" style="color: inherit; text-decoration: none;">2026년 추석 명절 맞이 하남시 전통시장 경품 행사 &amp; 온누리상품권 최대 30% 환급 이벤트</a></h3>
-<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
-<b>"풍성한 한가위, 하남시 전통시장에서 장보고 경품과 온누리상품권 혜택 받으세요!"</b><br/>
-하남시 관내 전통시장에서 2026년 추석 명절을 맞아 시민과 상인이 함께하는 풍성한 경품 및 온누리상품권 환급 행사를 개최합니다.<br/><br/>
-<b>🛍️ 신장전통시장 『추석명절 경품 행사』</b><br/>
-&nbsp;&nbsp;• <b>기간:</b> 2026년 9월 22일(화) ~ 9월 23일(수)<br/>
-&nbsp;&nbsp;• <b>장소:</b> 신장전통시장 고객센터 1층<br/>
-&nbsp;&nbsp;• <b>내용:</b> 3만 원 이상 구매 고객 대상 경품 선착순 지급<br/><br/>
-<b>🐟 하남수산물전통시장 『온누리상품권 환급행사』</b><br/>
-&nbsp;&nbsp;• <b>기간:</b> 2026년 9월 16일(수) ~ 9월 20일(일) (11:00 ~ 19:00)<br/>
-&nbsp;&nbsp;• <b>내용:</b> 당일 구매 금액의 최대 30%를 온누리상품권으로 환급 (1인 20,000원 한도)
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">전통시장 행사 안내 (하남시청) →</a></div>
-</div>
-<div class="source">
-📌 출처: 신장전통시장상인회 / 하남수산물전통시장상인회 / 하남시청
-<!-- 문화 기사 3 (2026 코스트코 하남점 추석 영업시간 & 휴무일 안내) -->
+<!-- 문화 기사 2 (2026 코스트코 하남점 추석 영업시간 & 휴무일 안내) -->
 <div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
 <div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🛒 2026.09.24~09.27 | 쇼핑/추석</div>
 <h3 style="margin-top: 6px;"><a href="https://blog.naver.com/jyoon930/224391683753" target="_blank" style="color: inherit; text-decoration: none;">2026 코스트코 하남점 9월 휴무일 &amp; 추석 연휴 영업시간 안내</a></h3>
@@ -225,8 +207,6 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 </div>
 <div class="source">
 📌 출처: 네이버 블로그 (제이윤)
-</div>
-</div>
 </div>
 </div>"""
 
