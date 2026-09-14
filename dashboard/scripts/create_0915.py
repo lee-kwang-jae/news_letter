@@ -208,6 +208,30 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 <div class="source">
 📌 출처: 네이버 블로그 (제이윤)
 </div>
+</div>
+
+<!-- 문화 기사 3 (HPV 국가예방접종 남아 대상 확대 지원) -->
+<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
+<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">💉 2026년~ | 건강/보건</div>
+<h3 style="margin-top: 6px;"><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=498785" target="_blank" style="color: inherit; text-decoration: none;">하남시보건소, HPV(사람유두종바이러스) 국가예방접종 남아 대상 확대 시행 안내</a></h3>
+<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
+<div style="flex: 1;">
+<b>"우리 아이 건강을 지키는 HPV 백신 무료 접종, 남학생까지 확대 지원!"</b><br/>
+하남시보건소에서 기존 여아 대상이었던 HPV(사람유두종바이러스) 무료 예방접종 대상을 12세~17세 남자 청소년(남아)까지 확대 실시합니다.<br/><br/>
+<b>💉 접종 대상:</b> 12세~17세 남·여 청소년 (2007년생~2013년생)<br/>
+<b>🏥 접종 장소:</b> 관내 지정 위탁의료기관 및 전국 지정 의료기관<br/>
+<b>📋 접종 백신:</b> HPV 2가 및 4가 백신 (무료 접종 지원)<br/>
+<b>☎️ 문의:</b> 하남시보건소 예방접종실 <a href="tel:031-790-6575" style="color:#3182ce; font-weight:bold;">031-790-6575</a>
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=498785" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 공고문 및 카드뉴스 보기 (하남시보건소) →</a></div>
+</div>
+<div class="img-box" style="width: 240px; flex-shrink: 0;">
+<img src="./images/091403.jpg" alt="HPV 예방접종 남아 확대 시행 안내 포스터" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+</div>
+</div>
+<div class="source">
+📌 출처: 하남시보건소 보건정책과
+</div>
+</div>
 </div>"""
 
 # Slice replace Section 4
