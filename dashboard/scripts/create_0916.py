@@ -321,28 +321,6 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 </div>
 </div>
 
-<!-- 공공기관 소식 4: 2026-2027절기 인플루엔자(독감)·코로나19 무료 예방접종 실시 -->
-<div class="article-card" style="margin-top: 16px;">
-<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">💉 하남시보건소 | 2026.09~</div>
-<h3><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=502516" target="_blank" style="color: inherit; text-decoration: none;">2026-2027절기 인플루엔자(독감) 및 코로나19 무료 예방접종 실시 안내</a></h3>
-<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
-<div style="flex: 1;">
-하남시보건소에서 2026-2027절기 독감 및 코로나19 무료 예방접종을 실시합니다. 접종 쏠림 방지를 위해 연령별·대상별 접종 일자가 상이하오니 사전 확인 후 지정 의료기관을 방문해 주세요.<br/><br/>
-<b>접종 백신:</b> 인플루엔자 3가 백신 / 코로나 XFG 백신 (화이자, 모더나)<br/>
-<b>접종 대상:</b> 65세 이상 어르신(독감+코로나 동시접종 가능), 어린이, 임신부, 취약계층, 60~64세<br/>
-<b>접종 장소:</b> 관내 지정 위탁의료기관 (하남시보건소 자체 접종은 실시하지 않음)<br/>
-<b>준비물:</b> 신분증, 아기수첩, 임신확인서, 수급자/장애인 증명서 등 대상별 확인서류<br/>
-<b>문의:</b> 하남시보건소 예방접종실 <a href="tel:031-790-6575" style="color:#3182ce; font-weight:bold;">031-790-6575</a> / 미사보건센터 <a href="tel:031-790-6560" style="color:#3182ce; font-weight:bold;">031-790-6560</a>
-<div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=502516" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">위탁의료기관 현황 및 공고 보기 (하남시보건소) →</a></div>
-</div>
-<div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/0914-2.jpg" alt="2026-2027절기 인플루엔자 및 코로나19 무료 예방접종" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
-</div>
-<div class="source">
-📌 출처: 하남시보건소 보건정책과
-</div>
-</div>
 
 </div>"""
 
