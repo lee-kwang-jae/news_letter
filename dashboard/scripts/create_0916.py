@@ -254,8 +254,30 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 <div class="section-title purple">🏛️ 공공기관 소식지</div>
 <p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 16일 기준 경기도 및 하남시 공공기관 주요 공고·신청 안내입니다.</p>
 
-<!-- 공공기관 소식 1: 2026년 가정보육 어린이 건강과일 지원사업 -->
+<!-- 공공기관 소식 1: 하남도시공사 공영주차장 정기권 순환배정 공개추첨 모집 공고 -->
 <div class="article-card">
+<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">🅿️ 하남도시공사 | 주차/공공</div>
+<h3><a href="https://www.huic.co.kr/www/selectBbsNttView.do?key=102&amp;bbsNo=36&amp;nttNo=11517" target="_blank" style="color: inherit; text-decoration: none;">하남도시공사, 공영주차장 정기권 순환배정 공개추첨 모집 공고</a></h3>
+<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
+<div style="flex: 1;">
+하남도시공사에서 관내 일반 공영주차장의 공정한 이용 기회 제공 및 시민 주차 편의를 위한 '일반공영주차장 사용자(정기권) 순환배정 공개추첨' 모집을 실시합니다.<br/><br/>
+<b>🚗 대상 시설:</b> 관내 일반공영주차장 (덕풍·신장·미사 등)<br/>
+<b>📋 신청 대상:</b> 하남시민 및 관내 사업장 근무자<br/>
+<b>📝 신청 방법:</b> 하남도시공사 홈페이지 공지사항 공고문 접수<br/>
+<b>☎️ 문의:</b> 하남도시공사 주차사업팀
+<div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://www.huic.co.kr/www/selectBbsNttView.do?key=102&amp;bbsNo=36&amp;nttNo=11517" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">공고문 및 신청 서식 보기 (하남도시공사) →</a></div>
+</div>
+<div class="img-box" style="width: 240px; flex-shrink: 0;">
+<img src="./images/091601.png" alt="하남도시공사 공영주차장 정기권 모집" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+</div>
+</div>
+<div class="source">
+📌 출처: 하남도시공사
+</div>
+</div>
+
+<!-- 공공기관 소식 2: 2026년 가정보육 어린이 건강과일 지원사업 -->
+<div class="article-card" style="margin-top: 16px;">
 <div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">🍎 경기민원24 | ~2026.09.18 (D-2)</div>
 <h3><a href="https://gg24.gg.go.kr/svcreqst/selectSvcReqst.do?svc_seq=953" target="_blank" style="color: inherit; text-decoration: none;">2026년 가정보육 어린이 건강과일 지원사업 신청 안내 (신청마감 9.18 D-2)</a></h3>
 <div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
@@ -277,7 +299,7 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 </div>
 </div>
 
-<!-- 공공기관 소식 2: 2026-2027절기 인플루엔자(독감)·코로나19 무료 예방접종 실시 -->
+<!-- 공공기관 소식 3: 2026-2027절기 인플루엔자(독감)·코로나19 무료 예방접종 실시 -->
 <div class="article-card" style="margin-top: 16px;">
 <div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">💉 하남시보건소 | 2026.09~</div>
 <h3><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=502516" target="_blank" style="color: inherit; text-decoration: none;">2026-2027절기 인플루엔자(독감) 및 코로나19 무료 예방접종 실시 안내</a></h3>
@@ -300,7 +322,7 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 </div>
 </div>
 
-<!-- 공공기관 소식 3: HPV 국가예방접종 남아 대상 확대 지원 -->
+<!-- 공공기관 소식 4: HPV 국가예방접종 남아 대상 확대 지원 -->
 <div class="article-card" style="margin-top: 16px;">
 <div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">💉 하남시보건소 | 2026년~</div>
 <h3><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=498785" target="_blank" style="color: inherit; text-decoration: none;">하남시보건소, HPV(사람유두종바이러스) 국가예방접종 남아 대상 확대 시행 안내</a></h3>
