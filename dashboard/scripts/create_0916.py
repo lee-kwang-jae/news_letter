@@ -298,28 +298,6 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 </div>
 </div>
 
-<!-- 공공기관 소식 3: 2026년 가정보육 어린이 건강과일 지원사업 -->
-<div class="article-card" style="margin-top: 16px;">
-<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">🍎 경기민원24 | ~2026.09.18 (D-2)</div>
-<h3><a href="https://gg24.gg.go.kr/svcreqst/selectSvcReqst.do?svc_seq=953" target="_blank" style="color: inherit; text-decoration: none;">2026년 가정보육 어린이 건강과일 지원사업 신청 안내 (신청마감 9.18 D-2)</a></h3>
-<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
-<div style="flex: 1;">
-경기도와 하남시에서 어린이집·유치원 등 시설을 이용하지 않는 가정보육 어린이에게 신선한 제철 과일 바우처(연 1회)를 지원합니다.<br/><br/>
-<b>지원 대상:</b> 신청기간(8.18 ~ 9.18) 중 경기도 내 주민등록이 되어 있고 시설을 이용하지 않는 가정보육 어린이<br/>
-&nbsp;&nbsp;• 가정양육수당 수급자 (24개월 이상 ~ 86개월 미만 미취학 아동)<br/>
-&nbsp;&nbsp;• 부모급여(현금) 수급자 (0 ~ 23개월 아동)<br/>
-<b>신청 기간:</b> 2026년 8월 18일 ~ 9월 18일 (마감 임박!)<br/>
-<b>신청 방법:</b> 경기민원24 온라인 신청 (<a href="https://gg24.gg.go.kr/svcreqst/selectSvcReqst.do?svc_seq=953" target="_blank" style="color:#3182ce; font-weight:bold;">gg24.gg.go.kr</a>) 또는 아동 주소지 동 행정복지센터 방문 신청
-<div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://gg24.gg.go.kr/svcreqst/selectSvcReqst.do?svc_seq=953" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 신청하기 (경기민원24) →</a></div>
-</div>
-<div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091401.png" alt="2026년 가정보육 어린이 건강과일 지원사업" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
-</div>
-<div class="source">
-📌 출처: 경기도 / 경기민원24 / 하남시
-</div>
-</div>
 
 
 </div>"""
