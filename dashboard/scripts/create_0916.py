@@ -245,6 +245,30 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 </div>
 </div>
 
+<!-- 문화 기사 4 (남한산성 가을 페스타 개최 안내) -->
+<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
+<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🍁 ~2026.10.25 | 축제/행사</div>
+<h3 style="margin-top: 6px;"><a href="https://www.gg.go.kr/namhansansung-2/bbs/boardView.do?bsIdx=765&amp;bIdx=110905413&amp;page=1&amp;menuId=3503&amp;bcIdx=0&amp;searchCondition=SUBJECT&amp;searchKeyword=" target="_blank" style="color: inherit; text-decoration: none;">2026 숲속의 산성도시 - '남한산성 가을 페스타' 개최 안내</a></h3>
+<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
+<div style="flex: 1;">
+<b>"세계유산 남한산성에서 펼쳐지는 가을 숲속 문화 축제!"</b><br/>
+경기도남한산성세계유산센터에서 주말과 공휴일 동안 전통문화체험, 에코-히스토리 캠프, 연희 한마당, 추석 야간 특별프로그램 등 다채로운 가을 축제를 진행합니다.<br/><br/>
+<b>📅 운영 기간:</b> 2026년 9월 5일 ~ 10월 25일 (매주 토·일·공휴일) ※ 9.19~20 미운영<br/>
+<b>📍 행사 장소:</b> 남한산성 일원 (행궁 등)<br/>
+<b>🎯 주 프로그램:</b> 전통문화체험, 연희 한마당, 에코 캠프, 추석 야간 프로그램<br/>
+<b>💰 참가비:</b> 무료 (행궁 입장료 별도 / 경기도민 무료입장)<br/>
+<b>☎️ 문의:</b> <a href="tel:02-1800-4746" style="color:#3182ce; font-weight:bold;">02-1800-4746</a>
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.gg.go.kr/namhansansung-2/bbs/boardView.do?bsIdx=765&amp;bIdx=110905413&amp;page=1&amp;menuId=3503&amp;bcIdx=0&amp;searchCondition=SUBJECT&amp;searchKeyword=" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 프로그램 확인하기 (남한산성 센터) →</a></div>
+</div>
+<div class="img-box" style="width: 240px; flex-shrink: 0;">
+<img src="./images/091604.png" alt="남한산성 가을 페스타 포스터" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+</div>
+</div>
+<div class="source">
+📌 출처: 경기도남한산성세계유산센터
+</div>
+</div>
+
 </div>"""
 
 # Slice replace Section 4
