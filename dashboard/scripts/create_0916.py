@@ -202,45 +202,6 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 </div>
 </div>
 
-<!-- 문화 기사 2 (추석 연휴 불법주정차 단속 완화 안내) -->
-<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
-<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🚗 2026.09.24~09.27 | 추석/교통</div>
-<h3 style="margin-top: 6px;"><a href="https://www.hanam.go.kr" target="_blank" style="color: inherit; text-decoration: none;">추석 연휴 하남시 전통시장 주변 도로 불법주정차 단속 완화 &amp; 마루공원 성묘객 주차 유예</a></h3>
-<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
-<b>"추석 명절 장보기 및 성묘길 주차 편의 지원!"</b><br/>
-하남시에서 2026년 추석 연휴를 맞아 시민분들의 전통시장 이용 활성화와 마루공원 성묘객의 편의를 위해 불법주정차 단속 완화 및 갓길 주차 유예를 실시합니다.<br/><br/>
-<b>🛒 신장·덕풍전통시장 주변 도로 주정차 단속 완화</b><br/>
-&nbsp;&nbsp;• <b>기간:</b> 2026년 9월 24일(목) ~ 9월 27일(일)<br/>
-&nbsp;&nbsp;• <b>내용:</b> 전통시장 이용객 주차 편의를 위한 주정차 단속 한시 완화<br/><br/>
-<b>🪦 하남등기소 맞은편 갓길주차 단속 유예 (마루공원 성묘객)</b><br/>
-&nbsp;&nbsp;• <b>기간:</b> 2026년 9월 25일(금) 09:00 ~ 16:00<br/>
-&nbsp;&nbsp;• <b>내용:</b> 마루공원 성묘객 주차 지원을 위한 하남등기소 맞은편 갓길 주차 유예
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 (하남시청) →</a></div>
-</div>
-<div class="source">
-📌 출처: 하남시청 / 하남시 주차관리과
-</div>
-</div>
-
-<!-- 문화 기사 3 (2026 코스트코 하남점 추석 영업시간 & 휴무일 안내) -->
-<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
-<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🛒 2026.09.24~09.27 | 쇼핑/추석</div>
-<h3 style="margin-top: 6px;"><a href="https://blog.naver.com/jyoon930/224391683753" target="_blank" style="color: inherit; text-decoration: none;">2026 코스트코 하남점 9월 휴무일 &amp; 추석 연휴 영업시간 안내</a></h3>
-<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
-<div style="flex: 1;">
-<b>"추석 명절 장보기 일정 미리 체크하세요! 코스트코 하남점 추석 연휴 운영시간"</b><br/>
-2026년 추석 명절을 맞아 코스트코 하남점의 9월 추석 연휴 기간 영업시간 및 휴무일 일정이 전해졌습니다.<br/><br/>
-<b>🛒 코스트코 하남점 추석 연휴 영업 안내</b><br/>
-&nbsp;&nbsp;• <b>9월 24일(목):</b> <b>오후 7시 조기 폐점</b><br/>
-&nbsp;&nbsp;• <b>9월 25일(금):</b> <b>추석 당일 휴무</b><br/>
-&nbsp;&nbsp;• <b>9월 26일(토):</b> <b>정상 영업</b><br/>
-&nbsp;&nbsp;• <b>9월 27일(일):</b> <b>정기 휴무</b> (넷째 주 일요일)
-</div>
-<div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091404.png" alt="2026 코스트코 하남점 추석 연휴 영업시간 안내" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
-</div>
-</div>
 </div>"""
 
 # Slice replace Section 4
