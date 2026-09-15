@@ -254,8 +254,30 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 <div class="section-title purple">🏛️ 공공기관 소식지</div>
 <p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 16일 기준 경기도 및 하남시 공공기관 주요 공고·신청 안내입니다.</p>
 
-<!-- 공공기관 소식 1: 하남도시공사 공영주차장 정기권 순환배정 공개추첨 모집 공고 -->
+<!-- 공공기관 소식 1: 2026년 하남시 일자리박람회 참가기업 모집 안내 -->
 <div class="article-card">
+<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">💼 하남시청 | ~2026.10.12</div>
+<h3><a href="https://www.hanam.go.kr/www/selectBbsNttView.do?key=170&amp;bbsNo=30&amp;nttNo=502693" target="_blank" style="color: inherit; text-decoration: none;">하남시, '2026 온세대+경기도 5070 일자리박람회' 참가기업 모집 안내</a></h3>
+<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
+<div style="flex: 1;">
+하남시가 경기도, 경기도일자리재단, 하남고용복지+센터와 협력하여 10월 30일(금) 하남종합운동장에서 열리는 '2026 하남시 온세대+경기도 5070 일자리박람회'에 참여할 구인기업(40개사)을 모집합니다.<br/><br/>
+<b>📅 일시 및 장소:</b> 2026년 10월 30일(금) 13:00~16:00 / 하남종합운동장 제2체육관<br/>
+<b>🏢 모집 규모:</b> 구인기업 40개사 (직접채용 30개사, 간접채용 10개사)<br/>
+<b>📝 접수 기간:</b> 2026년 9월 14일 ~ 10월 12일 18:00까지 (방문·팩스·이메일 접수)<br/>
+<b>☎️ 문의:</b> 하남일자리센터 <a href="tel:031-790-6890" style="color:#3182ce; font-weight:bold;">031-790-6890</a>
+<div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/www/selectBbsNttView.do?key=170&amp;bbsNo=30&amp;nttNo=502693" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 공고문 및 신청서 보기 (하남시청) →</a></div>
+</div>
+<div class="img-box" style="width: 240px; flex-shrink: 0;">
+<img src="./images/091602.png" alt="2026년 하남시 일자리박람회 참가기업 모집 안내" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+</div>
+</div>
+<div class="source">
+📌 출처: 하남시청 지역경제과 / 하남일자리센터
+</div>
+</div>
+
+<!-- 공공기관 소식 2: 하남도시공사 공영주차장 정기권 순환배정 공개추첨 모집 공고 -->
+<div class="article-card" style="margin-top: 16px;">
 <div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">🅿️ 하남도시공사 | 주차/공공</div>
 <h3><a href="https://www.huic.co.kr/www/selectBbsNttView.do?key=102&amp;bbsNo=36&amp;nttNo=11517" target="_blank" style="color: inherit; text-decoration: none;">하남도시공사, 공영주차장 정기권 순환배정 공개추첨 모집 공고</a></h3>
 <div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
@@ -276,7 +298,7 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 </div>
 </div>
 
-<!-- 공공기관 소식 2: 2026년 가정보육 어린이 건강과일 지원사업 -->
+<!-- 공공기관 소식 3: 2026년 가정보육 어린이 건강과일 지원사업 -->
 <div class="article-card" style="margin-top: 16px;">
 <div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">🍎 경기민원24 | ~2026.09.18 (D-2)</div>
 <h3><a href="https://gg24.gg.go.kr/svcreqst/selectSvcReqst.do?svc_seq=953" target="_blank" style="color: inherit; text-decoration: none;">2026년 가정보육 어린이 건강과일 지원사업 신청 안내 (신청마감 9.18 D-2)</a></h3>
@@ -299,7 +321,7 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 </div>
 </div>
 
-<!-- 공공기관 소식 3: 2026-2027절기 인플루엔자(독감)·코로나19 무료 예방접종 실시 -->
+<!-- 공공기관 소식 4: 2026-2027절기 인플루엔자(독감)·코로나19 무료 예방접종 실시 -->
 <div class="article-card" style="margin-top: 16px;">
 <div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">💉 하남시보건소 | 2026.09~</div>
 <h3><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=502516" target="_blank" style="color: inherit; text-decoration: none;">2026-2027절기 인플루엔자(독감) 및 코로나19 무료 예방접종 실시 안내</a></h3>
@@ -322,7 +344,7 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 </div>
 </div>
 
-<!-- 공공기관 소식 4: HPV 국가예방접종 남아 대상 확대 지원 -->
+<!-- 공공기관 소식 5: HPV 국가예방접종 남아 대상 확대 지원 -->
 <div class="article-card" style="margin-top: 16px;">
 <div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">💉 하남시보건소 | 2026년~</div>
 <h3><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=498785" target="_blank" style="color: inherit; text-decoration: none;">하남시보건소, HPV(사람유두종바이러스) 국가예방접종 남아 대상 확대 시행 안내</a></h3>
