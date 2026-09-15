@@ -1,598 +1,23 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>매일전하는 이광재의원의 하남인사이드</title>
-<meta property="og:type" content="website"/>
-<meta property="og:locale" content="ko_KR"/>
-<meta property="og:url" content="https://lee-kwang-jae.github.io/news_letter/"/>
-<meta property="og:site_name" content="매일전하는 이광재의원의 하남인사이드"/>
-<meta property="og:title" content="매일전하는 이광재의원의 하남인사이드"/>
-<meta property="og:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, ALL IN 하남라이프 &amp; 공공기관 소식지"/>
-<meta property="og:image" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail0916.jpg"/>
-<meta property="og:image:url" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail0916.jpg"/>
-<meta property="og:image:secure_url" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail0916.jpg"/>
-<meta property="og:image:type" content="image/jpeg"/>
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="630"/>
-<meta property="og:image:alt" content="매일전하는 이광재의원의 하남인사이드"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="매일전하는 이광재의원의 하남인사이드"/>
-<meta name="twitter:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, ALL IN 하남라이프 &amp; 공공기관 소식지"/>
-<meta name="twitter:image" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail0916.jpg"/>
-<meta name="twitter:image:width" content="1200"/>
-<meta name="twitter:image:height" content="630"/>
-<link rel="image_src" href="https://lee-kwang-jae.github.io/news_letter/images/thumbnail0916.jpg"/>
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSans.css" />
-<style>
-        * {
-            font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-        }
-        html {
-            font-size: 17px;
-        }
-        body {
-            font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-            line-height: 1.7;
-            color: #333;
-            max-width: 820px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f0f4f8;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-            animation: fadeInPage 0.6s ease-out;
-        }
-        @keyframes fadeInPage {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        /* ---- 상단 네비게이션 ---- */
-        .top-nav {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 10px 16px;
-            background: #f7fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 10px;
-            margin-bottom: 28px;
-        }
-        .top-nav a {
-            font-size: 1.4rem;
-            text-decoration: none;
-            color: #4a5568;
-            transition: transform 0.15s;
-        }
-        .top-nav a:hover { transform: scale(1.25); }
-        .top-nav span {
-            font-size: 0.85rem;
-            color: #718096;
-        }
-        /* ---- 헤더 ---- */
-        .header-box {
-            margin: -40px -40px 30px -40px;
-            border-radius: 14px 14px 0 0;
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-        .header-box h1 {
-            font-size: 1.65rem;
-            margin: 0 0 8px 0;
-            color: #fff;
-            border: none;
-        }
-        .header-box p {
-            margin: 0;
-            font-size: 0.95rem;
-            color: #bee3f8;
-        }
-        /* ---- 실시간 날씨 위젯 ---- */
-        .weather-widget {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 6px 12px;
-            border-radius: 16px;
-            position: absolute;
-            top: 24px;
-            right: 24px;
-            font-family: 'Pretendard', sans-serif;
-            transition: all 0.3s ease;
-            color: #fff;
-        }
-        .weather-widget:hover {
-            background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-2px);
-        }
-        .weather-icon {
-            font-size: 1.6rem;
-            line-height: 1;
-        }
-        .weather-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            text-align: left;
-        }
-        .weather-region {
-            font-size: 0.7rem;
-            color: #bee3f8;
-            font-weight: 600;
-        }
-        .weather-temp-container {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-        .weather-temp {
-            font-size: 0.95rem;
-            font-weight: 700;
-        }
-        .weather-desc {
-            font-size: 0.75rem;
-            color: #fff;
-            font-weight: 600;
-        }
-        .weather-loading-text {
-            font-size: 0.75rem;
-            color: #bee3f8;
-        }
-        /* ---- 폭염 알림 배너 ---- */
-        .alert-banner {
-            background: linear-gradient(90deg, #7b2d2d, #c53030);
-            color: #fff;
-            border-radius: 8px;
-            padding: 12px 20px;
-            margin-bottom: 24px;
-            font-size: 0.92rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            animation: pulseBanner 2s infinite ease-in-out;
-        }
-        @keyframes pulseBanner {
-            0%, 100% { transform: scale(1); opacity: 0.95; }
-            50% { transform: scale(1.005); opacity: 1; }
-        }
-        .alert-banner strong { font-size: 1rem; }
-        /* ---- 목차 ---- */
-        .toc {
-            background: #ebf8ff;
-            border-left: 4px solid #3182ce;
-            border-radius: 8px;
-            padding: 16px 22px;
-            margin-bottom: 32px;
-        }
-        .toc h3 {
-            margin: 0 0 10px 0;
-            font-size: 1rem;
-            color: #2c5282;
-        }
-        .toc ol {
-            margin: 0;
-            padding-left: 20px;
-        }
-        .toc ol li {
-            margin-bottom: 4px;
-        }
-        .toc ol li a {
-            color: #2b6cb0;
-            text-decoration: none;
-            font-size: 0.92rem;
-        }
-        /* ---- 본문 공통 ---- */
-        h2 {
-            font-size: 1.35rem;
-            color: #1a202c;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 8px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-        .section-title {
-            padding: 8px 16px;
-            color: white;
-            border-radius: 6px;
-            font-size: 1.33rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            background: linear-gradient(90deg, #2b6cb0, #4299e1);
-            text-align: center;
-            border: 1.5px solid #ffffff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            font-family: 'GmarketSansBold', 'GmarketSans', 'Pretendard', sans-serif !important;
-        }
-        .section-title.blue { background: linear-gradient(90deg, #2b6cb0, #4299e1); }
-        .section-title.green { background: linear-gradient(90deg, #2f855a, #48bb78); }
-        .section-title.purple { background: linear-gradient(90deg, #553c9a, #805ad5); }
-        .section-title.orange { background: linear-gradient(90deg, #c05621, #ed8936); }
-        .section-title.teal { background: linear-gradient(90deg, #319795, #4fd1c5); }
-        .section-title.pink { background: linear-gradient(90deg, #ed64a6, #fbb6ce); }
-        
-        .article-card {
-            border: none;
-            border-radius: 14px;
-            padding: 22px;
-            margin-bottom: 20px;
-            background-color: #fff;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-        }
-        .article-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.09);
-        }
-        
-        /* 파스텔 톤 배경색 적용 (섹션별) */
-        #lawmaker .article-card.card-field {
-            background-color: #f0f7ff;
-        }
-        #lawmaker .article-card.card-press {
-            background-color: #e0f2fe; /* 언론보도에 더 파란색 적용 */
-        }
-        #local-news .article-card {
-            background-color: #f2fbf5;
-        }
-        #public-news .article-card {
-            background-color: #f8f5ff;
-        }
-        #mom-cafe .article-card, .mom-issue-card {
-            background-color: #fff5f8;
-            border: none;
-        }
+# -*- coding: utf-8 -*-
+import os
+import re
 
-        .badge {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.8);
-            color: #4a5568;
-            font-size: 0.78rem;
-            font-weight: bold;
-            padding: 3px 8px;
-            border-radius: 4px;
-            margin-bottom: 10px;
-        }
-        .article-card h3 {
-            font-size: 1.1rem;
-            margin: 0 0 12px 0;
-            color: #2d3748;
-            line-height: 1.4;
-        }
-        .summary {
-            border-radius: 8px;
-            padding: 14px 16px;
-            font-size: 0.95rem;
-            margin-bottom: 10px;
-            line-height: 1.7;
-            text-align: justify;
-            word-break: keep-all;
-            letter-spacing: -0.3px;
-        }
-        #lawmaker .summary, #legislative .summary {
-            background: rgba(255, 255, 255, 0.55);
-            border: 1px solid rgba(144, 205, 244, 0.4);
-            color: #2c5282;
-        }
-        #local-news .summary {
-            background: rgba(255, 255, 255, 0.55);
-            border: 1px solid rgba(198, 246, 213, 0.4);
-            color: #22543d;
-        }
-        #public-news .summary {
-            background: rgba(255, 255, 255, 0.55);
-            border: 1px solid rgba(233, 216, 253, 0.4);
-            color: #4c1d95;
-        }
-        .summary strong {
-            color: inherit;
-            font-weight: bold;
-        }
-        .source {
-            font-size: 0.82rem;
-            color: #718096;
-            border-top: 1px solid #edf2f7;
-            padding-top: 10px;
-        }
-        .source a {
-            color: #3182ce;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .source a:hover {
-            text-decoration: underline;
-        }
-        /* ---- 네이버 뉴스 리스트 ---- */
-        .news-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .news-list li {
-            border-bottom: 1px solid #edf2f7;
-            padding: 16px 0;
-        }
-        .news-list li:last-child {
-            border-bottom: none;
-        }
-        .news-list strong {
-            display: block;
-            font-size: 0.98rem;
-            color: #2d3748;
-            margin-bottom: 6px;
-        }
-        .news-list p {
-            margin: 0 0 8px 0;
-            font-size: 0.88rem;
-            color: #4a5568;
-        }
-        .news-meta {
-            font-size: 0.8rem;
-            color: #718096;
-        }
-        .news-meta a {
-            color: #3182ce;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .news-meta a:hover {
-            text-decoration: underline;
-        }
-        /* ---- 지역 문화 소식 그리드 ---- */
-        .event-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-            margin-bottom: 30px;
-        }
-        .event-card {
-            background-color: #f7fafc;
-            border: 1px dashed #cbd5e0;
-            border-radius: 8px;
-            padding: 16px;
-            transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
-        }
-        .event-card:hover {
-            transform: translateY(-2px);
-            border-color: #2b6cb0;
-            background-color: #ffffff;
-        }
-        .event-card strong {
-            display: block;
-            font-size: 0.95rem;
-            color: #2b6cb0;
-            margin-bottom: 6px;
-        }
-        .event-card p {
-            margin: 0;
-            font-size: 0.85rem;
-            color: #4a5568;
-        }
-        /* ---- 맘카페 핫이슈 ---- */
-        .mom-issue-card {
-            border-left: 4px solid #ed64a6;
-            background-color: #fffdfd;
-            border-top: 1px solid #fbb6ce;
-            border-right: 1px solid #fbb6ce;
-            border-bottom: 1px solid #fbb6ce;
-            border-radius: 0 8px 8px 0;
-            padding: 20px;
-            margin-bottom: 16px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .mom-issue-card:hover {
-            transform: translateX(4px);
-            box-shadow: 0 4px 12px rgba(237,100,166,0.1);
-        }
-        .mom-issue-card h4 {
-            margin: 0 0 10px 0;
-            font-size: 1.05rem;
-            color: #b83280;
-        }
-        .mom-detail {
-            font-size: 0.9rem;
-            color: #4a5568;
-            margin-bottom: 8px;
-        }
-        .mom-point {
-            font-size: 0.88rem;
-            color: #2d3748;
-            font-weight: bold;
-            background: #fff5f5;
-            padding: 6px 12px;
-            border-radius: 4px;
-            margin-bottom: 8px;
-            border-left: 2px solid #e53e3e;
-        }
-        .mom-reaction {
-            font-size: 0.85rem;
-            color: #718096;
-            font-style: italic;
-        }
-        /* ---- 하단 네비게이션 및 푸터 ---- */
-        .bottom-nav {
-            display: flex;
-            justify-content: center;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 20px;
-            margin-top: 40px;
-        }
-        .bottom-nav a {
-            text-decoration: none;
-            color: #4a5568;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-        .footer {
-            margin-top: 30px;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #a0aec0;
-            border-top: 1px solid #edf2f7;
-            padding-top: 20px;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background: #e2e8f0;
-            margin: 30px 0;
-        }
+source_path = 'dashboard/news/kj_hanam_inside_20260915.html'
+target_path = 'dashboard/news/kj_hanam_inside_20260916.html'
+news_index_path = 'dashboard/news/index.html'
+root_index_path = 'index.html'
 
-        /* ---- 모바일 최적화 미디어 쿼리 (가로폭 활용 극대화) ---- */
-        @media (max-width: 600px) {
-            body {
-                padding: 2px !important;
-            }
-            .container {
-                padding: 12px 8px !important;
-                border-radius: 8px !important;
-            }
-            .header-box {
-                margin: -12px -8px 20px -8px !important;
-                border-radius: 8px 8px 0 0 !important;
-                padding: 0 !important;
-            }
-            .header-box h1 {
-                font-size: 1.4rem;
-            }
-            .weather-widget {
-                position: static;
-                align-self: flex-start;
-                margin-top: 5px;
-            }
-            .top-nav {
-                padding: 6px 10px !important;
-                margin-bottom: 14px !important;
-                gap: 8px;
-            }
-            .top-nav a { font-size: 1.2rem; }
-            .top-nav span { font-size: 0.75rem; }
-            .alert-banner {
-                padding: 10px 12px !important;
-                font-size: 0.88rem !important;
-            }
-            .toc {
-                padding: 10px 14px !important;
-                margin-bottom: 18px !important;
-            }
-            h2, .section-title {
-                font-size: 1.22rem;
-                padding: 6px 12px;
-                margin-top: 30px;
-            }
-            .article-card {
-                padding: 12px 10px !important;
-                margin-bottom: 14px !important;
-                border-radius: 10px;
-            }
-            .article-card h3 {
-                font-size: 1rem;
-                margin-bottom: 8px;
-                word-break: keep-all;
-            }
-            .summary {
-                padding: 10px 8px !important;
-                font-size: 0.95rem !important;
-                text-align: left;
-                word-break: keep-all;
-                letter-spacing: -0.3px;
-                line-height: 1.65 !important;
-            }
-            .flex-summary {
-                flex-direction: column-reverse !important;
-                gap: 12px !important;
-            }
-            .flex-summary .img-box {
-                width: 100% !important;
-            }
-            .flex-summary .img-box img {
-                width: 100% !important;
-                height: auto !important;
-                object-fit: contain !important;
-            }
-            .event-grid {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
-            .event-card {
-                padding: 10px !important;
-            }
-            .mom-issue-card {
-                padding: 12px 10px !important;
-            }
-        }
+with open(source_path, 'r', encoding='utf-8') as f:
+    content = f.read()
 
-        .badge.badge-field {
-            background-color: #e6fffa;
-            color: #2c7a7b;
-            border: 1px solid #b2f5ea;
-        }
-        .badge.badge-press {
-            background-color: #ebf8ff;
-            color: #2b6cb0;
-            border: 1px solid #bee3f8;
-        }
-    
-        /* ---- 고정 헤더 & 맨위로 버튼 스타일 ---- */
-        .fixed-title {
-            position: fixed !important;
-            top: 0 !important;
-            left: 50% !important;
-            transform: translateX(-50%) !important;
-            width: calc(100% - 32px) !important;
-            max-width: 740px !important;
-            box-sizing: border-box !important;
-            z-index: 9999 !important;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
-            border-radius: 0 0 10px 10px !important;
-            margin: 0 !important;
-            animation: slideDownHeader 0.25s ease-out;
-        }
-        @keyframes slideDownHeader {
-            from { transform: translate(-50%, -100%); opacity: 0; }
-            to { transform: translate(-50%, 0); opacity: 1; }
-        }
-        
+# 1. Update Title, Issue Number, and Date
+content = content.replace("40호 | 2026년 9월 15일 발행", "41호 | 2026년 9월 16일 발행")
+content = content.replace("2026년 9월 15일 기준", "2026년 9월 16일 기준")
+content = content.replace("images/thumbnail0915.jpg", "images/thumbnail0916.jpg")
+content = content.replace("images/thumb.jpg", "images/thumbnail0916.jpg")
 
-</style>
-</head>
-<body>
-<div class="container">
-<!-- 헤더 -->
-<div class="header-box">
-  <a href="index.html" style="display: block; text-decoration: none; cursor: pointer;" title="홈으로 이동">
-    <img src="./images/top01.png" alt="매일전하는 이광재의원의 하남인사이드" style="width: 100%; height: auto; display: block; cursor: pointer;" onerror="this.src='./images/top.png'">
-  </a>
-  <div style="position: absolute; bottom: 12px; right: 16px; background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #ffffff; padding: 2px 8px; border-radius: 20px; font-size: 7px; font-weight: 600; border: 1px solid rgba(255, 255, 255, 0.3); opacity: 0.6;">
-    41호 | 2026년 9월 16일 발행
-  </div>
-</div>
-<!-- 목차 -->
-<div class="toc">
-  <h3>📌 이번 호 주요 목차</h3>
-  <ol>
-  <li><a href="#lawmaker">우리동네 국회의원 이광재</a></li>
-  <li><a href="#local-news">하남 지역 주요 뉴스</a></li>
-  <li><a href="#mom-cafe">하남 맘카페 HOT 이슈</a></li>
-  <li><a href="#culture">ALL IN 하남라이프</a></li>
-  <li><a href="#public-news">공공기관 소식지</a></li>
-  </ol>
-</div>
-<!-- ===== 섹션 1: 이광재 국회의원 언론보도 ===== -->
-<!-- ===== 섹션 1: 이광재 국회의원 언론보도 & 현장일지 ===== -->
-<!-- ===== 섹션 1: 이광재 국회의원 언론보도 & 현장일지 ===== -->
-<!-- ===== 섹션 1: 이광재 국회의원 언론보도 & 현장일지 ===== -->
-<!-- ===== 섹션 1: 이광재 국회의원 언론보도 & 현장일지 ===== -->
+# 2. Section 1: 우리동네 국회의원 이광재
+section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 & 현장일지 ===== -->
 <div id="lawmaker">
 <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
   <div class="section-title" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
@@ -663,9 +88,15 @@
 📌 출처: 이광재 공식 유튜브 (이광재 TV)
 </div>
 </div>
-</div>
-<hr/>
-<!-- ===== 섹션 2: 하남 지역 주요 뉴스 ===== -->
+</div>"""
+
+# Slice replace Section 1
+idx_lawmaker = content.find('<div id="lawmaker">')
+idx_local = content.find('<div id="local-news">')
+content = content[:idx_lawmaker] + section1_content + '\n<hr/>\n' + content[idx_local:]
+
+# 3. Section 2: 하남 지역 주요 뉴스
+section2_content = """<!-- ===== 섹션 2: 하남 지역 주요 뉴스 ===== -->
 <div id="local-news">
 <div class="section-title green">📰 하남 지역 주요 뉴스</div>
 
@@ -707,9 +138,15 @@
 📌 출처: 톱스타뉴스 (임가영 기자)
 </div>
 </div>
-</div>
-<hr/>
-<!-- ===== 섹션 3: 하남 맘카페 HOT 이슈 ===== -->
+</div>"""
+
+# Slice replace Section 2
+idx_local = content.find('<div id="local-news">')
+idx_mom = content.find('<div id="mom-cafe">')
+content = content[:idx_local] + section2_content + '\n<hr/>\n' + content[idx_mom:]
+
+# 4. Section 3: 하남 맘카페 HOT 이슈
+section3_content = """<!-- ===== 섹션 3: 하남 맘카페 HOT 이슈 ===== -->
 <div id="mom-cafe">
 <div class="section-title pink">💬 하남 맘카페 HOT 이슈</div>
 <p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 16일 기준 하남 지역 인터넷 커뮤니티(맘카페)에서 가장 조회수와 댓글이 높았던 핫이슈 TOP 3 소식입니다.</p>
@@ -734,9 +171,15 @@
 <div class="mom-point">💡 주민 포인트: 경기민원24를 통한 온라인 5분 간편 신청으로 우리 아이 제철 과일 혜택 챙기기.</div>
 <div class="mom-reaction">💬 주민 반응: "깜빡할 뻔했는데 맘카페 덕분에 신청 완료했네요", "가정보육 하시는 분들 내일까지 꼭 챙기세요" 권장 속출.</div>
 </div>
-</div>
+</div>"""
 
-<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
+# Slice replace Section 3
+idx_mom = content.find('<div id="mom-cafe">')
+idx_culture = content.find('<div id="culture">')
+content = content[:idx_mom] + section3_content + '\n\n' + content[idx_culture:]
+
+# 5. Section 4: ALL IN 하남라이프
+section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 <div id="culture">
 <div class="section-title" style="background: linear-gradient(90deg, #319795, #4fd1c5);">🎭 ALL IN 하남라이프</div>
 <p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 16일 기준 한눈에 보는 하남시 최신 문화·행사·추석 안내 가이드</p>
@@ -798,10 +241,15 @@
 </div>
 </div>
 </div>
-</div>
-<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 35px 0;"/>
+</div>"""
 
-<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
+# Slice replace Section 4
+idx_culture = content.find('<div id="culture">')
+idx_public = content.find('<div id="public-news">')
+content = content[:idx_culture] + section4_content + '\n<hr style="border: none; border-top: 1px solid #e2e8f0; margin: 35px 0;"/>\n\n' + content[idx_public:]
+
+# 6. Section 5: 공공기관 소식지
+section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 <div id="public-news">
 <div class="section-title purple">🏛️ 공공기관 소식지</div>
 <p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 16일 기준 경기도 및 하남시 공공기관 주요 공고·신청 안내입니다.</p>
@@ -873,71 +321,15 @@
 📌 출처: 하남시보건소 보건정책과
 </div>
 </div>
-</div>
+</div>"""
 
-<!-- 하단 맨위로 버튼 및 푸터 -->
-<div class="bottom-nav" style="display: flex; flex-direction: column; align-items: center; gap: 14px; border-top: 1px solid #e2e8f0; padding-top: 25px; margin-top: 40px; margin-bottom: 20px;">
-  <span style="font-size: 0.6rem; color: #a0aec0;">© 2026 우리동네 진짜일꾼 이광재</span>
-  <button onclick="scrollToTop()" title="맨위로" style="background: linear-gradient(135deg, #2b6cb0, #4299e1); color: white; border: none; width: 46px; height: 46px; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 12px rgba(43,108,176,0.3); display: flex; align-items: center; justify-content: center; transition: transform 0.2s, box-shadow 0.2s;">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 11.5l7-7 7 7"/></svg>
-  </button>
-</div>
+# Slice replace Section 5
+idx_public = content.find('<div id="public-news">')
+idx_footer = content.find('<!-- 하단')
+content = content[:idx_public] + section5_content + '\n\n' + content[idx_footer:]
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var title = document.querySelector('#lawmaker .section-title');
-    if (!title) return;
-    
-    var placeholder = document.createElement('div');
-    placeholder.style.display = 'none';
-    title.parentNode.insertBefore(placeholder, title);
-
-    var initialTop = title.getBoundingClientRect().top + window.pageYOffset;
-    var isUnfixedByTopBtn = false;
-
-    function handleScroll() {
-        var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScroll < initialTop - 10) {
-            isUnfixedByTopBtn = false;
-        }
-
-        if (!isUnfixedByTopBtn && currentScroll >= initialTop) {
-            if (!title.classList.contains('fixed-title')) {
-                placeholder.style.height = title.offsetHeight + 'px';
-                placeholder.style.marginBottom = getComputedStyle(title).marginBottom;
-                placeholder.style.display = 'block';
-                title.classList.add('fixed-title');
-            }
-        } else {
-            if (title.classList.contains('fixed-title')) {
-                title.classList.remove('fixed-title');
-                placeholder.style.display = 'none';
-            }
-        }
-    }
-
-    window.addEventListener('scroll', handleScroll);
-
-    window.scrollToTop = function() {
-        isUnfixedByTopBtn = true;
-        title.classList.remove('fixed-title');
-        placeholder.style.display = 'none';
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-});
-</script>
-
-<div id="imageModal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); text-align:center; flex-direction:column; justify-content:center; align-items:center;" onclick="this.style.display='none'">
-    <img id="modalImage" src="" style="max-width:90%; max-height:90%; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.5);">
-    <span style="color:white; margin-top:15px; font-size:1.1rem; cursor:pointer;">닫기 (아무 곳이나 클릭하세요)</span>
-</div>
-<script>
-function openImageModal(src) {
-    document.getElementById('imageModal').style.display = 'flex';
-    document.getElementById('modalImage').src = src;
-}
-function playNewsletterVideo() {
+# 7. Update playNewsletterVideo JavaScript function
+new_script = """function playNewsletterVideo() {
     var v = document.getElementById('video--X7EDD6ADSY') || document.getElementById('video-8BKrEO0X7I4') || document.getElementById('video-yclRLijNE14') || document.getElementById('video-3BlZC9feiyw');
     if (v) {
         v.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -954,52 +346,20 @@ function playNewsletterVideo() {
             v.pause();
         }
     }
-});
-        if (v.paused) {
-            var promise = v.play();
-            if (promise !== undefined) {
-                promise.catch(function(error) {
-                    console.log("Autoplay blocked:", error);
-                    v.muted = true;
-                    v.play();
-                });
-            }
-        } else {
-            v.pause();
-        }
-    }
-});
-        if (v.paused) {
-            var promise = v.play();
-            if (promise !== undefined) {
-                promise.catch(function(error) {
-                    console.log("Autoplay blocked:", error);
-                    v.muted = true;
-                    v.play();
-                });
-            }
-        } else {
-            v.pause();
-        }
-    }
-});
-        if (v.paused) {
-            var promise = v.play();
-            if (promise !== undefined) {
-                promise.catch(function(error) {
-                    console.log("Video playback error:", error);
-                    v.muted = true;
-                    v.play();
-                });
-            }
-        } else {
-            v.pause();
-        }
-    }
-}
-function playYoutubeInline(videoId, element) {
-    playNewsletterVideo();
-}
-</script>
-</body>
-</html>
+}"""
+
+content = re.sub(r'function playNewsletterVideo\(\)\s*\{.*?\}', new_script, content, flags=re.DOTALL)
+
+# Save target_path
+with open(target_path, 'w', encoding='utf-8') as f:
+    f.write(content)
+print(f"Created {target_path}")
+
+# Update news_index_path & root_index_path
+with open(news_index_path, 'w', encoding='utf-8') as f:
+    f.write(content)
+print(f"Updated {news_index_path}")
+
+with open(root_index_path, 'w', encoding='utf-8') as f:
+    f.write(content)
+print(f"Updated {root_index_path}")
