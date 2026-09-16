@@ -59,7 +59,7 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 &
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 대전 예산정책협의회에 참석하여 허태정 시장, 지역 국회의원들과 대전의 미래 발전과 국비 예산 확보를 논의했습니다. KAIST, 충남대, 대덕연구개발특구의 우수한 인재와 연구 성과가 벤처·스타트업 창업과 기업 성장으로 연결되도록 규제 완화, 부지 확보, 반도체·AI 기업 유치 지원 방안을 강조했습니다.
 <div style="margin-top: 14px; text-align: center;">
-  <img src="./images/thumbnail0917.jpg" alt="대전을 기업이 머무는 도시로 만들겠습니다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+  <img src="./images/thumbnail-917.jpg" alt="대전을 기업이 머무는 도시로 만들겠습니다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://blog.naver.com/lee_kwang_jae/224413843999" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">현장일지 전문 보기 (이광재 블로그) →</a></div>
 </div>
