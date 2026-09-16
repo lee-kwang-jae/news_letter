@@ -227,7 +227,7 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/cleanh/cleanhBbsNttWebView.do?key=4348&amp;nttNo=3460" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 연휴 정보 확인 (청정하남) →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091706.jpg" alt="추석 연휴 종합안내" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="./images/091707.jpg" alt="추석 연휴 종합안내" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
