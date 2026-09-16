@@ -297,18 +297,13 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 <div class="article-card" style="margin-top: 16px;">
 <div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">🏛️ 위택스 / 하남시세무과 | ~2026.09.30</div>
 <h3><a href="https://www.wetax.go.kr/tcp/wtg/J040401M02.do?bbsId=10000000000000003405" target="_blank" style="color: inherit; text-decoration: none;">2026년 9월 정기분 재산세(토지·주택) 납부 안내</a></h3>
-<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
-<div style="flex: 1;">
+<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
 2026년 9월 정기분 재산세(토지 및 주택 2기분) 납부 기간이 진행됩니다. 연체에 따른 가산금이 발생하지 않도록 기한 내 납부를 권장합니다.<br/><br/>
 <b>📅 납부 기간:</b> 2026년 9월 16일(수) ~ 9월 30일(수)까지<br/>
 <b>📋 과세 대상:</b> 토지 및 주택(2차분) 소유자<br/>
 <b>💳 납부 방법:</b> 위택스(wetax.go.kr), 스마트 위택스 앱, 가상계좌, ARS, 금융기관 CD/ATM<br/>
 <b>☎️ 문의:</b> 하남시청 세무과 및 위택스 고객센터
 <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://www.wetax.go.kr/tcp/wtg/J040401M02.do?bbsId=10000000000000003405" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 공고 및 납부하기 (위택스) →</a></div>
-</div>
-<div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091703.jpg" alt="위택스 9월 정기분 재산세 납부 안내" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
 </div>
 <div class="source">
 📌 출처: 행정안전부 위택스 / 하남시청
