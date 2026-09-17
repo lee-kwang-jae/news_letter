@@ -13,9 +13,9 @@ with open(source_path, 'r', encoding='utf-8') as f:
 # 1. Update Title, Issue Number, and Date
 content = content.replace("42호 | 2026년 9월 17일 발행", "43호 | 2026년 9월 18일 발행")
 content = content.replace("2026년 9월 17일 기준", "2026년 9월 18일 기준")
-content = content.replace("images/thumbnail0917.jpg", "images/thumbnail0918.jpg")
-content = content.replace("images/thumbnail-917.jpg", "images/thumbnail0918.jpg")
-content = content.replace("images/thumb.jpg", "images/thumbnail0918.jpg")
+content = content.replace("images/thumbnail0917.jpg", "images/thumbnail-0918.jpg")
+content = content.replace("images/thumbnail-917.jpg", "images/thumbnail-0918.jpg")
+content = content.replace("images/thumb.jpg", "images/thumbnail-0918.jpg")
 
 # 2. Section 1: 우리동네 국회의원 이광재
 section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 & 현장일지 ===== -->
@@ -48,7 +48,7 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 &
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 예산결산특별위원회 위원장으로서 내년도 820조 원 규모의 국가 예산안 심의에 임하는 이광재 의원의 현장일지입니다. 국민 삶에 직결된 예산 항목 하나하나를 꼼꼼히 살피고, 국가 발전과 하남시민을 위한 세밀한 예산 검토를 이어가겠습니다.
 <div style="margin-top: 14px; text-align: center;">
-  <img src="./images/thumbnail-918.jpg" alt="국민 삶에 직결된 800조 예산 꼼꼼히 챙기며 우리동네 현장도 달려갑니다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+  <img src="./images/thumbnail-0918.jpg" alt="국민 삶에 직결된 800조 예산 꼼꼼히 챙기며 우리동네 현장도 달려갑니다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://blog.naver.com/lee_kwang_jae/224414956518" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">현장일지 전문 보기 (이광재 블로그) →</a></div>
 </div>
@@ -65,7 +65,7 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 &
 대한적십자사 봉사회 하남지구협의회와 함께한 2026년 추석맞이 사랑의 한가위 나눔 현장을 담은 숏폼 영상입니다. 정성 담긴 명절 나눔과 봉사자 분들의 따뜻한 마음을 영상으로 확인해보세요.
 <div style="margin-top: 14px; margin-bottom: 12px; display: flex; justify-content: center;">
   <div id="yt-container-shorts0918" style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); display: block; background: #000;">
-    <video id="video-shorts0918" poster="./images/thumbnail0918.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+    <video id="video-shorts0918" poster="./images/thumbnail-0918.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
       <source src="./images/shorts_0918.mp4" type="video/mp4">
       <p style="color: #fff; text-align: center; padding: 20px;">브라우저가 동영상 재생을 지원하지 않습니다.</p>
     </video>
