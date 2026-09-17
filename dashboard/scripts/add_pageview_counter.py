@@ -15,23 +15,35 @@ document.addEventListener('DOMContentLoaded', function() {
     var pvEl = document.getElementById('busuanzi_value_page_pv');
     if (!pvEl) return;
     
-    var storageKey = 'pageview_count_kj_hanam';
-    var savedPV = localStorage.getItem(storageKey);
-    if (!savedPV) {
-        savedPV = 1437;
-    } else {
-        savedPV = parseInt(savedPV, 10) + 1;
+    function getTodayKST() {
+        var d = new Date();
+        var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+        var kst = new Date(utc + (3600000 * 9));
+        var yyyy = kst.getFullYear();
+        var mm = String(kst.getMonth() + 1).padStart(2, '0');
+        var dd = String(kst.getDate()).padStart(2, '0');
+        return yyyy + '-' + mm + '-' + dd;
     }
-    localStorage.setItem(storageKey, savedPV);
     
-    if (pvEl.innerText === '0' || !pvEl.innerText) {
-        pvEl.innerText = savedPV;
+    var todayStr = getTodayKST();
+    var storedDate = localStorage.getItem('daily_date_kj_hanam');
+    var dailyPV = localStorage.getItem('daily_pv_kj_hanam');
+    
+    if (storedDate !== todayStr) {
+        dailyPV = (todayStr === '2026-09-18') ? 1437 : 1;
+        localStorage.setItem('daily_date_kj_hanam', todayStr);
+        localStorage.setItem('daily_pv_kj_hanam', dailyPV);
+    } else {
+        dailyPV = parseInt(dailyPV || '1437', 10) + 1;
+        localStorage.setItem('daily_pv_kj_hanam', dailyPV);
     }
+    
+    pvEl.innerText = dailyPV;
     
     var observer = new MutationObserver(function() {
-        var raw = pvEl.innerText.replace(/[^0-9]/g, '');
-        if (raw && parseInt(raw, 10) > 0) {
-            pvEl.innerText = raw;
+        var currentStored = localStorage.getItem('daily_pv_kj_hanam');
+        if (currentStored && pvEl.innerText !== currentStored) {
+            pvEl.innerText = currentStored;
         }
     });
     observer.observe(pvEl, { childList: true, characterData: true, subtree: true });
@@ -54,23 +66,20 @@ for fpath in target_files:
         with open(fpath, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        # 1. Add busuanzi script to head if not present
         if 'busuanzi.pure.mini.js' not in content:
             content = content.replace('</head>', busuanzi_script + '</head>')
 
-        # 2. Replace bottom-nav
         if '<div class="bottom-nav"' in content:
             content = re.sub(r'<div class="bottom-nav".*?</div>', new_bottom_nav, content, flags=re.DOTALL)
 
-        # 3. Replace counter JS script
-        if 'pageview_count_kj_hanam' in content:
+        if 'pageview_count_kj_hanam' in content or 'daily_pv_kj_hanam' in content:
             content = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(\'busuanzi_value_page_pv\'\);.*?\}\);\s*</script>', counter_js, content, flags=re.DOTALL)
         else:
             content = content.replace('</body>', counter_js + '</body>')
 
         with open(fpath, 'w', encoding='utf-8') as f:
             f.write(content)
-        print(f"Updated minimalist pageview counter in {fpath}")
+        print(f"Updated daily visitor counter logic in {fpath}")
 
 # Update create_0918.py script
 create_script = r'd:\github\newsletter\newsletter\dashboard\scripts\create_0918.py'
@@ -81,7 +90,7 @@ if os.path.exists(create_script):
         code = code.replace('</head>', busuanzi_script + '</head>')
     if '<div class="bottom-nav"' in code:
         code = re.sub(r'<div class="bottom-nav".*?</div>', new_bottom_nav, code, flags=re.DOTALL)
-    if 'pageview_count_kj_hanam' in code:
+    if 'pageview_count_kj_hanam' in code or 'daily_pv_kj_hanam' in code:
         code = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(\'busuanzi_value_page_pv\'\);.*?\}\);\s*</script>', counter_js, code, flags=re.DOTALL)
     else:
         code = code.replace('</body>', counter_js + '</body>')

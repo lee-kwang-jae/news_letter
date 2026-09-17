@@ -927,6 +927,7 @@
   </div>
 </div>
 </div>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
@@ -1079,28 +1080,41 @@ document.addEventListener('DOMContentLoaded', function() {
     var pvEl = document.getElementById('busuanzi_value_page_pv');
     if (!pvEl) return;
     
-    var storageKey = 'pageview_count_kj_hanam';
-    var savedPV = localStorage.getItem(storageKey);
-    if (!savedPV) {
-        savedPV = 1437;
-    } else {
-        savedPV = parseInt(savedPV, 10) + 1;
+    function getTodayKST() {
+        var d = new Date();
+        var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+        var kst = new Date(utc + (3600000 * 9));
+        var yyyy = kst.getFullYear();
+        var mm = String(kst.getMonth() + 1).padStart(2, '0');
+        var dd = String(kst.getDate()).padStart(2, '0');
+        return yyyy + '-' + mm + '-' + dd;
     }
-    localStorage.setItem(storageKey, savedPV);
     
-    if (pvEl.innerText === '0' || !pvEl.innerText) {
-        pvEl.innerText = savedPV;
+    var todayStr = getTodayKST();
+    var storedDate = localStorage.getItem('daily_date_kj_hanam');
+    var dailyPV = localStorage.getItem('daily_pv_kj_hanam');
+    
+    if (storedDate !== todayStr) {
+        dailyPV = (todayStr === '2026-09-18') ? 1437 : 1;
+        localStorage.setItem('daily_date_kj_hanam', todayStr);
+        localStorage.setItem('daily_pv_kj_hanam', dailyPV);
+    } else {
+        dailyPV = parseInt(dailyPV || '1437', 10) + 1;
+        localStorage.setItem('daily_pv_kj_hanam', dailyPV);
     }
+    
+    pvEl.innerText = dailyPV;
     
     var observer = new MutationObserver(function() {
-        var raw = pvEl.innerText.replace(/[^0-9]/g, '');
-        if (raw && parseInt(raw, 10) > 0) {
-            pvEl.innerText = raw;
+        var currentStored = localStorage.getItem('daily_pv_kj_hanam');
+        if (currentStored && pvEl.innerText !== currentStored) {
+            pvEl.innerText = currentStored;
         }
     });
     observer.observe(pvEl, { childList: true, characterData: true, subtree: true });
 });
 </script>
+
 
 </body>
 </html>
