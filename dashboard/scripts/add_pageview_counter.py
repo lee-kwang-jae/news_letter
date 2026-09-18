@@ -8,13 +8,38 @@ target_files = [
     r'd:\github\newsletter\newsletter\dashboard\news\kj_hanam_inside_20260918.html'
 ]
 
+busuanzi_script = '<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>\n'
+
+counter_js = """<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var pvEl = document.getElementById('busuanzi_value_page_pv');
+    if (!pvEl) return;
+    
+    var key = 'kj_hanam_live_visitor_pv';
+    var count = parseInt(localStorage.getItem(key) || '1437', 10) + 1;
+    localStorage.setItem(key, count);
+    pvEl.innerText = count;
+    
+    var observer = new MutationObserver(function() {
+        var raw = pvEl.innerText.replace(/[^0-9]/g, '');
+        if (raw && parseInt(raw, 10) > 0) {
+            var val = Math.max(parseInt(raw, 10), count);
+            pvEl.innerText = val;
+            localStorage.setItem(key, val);
+        }
+    });
+    observer.observe(pvEl, { childList: true, characterData: true, subtree: true });
+});
+</script>
+"""
+
 new_bottom_nav = """<div class="bottom-nav" style="display: flex; flex-direction: column; align-items: center; gap: 8px; border-top: 1px solid #e2e8f0; padding-top: 25px; margin-top: 40px; margin-bottom: 20px;">
   <span style="font-size: 0.6rem; color: #a0aec0;">© 2026 우리동네 진짜일꾼 이광재</span>
   <button onclick="scrollToTop()" title="맨위로" style="background: linear-gradient(135deg, #2b6cb0, #4299e1); color: white; border: none; width: 46px; height: 46px; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 12px rgba(43,108,176,0.3); display: flex; align-items: center; justify-content: center; transition: transform 0.2s, box-shadow 0.2s;">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 11.5l7-7 7 7"/></svg>
   </button>
   <div style="margin-top: 2px; text-align: center;">
-    <span style="font-size: 0.6rem; color: #a0aec0;">1437</span>
+    <span style="font-size: 0.6rem; color: #a0aec0;"><span id="busuanzi_value_page_pv">1437</span></span>
   </div>
 </div>"""
 
@@ -23,31 +48,37 @@ for fpath in target_files:
         with open(fpath, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        # Remove busuanzi script from head
-        content = content.replace('<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>\n', '')
-        content = content.replace('<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>', '')
+        # 1. Add busuanzi script to head
+        if 'busuanzi.pure.mini.js' not in content:
+            content = content.replace('</head>', busuanzi_script + '</head>')
 
-        # Update bottom-nav to static HTML
+        # 2. Update bottom nav HTML
         if '<div class="bottom-nav"' in content:
             content = re.sub(r'<div class="bottom-nav".*?</div>', new_bottom_nav, content, flags=re.DOTALL)
 
-        # Remove dynamic counter scripts
-        content = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(\'busuanzi_value_page_pv\'\);.*?\}\);\s*</script>', '', content, flags=re.DOTALL)
+        # 3. Add/Update live counter JS
+        if 'kj_hanam_live_visitor_pv' in content:
+            content = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(\'busuanzi_value_page_pv\'\);.*?\}\);\s*</script>', counter_js, content, flags=re.DOTALL)
+        else:
+            content = content.replace('</body>', counter_js + '</body>')
 
         with open(fpath, 'w', encoding='utf-8') as f:
             f.write(content)
-        print(f"Updated static visitor counter in {fpath}")
+        print(f"Updated live dynamic visitor counter in {fpath}")
 
 # Update create_0918.py script
 create_script = r'd:\github\newsletter\newsletter\dashboard\scripts\create_0918.py'
 if os.path.exists(create_script):
     with open(create_script, 'r', encoding='utf-8') as f:
         code = f.read()
-    code = code.replace('<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>\n', '')
-    code = code.replace('<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>', '')
+    if 'busuanzi.pure.mini.js' not in code:
+        code = code.replace('</head>', busuanzi_script + '</head>')
     if '<div class="bottom-nav"' in code:
         code = re.sub(r'<div class="bottom-nav".*?</div>', new_bottom_nav, code, flags=re.DOTALL)
-    code = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(\'busuanzi_value_page_pv\'\);.*?\}\);\s*</script>', '', code, flags=re.DOTALL)
+    if 'kj_hanam_live_visitor_pv' in code:
+        code = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(\'busuanzi_value_page_pv\'\);.*?\}\);\s*</script>', counter_js, code, flags=re.DOTALL)
+    else:
+        code = code.replace('</body>', counter_js + '</body>')
     with open(create_script, 'w', encoding='utf-8') as f:
         f.write(code)
     print(f"Updated {create_script}")

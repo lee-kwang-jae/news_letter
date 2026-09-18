@@ -588,6 +588,7 @@
             animation: moonlightGlow 3s ease-in-out infinite alternate;
         }
 </style>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </head>
 <body>
 <div class="container">
@@ -922,8 +923,9 @@
     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 11.5l7-7 7 7"/></svg>
   </button>
   <div style="margin-top: 2px; text-align: center;">
-    <span style="font-size: 0.6rem; color: #a0aec0;">1437</span>
+    <span style="font-size: 0.6rem; color: #a0aec0;"><span id="busuanzi_value_page_pv">1437</span></span>
   </div>
+</div>
 </div>
 </div>
 </div>
@@ -1008,5 +1010,26 @@ function playYoutubeInline(videoId, element) {
 
 
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var pvEl = document.getElementById('busuanzi_value_page_pv');
+    if (!pvEl) return;
+    
+    var key = 'kj_hanam_live_visitor_pv';
+    var count = parseInt(localStorage.getItem(key) || '1437', 10) + 1;
+    localStorage.setItem(key, count);
+    pvEl.innerText = count;
+    
+    var observer = new MutationObserver(function() {
+        var raw = pvEl.innerText.replace(/[^0-9]/g, '');
+        if (raw && parseInt(raw, 10) > 0) {
+            var val = Math.max(parseInt(raw, 10), count);
+            pvEl.innerText = val;
+            localStorage.setItem(key, val);
+        }
+    });
+    observer.observe(pvEl, { childList: true, characterData: true, subtree: true });
+});
+</script>
 </body>
 </html>
