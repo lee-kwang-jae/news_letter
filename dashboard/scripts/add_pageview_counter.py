@@ -8,12 +8,10 @@ target_files = [
     r'd:\github\newsletter\newsletter\dashboard\news\kj_hanam_inside_20260918.html'
 ]
 
-busuanzi_script = '<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>\n'
-
-counter_js = """<script>
+clean_counter_js = """<script>
 (function() {
-    function initMobileVisitorCounter() {
-        var pvEl = document.getElementById('busuanzi_value_site_uv') || document.getElementById('busuanzi_value_page_pv');
+    function initVisitorCounter() {
+        var pvEl = document.getElementById('visitor_counter_val') || document.getElementById('busuanzi_value_site_uv') || document.getElementById('busuanzi_value_page_pv');
         if (!pvEl) return;
         
         function getTodayKST() {
@@ -27,9 +25,9 @@ counter_js = """<script>
         }
         
         var todayStr = getTodayKST();
-        var dateKey = 'kj_hanam_mobile_pv_date';
-        var countKey = 'kj_hanam_mobile_pv_count';
-        var sessionKey = 'kj_hanam_counted_session_' + todayStr;
+        var dateKey = 'kj_hanam_pv_date';
+        var countKey = 'kj_hanam_pv_count';
+        var sessionKey = 'kj_hanam_pv_session_' + todayStr;
         
         var storedDate = localStorage.getItem(dateKey);
         var currentCount = parseInt(localStorage.getItem(countKey) || '0', 10);
@@ -42,7 +40,6 @@ counter_js = """<script>
         } else {
             var alreadyCounted = false;
             try { alreadyCounted = sessionStorage.getItem(sessionKey); } catch(e){}
-            
             if (!alreadyCounted) {
                 currentCount = Math.max(1, currentCount + 1);
                 localStorage.setItem(countKey, currentCount.toString());
@@ -52,22 +49,12 @@ counter_js = """<script>
         
         if (currentCount <= 0) currentCount = 1;
         pvEl.innerText = currentCount;
-        
-        var observer = new MutationObserver(function() {
-            var raw = pvEl.innerText.replace(/[^0-9]/g, '');
-            if (raw && parseInt(raw, 10) > 0) {
-                var val = Math.max(parseInt(raw, 10), currentCount);
-                pvEl.innerText = val;
-                localStorage.setItem(countKey, val.toString());
-            }
-        });
-        observer.observe(pvEl, { childList: true, characterData: true, subtree: true });
     }
     
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initMobileVisitorCounter);
+        document.addEventListener('DOMContentLoaded', initVisitorCounter);
     } else {
-        initMobileVisitorCounter();
+        initVisitorCounter();
     }
 })();
 </script>
@@ -79,7 +66,7 @@ new_bottom_nav = """<div class="bottom-nav" style="display: flex; flex-direction
     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 11.5l7-7 7 7"/></svg>
   </button>
   <div style="margin-top: 2px; text-align: center;">
-    <span style="font-size: 0.6rem; color: #a0aec0;"><span id="busuanzi_value_site_uv">1</span></span>
+    <span style="font-size: 0.6rem; color: #a0aec0;"><span id="visitor_counter_val">1</span></span>
   </div>
 </div>"""
 
@@ -88,36 +75,36 @@ for fpath in target_files:
         with open(fpath, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        if 'busuanzi.pure.mini.js' not in content:
-            content = content.replace('</head>', busuanzi_script + '</head>')
+        # Remove busuanzi script from head completely
+        content = content.replace('<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>\n', '')
+        content = content.replace('<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>', '')
 
+        # Replace bottom nav
         if '<div class="bottom-nav"' in content:
             content = re.sub(r'<div class="bottom-nav".*?</div>', new_bottom_nav, content, flags=re.DOTALL)
 
-        if '<script>\n(function() {\n    function initMobileVisitorCounter()' in content or 'kj_hanam_daily_date' in content or 'kj_hanam_live_visitor_pv' in content or 'pageview_count_kj_hanam' in content:
-            content = re.sub(r'<script>\s*(?:\(function\(\)\s*\{)?\s*function initMobileVisitorCounter\(\).*?\)\(\);\s*</script>', counter_js, content, flags=re.DOTALL)
-            content = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(.*?\);.*?\}\);\s*</script>', counter_js, content, flags=re.DOTALL)
-        else:
-            content = content.replace('</body>', counter_js + '</body>')
+        # Remove any existing counter scripts and add clean_counter_js before </body>
+        content = re.sub(r'<script>\s*(?:\(function\(\)\s*\{)?\s*function init(?:Mobile)?VisitorCounter\(\).*?\)\(\);\s*</script>', '', content, flags=re.DOTALL)
+        content = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(.*?\);.*?\}\);\s*</script>', '', content, flags=re.DOTALL)
+
+        content = content.replace('</body>', clean_counter_js + '</body>')
 
         with open(fpath, 'w', encoding='utf-8') as f:
             f.write(content)
-        print(f"Updated universal mobile & PC visitor counter in {fpath}")
+        print(f"Fixed freeze bug and updated clean counter in {fpath}")
 
 # Update create_0918.py script
 create_script = r'd:\github\newsletter\newsletter\dashboard\scripts\create_0918.py'
 if os.path.exists(create_script):
     with open(create_script, 'r', encoding='utf-8') as f:
         code = f.read()
-    if 'busuanzi.pure.mini.js' not in code:
-        code = code.replace('</head>', busuanzi_script + '</head>')
+    code = code.replace('<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>\n', '')
+    code = code.replace('<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>', '')
     if '<div class="bottom-nav"' in code:
         code = re.sub(r'<div class="bottom-nav".*?</div>', new_bottom_nav, code, flags=re.DOTALL)
-    if 'kj_hanam_daily_date' in code or 'kj_hanam_live_visitor_pv' in code or 'pageview_count_kj_hanam' in code or 'initMobileVisitorCounter' in code:
-        code = re.sub(r'<script>\s*(?:\(function\(\)\s*\{)?\s*function initMobileVisitorCounter\(\).*?\)\(\);\s*</script>', counter_js, code, flags=re.DOTALL)
-        code = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(.*?\);.*?\}\);\s*</script>', counter_js, code, flags=re.DOTALL)
-    else:
-        code = code.replace('</body>', counter_js + '</body>')
+    code = re.sub(r'<script>\s*(?:\(function\(\)\s*\{)?\s*function init(?:Mobile)?VisitorCounter\(\).*?\)\(\);\s*</script>', '', code, flags=re.DOTALL)
+    code = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(.*?\);.*?\}\);\s*</script>', '', code, flags=re.DOTALL)
+    code = code.replace('</body>', clean_counter_js + '</body>')
     with open(create_script, 'w', encoding='utf-8') as f:
         f.write(code)
     print(f"Updated {create_script}")
