@@ -11,50 +11,65 @@ target_files = [
 busuanzi_script = '<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>\n'
 
 counter_js = """<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var pvEl = document.getElementById('busuanzi_value_site_uv') || document.getElementById('busuanzi_value_page_pv');
-    if (!pvEl) return;
-    
-    function getTodayKST() {
-        var d = new Date();
-        var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-        var kst = new Date(utc + (3600000 * 9));
-        var yyyy = kst.getFullYear();
-        var mm = String(kst.getMonth() + 1).padStart(2, '0');
-        var dd = String(kst.getDate()).padStart(2, '0');
-        return yyyy + '-' + mm + '-' + dd;
+(function() {
+    function initMobileVisitorCounter() {
+        var pvEl = document.getElementById('busuanzi_value_site_uv') || document.getElementById('busuanzi_value_page_pv');
+        if (!pvEl) return;
+        
+        function getTodayKST() {
+            var d = new Date();
+            var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            var kst = new Date(utc + (3600000 * 9));
+            var yyyy = kst.getFullYear();
+            var mm = String(kst.getMonth() + 1).padStart(2, '0');
+            var dd = String(kst.getDate()).padStart(2, '0');
+            return yyyy + '-' + mm + '-' + dd;
+        }
+        
+        var todayStr = getTodayKST();
+        var dateKey = 'kj_hanam_mobile_pv_date';
+        var countKey = 'kj_hanam_mobile_pv_count';
+        var sessionKey = 'kj_hanam_counted_session_' + todayStr;
+        
+        var storedDate = localStorage.getItem(dateKey);
+        var currentCount = parseInt(localStorage.getItem(countKey) || '0', 10);
+        
+        if (storedDate !== todayStr) {
+            currentCount = 1;
+            localStorage.setItem(dateKey, todayStr);
+            localStorage.setItem(countKey, '1');
+            try { sessionStorage.setItem(sessionKey, 'true'); } catch(e){}
+        } else {
+            var alreadyCounted = false;
+            try { alreadyCounted = sessionStorage.getItem(sessionKey); } catch(e){}
+            
+            if (!alreadyCounted) {
+                currentCount = Math.max(1, currentCount + 1);
+                localStorage.setItem(countKey, currentCount.toString());
+                try { sessionStorage.setItem(sessionKey, 'true'); } catch(e){}
+            }
+        }
+        
+        if (currentCount <= 0) currentCount = 1;
+        pvEl.innerText = currentCount;
+        
+        var observer = new MutationObserver(function() {
+            var raw = pvEl.innerText.replace(/[^0-9]/g, '');
+            if (raw && parseInt(raw, 10) > 0) {
+                var val = Math.max(parseInt(raw, 10), currentCount);
+                pvEl.innerText = val;
+                localStorage.setItem(countKey, val.toString());
+            }
+        });
+        observer.observe(pvEl, { childList: true, characterData: true, subtree: true });
     }
     
-    var todayStr = getTodayKST();
-    var storedDate = localStorage.getItem('kj_hanam_daily_date');
-    var todayCount = parseInt(localStorage.getItem('kj_hanam_today_unique_count') || '0', 10);
-    
-    if (storedDate !== todayStr) {
-        todayCount = 1;
-        localStorage.setItem('kj_hanam_daily_date', todayStr);
-        localStorage.setItem('kj_hanam_today_unique_count', '1');
-        sessionStorage.setItem('kj_hanam_counted_today', 'true');
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initMobileVisitorCounter);
     } else {
-        if (!sessionStorage.getItem('kj_hanam_counted_today')) {
-            todayCount += 1;
-            localStorage.setItem('kj_hanam_today_unique_count', todayCount.toString());
-            sessionStorage.setItem('kj_hanam_counted_today', 'true');
-        }
+        initMobileVisitorCounter();
     }
-    
-    if (todayCount === 0) todayCount = 1;
-    pvEl.innerText = todayCount;
-    
-    var observer = new MutationObserver(function() {
-        var raw = pvEl.innerText.replace(/[^0-9]/g, '');
-        if (raw && parseInt(raw, 10) > 0) {
-            var val = Math.max(parseInt(raw, 10), todayCount);
-            pvEl.innerText = val;
-            localStorage.setItem('kj_hanam_today_unique_count', val.toString());
-        }
-    });
-    observer.observe(pvEl, { childList: true, characterData: true, subtree: true });
-});
+})();
 </script>
 """
 
@@ -79,14 +94,15 @@ for fpath in target_files:
         if '<div class="bottom-nav"' in content:
             content = re.sub(r'<div class="bottom-nav".*?</div>', new_bottom_nav, content, flags=re.DOTALL)
 
-        if 'kj_hanam_daily_date' in content or 'kj_hanam_live_visitor_pv' in content or 'pageview_count_kj_hanam' in content:
+        if '<script>\n(function() {\n    function initMobileVisitorCounter()' in content or 'kj_hanam_daily_date' in content or 'kj_hanam_live_visitor_pv' in content or 'pageview_count_kj_hanam' in content:
+            content = re.sub(r'<script>\s*(?:\(function\(\)\s*\{)?\s*function initMobileVisitorCounter\(\).*?\)\(\);\s*</script>', counter_js, content, flags=re.DOTALL)
             content = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(.*?\);.*?\}\);\s*</script>', counter_js, content, flags=re.DOTALL)
         else:
             content = content.replace('</body>', counter_js + '</body>')
 
         with open(fpath, 'w', encoding='utf-8') as f:
             f.write(content)
-        print(f"Updated today's actual unique daily visitor counter in {fpath}")
+        print(f"Updated universal mobile & PC visitor counter in {fpath}")
 
 # Update create_0918.py script
 create_script = r'd:\github\newsletter\newsletter\dashboard\scripts\create_0918.py'
@@ -97,7 +113,8 @@ if os.path.exists(create_script):
         code = code.replace('</head>', busuanzi_script + '</head>')
     if '<div class="bottom-nav"' in code:
         code = re.sub(r'<div class="bottom-nav".*?</div>', new_bottom_nav, code, flags=re.DOTALL)
-    if 'kj_hanam_daily_date' in code or 'kj_hanam_live_visitor_pv' in code or 'pageview_count_kj_hanam' in code:
+    if 'kj_hanam_daily_date' in code or 'kj_hanam_live_visitor_pv' in code or 'pageview_count_kj_hanam' in code or 'initMobileVisitorCounter' in code:
+        code = re.sub(r'<script>\s*(?:\(function\(\)\s*\{)?\s*function initMobileVisitorCounter\(\).*?\)\(\);\s*</script>', counter_js, code, flags=re.DOTALL)
         code = re.sub(r'<script>\s*document\.addEventListener\(\'DOMContentLoaded\', function\(\) \{\s*var pvEl = document\.getElementById\(.*?\);.*?\}\);\s*</script>', counter_js, code, flags=re.DOTALL)
     else:
         code = code.replace('</body>', counter_js + '</body>')
