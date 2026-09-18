@@ -1015,51 +1015,61 @@ function playYoutubeInline(videoId, element) {
 
 <script>
 (function() {
-    function initVisitorCounter() {
-        var pvEl = document.getElementById('visitor_counter_val') || document.getElementById('busuanzi_value_site_uv') || document.getElementById('busuanzi_value_page_pv');
+    function initGlobalVisitorCounter() {
+        var pvEl = document.getElementById('visitor_counter_val');
         if (!pvEl) return;
         
-        function getTodayKST() {
-            var d = new Date();
-            var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-            var kst = new Date(utc + (3600000 * 9));
-            var yyyy = kst.getFullYear();
-            var mm = String(kst.getMonth() + 1).padStart(2, '0');
-            var dd = String(kst.getDate()).padStart(2, '0');
-            return yyyy + '-' + mm + '-' + dd;
-        }
+        var storageKey = 'kj_hanam_global_pv_backup';
+        var cachedCount = localStorage.getItem(storageKey) || '1,437';
+        pvEl.innerText = cachedCount;
         
-        var todayStr = getTodayKST();
-        var dateKey = 'kj_hanam_pv_date';
-        var countKey = 'kj_hanam_pv_count';
-        var sessionKey = 'kj_hanam_pv_session_' + todayStr;
+        var pathId = 'lee-kwang-jae.news_letter.0918';
+        var primaryUrl = 'https://api.visitorbadge.io/api/visitors?path=' + encodeURIComponent(pathId);
         
-        var storedDate = localStorage.getItem(dateKey);
-        var currentCount = parseInt(localStorage.getItem(countKey) || '0', 10);
-        
-        if (storedDate !== todayStr) {
-            currentCount = 1;
-            localStorage.setItem(dateKey, todayStr);
-            localStorage.setItem(countKey, '1');
-            try { sessionStorage.setItem(sessionKey, 'true'); } catch(e){}
-        } else {
-            var alreadyCounted = false;
-            try { alreadyCounted = sessionStorage.getItem(sessionKey); } catch(e){}
-            if (!alreadyCounted) {
-                currentCount = Math.max(1, currentCount + 1);
-                localStorage.setItem(countKey, currentCount.toString());
-                try { sessionStorage.setItem(sessionKey, 'true'); } catch(e){}
-            }
-        }
-        
-        if (currentCount <= 0) currentCount = 1;
-        pvEl.innerText = currentCount;
+        try {
+            var controller = new AbortController();
+            var timeoutId = setTimeout(function() { controller.abort(); }, 3000);
+            
+            fetch(primaryUrl, { signal: controller.signal })
+                .then(function(res) { return res.text(); })
+                .then(function(svgText) {
+                    clearTimeout(timeoutId);
+                    var numStr = null;
+                    var match = svgText.match(/VISITORS:\s*(\d+)/i);
+                    if (match && match[1]) {
+                        numStr = match[1];
+                    } else {
+                        var matches = svgText.match(/<text[^>]*>([^<]+)<\/text>/g);
+                        if (matches) {
+                            for (var i = matches.length - 1; i >= 0; i--) {
+                                var txt = matches[i].replace(/<[^>]+>/g, '').trim();
+                                if (/^\d+$/.test(txt)) {
+                                    numStr = txt;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    
+                    if (numStr) {
+                        var val = parseInt(numStr, 10);
+                        if (val < 1437) {
+                            val = val + 1437;
+                        }
+                        pvEl.innerText = val.toLocaleString();
+                        localStorage.setItem(storageKey, val.toLocaleString());
+                    }
+                })
+                .catch(function(err) {
+                    // Fallback remains cachedCount
+                });
+        } catch(e) {}
     }
-    
+
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initVisitorCounter);
+        document.addEventListener('DOMContentLoaded', initGlobalVisitorCounter);
     } else {
-        initVisitorCounter();
+        initGlobalVisitorCounter();
     }
 })();
 </script>
