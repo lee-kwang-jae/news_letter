@@ -969,9 +969,21 @@ function openImageModal(src) {
     document.getElementById('modalImage').src = src;
 }
 function playNewsletterVideo() {
-    var v = document.getElementById('video-9VpL5CdPQls');
+    var v = document.getElementById('video-shorts0918') || document.getElementsByTagName('video')[0];
     if (v) {
-        v.play();
+        v.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (v.paused) {
+            var promise = v.play();
+            if (promise !== undefined) {
+                promise.catch(function(error) {
+                    console.log("Autoplay blocked, playing muted:", error);
+                    v.muted = true;
+                    v.play();
+                });
+            }
+        } else {
+            v.pause();
+        }
     }
 }
 function playYoutubeInline(videoId, element) {

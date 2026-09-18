@@ -77,8 +77,8 @@ def update_html_performance():
         with open(fpath, 'r', encoding='utf-8') as f:
             content = f.read()
             
-        # 1. Update <video> tags to preload="none"
-        content = re.sub(r'preload=["\'](?:metadata|auto)["\']', 'preload="none"', content)
+        # 1. Update <video> tags to preload="metadata"
+        content = re.sub(r'preload=["\'](?:metadata|auto)["\']', 'preload="metadata"', content)
         
         # 2. Add loading="lazy" decoding="async" to article content images if missing
         # Avoid top banner top01.png
