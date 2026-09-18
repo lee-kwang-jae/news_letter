@@ -80,14 +80,14 @@ def update_html_performance():
         # 1. Update <video> tags to preload="metadata"
         content = re.sub(r'preload=["\'](?:metadata|auto)["\']', 'preload="metadata"', content)
         
-        # 2. Add loading="lazy" decoding="async" to article content images if missing
+        # 2. Add to article content images if missing
         # Avoid top banner top01.png
         def img_replacer(match):
             img_tag = match.group(0)
             if 'top01.png' in img_tag or 'top.png' in img_tag or 'kjicon.png' in img_tag:
                 return img_tag
             if 'loading=' not in img_tag:
-                img_tag = img_tag.replace('<img ', '<img loading="lazy" decoding="async" ')
+                img_tag = img_tag.replace('<img ', '<img ')
             return img_tag
 
         content = re.sub(r'<img [^>]+>', img_replacer, content)
