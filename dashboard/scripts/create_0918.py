@@ -65,9 +65,9 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 &
 대한적십자사 봉사회 하남지구협의회와 함께한 2026년 추석맞이 사랑의 한가위 나눔 현장을 담은 숏폼 영상입니다. 정성 담긴 명절 나눔과 봉사자 분들의 따뜻한 마음을 영상으로 확인해보세요.
 <div style="margin-top: 14px; margin-bottom: 12px; display: flex; justify-content: center;">
   <div id="yt-container-shorts0918" style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); display: block; background: #000;">
-    <video id="video-shorts0918" poster="./images/thumbnail-0918.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+    <video id="video-shorts0918" poster="./images/thumbnail-918.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
       <source src="./images/shorts_0918.mp4" type="video/mp4">
-      <p style="color: #fff; text-align: center; padding: 20px;">브라우저가 동영상 재생을 지원하지 않습니다.</p>
+      <iframe src="https://www.youtube.com/embed/A5H3SrB6qiE?feature=oembed" title="&quot;적십자와 함께하는 추석맞이 사랑의 한가위 나눔행사&quot; 현장 숏폼" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </video>
   </div>
 </div>
