@@ -22,7 +22,7 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 &
 <div id="lawmaker">
 <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
   <div class="section-title" style="display: flex; align-items: center; justify-content: center; gap: 12px; background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 35%, #431407 80%, #78350f 100%); border: 2px solid #fbbf24; box-shadow: 0 4px 20px rgba(251, 191, 36, 0.35); position: relative; padding: 10px 20px; border-radius: 10px;">
-    <img src="./images/kjicon.png" alt="이광재 국회의원" class="moonlight-avatar-img">
+    <img src="images/kjicon.png" alt="이광재 국회의원" class="moonlight-avatar-img">
     <span style="color: #fef08a; text-shadow: 0 2px 4px rgba(0,0,0,0.5); font-weight: bold; letter-spacing: -0.5px;">우리동네 국회의원 이광재</span>
   </div>
 </a>
@@ -48,7 +48,7 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 &
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 예산결산특별위원회 위원장으로서 내년도 820조 원 규모의 국가 예산안 심의에 임하는 이광재 의원의 현장일지입니다. 국민 삶에 직결된 예산 항목 하나하나를 꼼꼼히 살피고, 국가 발전과 하남시민을 위한 세밀한 예산 검토를 이어가겠습니다.
 <div style="margin-top: 14px; text-align: center;">
-  <img src="./images/thumbnail-0918.jpg" alt="국민 삶에 직결된 800조 예산 꼼꼼히 챙기며 우리동네 현장도 달려갑니다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+  <img src="images/thumbnail-0918.jpg" alt="국민 삶에 직결된 800조 예산 꼼꼼히 챙기며 우리동네 현장도 달려갑니다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://blog.naver.com/lee_kwang_jae/224414956518" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">현장일지 전문 보기 (이광재 블로그) →</a></div>
 </div>
@@ -66,7 +66,7 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 언론보도 &
 <div style="margin-top: 14px; margin-bottom: 12px; display: flex; justify-content: center;">
   <div id="yt-container-shorts0918" style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); display: block; background: #000;">
     <video id="video-shorts0918" poster="./images/thumbnail-918.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
-      <source src="./images/shorts_0918.mp4" type="video/mp4">
+      <source src="images/shorts_0918.mp4" type="video/mp4">
       <iframe src="https://www.youtube.com/embed/A5H3SrB6qiE?feature=oembed" title="&quot;적십자와 함께하는 추석맞이 사랑의 한가위 나눔행사&quot; 현장 숏폼" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </video>
   </div>
@@ -99,7 +99,7 @@ section2_content = """<!-- ===== 섹션 2: 하남 지역 주요 뉴스 ===== -->
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.newsis.com/view/NISX20260917_0003794093" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">기사 원문 보기 (뉴시스) →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091802.jpg" alt="무료 예방접종 진행 일정" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/091802.jpg" alt="무료 예방접종 진행 일정" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
@@ -143,7 +143,7 @@ section2_content = """<!-- ===== 섹션 2: 하남 지역 주요 뉴스 ===== -->
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.gukjenews.com/news/articleView.html?idxno=3695038" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">기사 원문 보기 (국제뉴스) →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091807.jpg" alt="유보통합 시대 경기도 영유아 교육·보육 통합지원체계 구축 방안 정책토론회 안내" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/091807.jpg" alt="유보통합 시대 경기도 영유아 교육·보육 통합지원체계 구축 방안 정책토론회 안내" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
@@ -213,7 +213,7 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanamlib.go.kr" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">하남시립도서관 홈페이지 바로가기 →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091804.jpg" alt="시민 추천도서 의견수렴 안내" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/091804.jpg" alt="시민 추천도서 의견수렴 안내" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
@@ -235,7 +235,7 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanamlib.go.kr" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 신청하기 (위례도서관) →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091805.jpg" alt="위례도서관 10월 프로그램" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/091805.jpg" alt="위례도서관 10월 프로그램" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
@@ -259,7 +259,7 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/health/index.do" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 홈페이지 바로가기 →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091806.jpg" alt="감일건강생활지원센터 임산부 요가교실 4기" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/091806.jpg" alt="감일건강생활지원센터 임산부 요가교실 4기" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
@@ -294,7 +294,7 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=502516" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 공고 및 위탁의료기관 조회 (하남시보건소) →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091802.jpg" alt="2026-27년도 인플루엔자 무료 예방접종 안내" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/091802.jpg" alt="2026-27년도 인플루엔자 무료 예방접종 안내" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
@@ -315,7 +315,7 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/www/selectBbsNttView.do?key=170&amp;bbsNo=30&amp;nttNo=502750" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 공고 확인하기 (하남시청) →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="./images/091803.jpg" alt="2026년 녹색건축물 조성 지원사업 공고" style="width: 100%; height: 210px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/091803.jpg" alt="2026년 녹색건축물 조성 지원사업 공고" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
