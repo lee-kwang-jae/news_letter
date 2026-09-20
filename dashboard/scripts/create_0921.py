@@ -20,7 +20,11 @@ if not os.path.exists(primary_thumb):
     primary_thumb = os.path.join(img_dir, 'thumbnail-921.jpg')
 
 if os.path.exists(primary_thumb):
-    aliases = ['thumbnail-092100.jpg', 'thumbnail-0921.jpg', 'thumbnail0921.jpg', 'thumbnail-921.jpg', '09.jpg']
+    aliases = [
+        'thumbnail-092100.jpg', 'thumbnail-0921.jpg', 'thumbnail0921.jpg',
+        'thumbnail-921.jpg', '09.jpg', 'thumb.jpg', 'thumbnail.jpg',
+        'thumb.png', 'thumbnail.png'
+    ]
     for alias in aliases:
         dst1 = os.path.join(img_dir, alias)
         dst2 = os.path.join(dash_img_dir, alias)
@@ -46,11 +50,13 @@ with open(source_path, 'r', encoding='utf-8') as f:
 # Update Title, Issue Number, Date, Meta Image Tags
 content = content.replace("43호 | 2026년 9월 18일 발행", "44호 | 2026년 9월 21일 발행")
 content = content.replace("2026년 9월 18일 기준", "2026년 9월 21일 기준")
-content = content.replace("images/thumbnail-0918.jpg", "images/thumbnail-092100.jpg")
-content = content.replace("images/thumbnail-918.jpg", "images/thumbnail-092100.jpg")
-content = content.replace("images/thumbnail-0921.jpg", "images/thumbnail-092100.jpg")
-content = content.replace("https://lee-kwang-jae.github.io/news_letter/images/thumbnail-0918.jpg", "https://lee-kwang-jae.github.io/news_letter/images/thumbnail-092100.jpg")
-content = content.replace("https://lee-kwang-jae.github.io/news_letter/images/thumbnail-0921.jpg", "https://lee-kwang-jae.github.io/news_letter/images/thumbnail-092100.jpg")
+
+# Update og:image tags with cache buster query string to force KakaoTalk/messaging scraper refresh
+og_thumb_url = "https://lee-kwang-jae.github.io/news_letter/images/thumbnail-092100.jpg?v=2026092101"
+content = re.sub(r'content="https://lee-kwang-jae\.github\.io/news_letter/images/[^"]*"', f'content="{og_thumb_url}"', content)
+content = re.sub(r'href="https://lee-kwang-jae\.github\.io/news_letter/images/[^"]*"', f'href="{og_thumb_url}"', content)
+content = content.replace('content="1200"', 'content="996"')
+content = content.replace('content="630"', 'content="555"')
 
 # 1. Section 1: 우리동네 국회의원 이광재 (현장일지 선배치 + 언론보도 후배치 지침 준수)
 section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 현장일지 & 언론보도 ===== -->
