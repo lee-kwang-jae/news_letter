@@ -137,7 +137,7 @@ section2_content = """<!-- ===== 섹션 2: 하남 지역 주요 뉴스 ===== -->
 <div class="badge">📰 행정/시정</div>
 <h3><a href="https://sports.donga.com/region/article/all/20260920/134703974/1" target="_blank" style="color: inherit; text-decoration: none;">하남시, 이사 후 '주소일괄정정' 신청 주의 당부</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
-하남시(시장 이현재)는 이사 후 카드사·통신사 등에 등록된 주소를 변경하려는 시민들에게 정부24의 '주소일괄정정' 민원을 잘못 신청하지 않도록 주의를 당부했습니다. '주소일괄정정'은 건물 도로명주소 변경 시 사용하는 행정 서비스로, 카드나 통신사 주소 변경은 별도의 금융·통신 주소이전 통합서비스를 이용해야 합니다.
+하남시는 이사 후 카드사·통신사 등에 등록된 주소를 변경하려는 시민들에게 정부24의 '주소일괄정정' 민원을 잘못 신청하지 않도록 주의를 당부했습니다. '주소일괄정정'은 건물 도로명주소 변경 시 사용하는 행정 서비스로, 카드나 통신사 주소 변경은 별도의 금융·통신 주소이전 통합서비스를 이용해야 합니다.
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://sports.donga.com/region/article/all/20260920/134703974/1" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">기사 원문 보기 (스포츠동아) →</a></div>
 </div>
 <div class="source">
