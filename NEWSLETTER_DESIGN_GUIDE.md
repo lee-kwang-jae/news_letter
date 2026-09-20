@@ -55,7 +55,7 @@
 
 1. **`우리동네 국회의원 이광재` (`#lawmaker`)**
    - 프로필 아이콘: `<img src="./images/kjicon.png" style="width:48px; height:48px; border-radius:50%;">`
-   - 구성: 언론보도 카드 (`card-press`) + 현장일지 카드 (`card-field`)
+   - 구성: 현장일지 카드 (`card-field`) [선배치] + 언론보도 카드 (`card-press`) [후배치]
 2. **`📰 하남 지역 주요 뉴스` (`#local-news`)**
    - 제목 스타일: `<div class="section-title green">📰 하남 지역 주요 뉴스</div>`
 3. **`💬 하남 맘카페 HOT 이슈` (`#mom-cafe`)**
