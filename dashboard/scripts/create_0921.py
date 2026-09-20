@@ -309,6 +309,9 @@ content = content[:idx_mom] + section3_content + '\n\n' + section4_content + '\n
 # Update visitor counter path ID to 0921
 content = content.replace("lee-kwang-jae.news_letter.0918", "lee-kwang-jae.news_letter.0921")
 
+# Remove visitor counter element from footer
+content = re.sub(r'<div style="margin-top: 2px; text-align: center;">\s*<span[^>]*><span id="visitor_counter_val">.*?</span></span>\s*</div>', '', content, flags=re.DOTALL)
+
 # Update playNewsletterVideo function for shorts_0921
 new_script = """function playNewsletterVideo() {
     var v = document.getElementById('video-HHx77yzsWrY') || document.getElementById('video-shorts0921') || document.getElementById('video-shorts0918') || document.getElementById('video-A5H3SrB6qiE');
