@@ -48,9 +48,9 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 현장일지 &
 <!-- [현장일지 1] (네이버 블로그: 이광재, [한강변에 기후부 장관님과 갔습니다]) -->
 <div class="article-card card-field">
 <div class="badge badge-field">📝 현장일지</div>
-<h3><a href="https://blog.naver.com/lee_kwang_jae/224416869021" target="_blank" style="color: inherit; text-decoration: none;">이광재, "한강변에 기후부 장관님과 함께 갔습니다"… 미사 한강변 황톳길·모래사장 걷기 현장</a></h3>
+<h3><a href="https://blog.naver.com/lee_kwang_jae/224416869021" target="_blank" style="color: inherit; text-decoration: none;">이광재, "한강변에 기후부 장관님과 함께 갔습니다"… 미사 한강변 폐천부지·선동둔치 점검 현장</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
-미사 한강변을 걸었습니다. 김성환 기후에너지환경부 장관, 김경수 지방시대위원장, 김동연 경기도지사, 김상호 전 하남시장과 함께 신발을 벗고 촉촉한 황톳길과 맨발 모래사장을 같이 걸었습니다. 한강의 뛰어난 자연환경을 소중히 지키면서 시민들의 편안한 휴식 공간이자 건강한 힐링 명소로 다듬어갈 구상을 나눴습니다.
+어제 미사 한강변을 김성환 기후에너지환경부 장관, 김용만 국회의원과 함께 걸으며 하남시와 정부 간 소송으로 방치되어온 폐천부지 현장을 점검했습니다. "누가 잘못했나"보다 "언제 깨끗해지나"라는 시민들의 요구에 따라 책임 가리기와 땅 살리기를 동시에 추진할 것을 장관께 제안했습니다. 이어 선동둔치 파크골프장을 방문해 어르신들의 소통 현장을 살피며, 한강이 하남시민이 매일 누리는 공간이 되도록 현장에서 답을 찾겠습니다.
 <div style="margin-top: 14px; text-align: center;">
   <img src="images/thumbnail-0921.jpg" alt="한강변에 기후부 장관님과 갔습니다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
