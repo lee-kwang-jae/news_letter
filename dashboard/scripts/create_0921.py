@@ -33,6 +33,10 @@ shorts_poster = os.path.join(img_dir, 'shorts_0921_poster.jpg')
 if os.path.exists(shorts_poster):
     shutil.copy2(shorts_poster, os.path.join(dash_img_dir, 'shorts_0921_poster.jpg'))
 
+img_092101 = os.path.join(img_dir, '092101.jpg')
+if os.path.exists(img_092101):
+    shutil.copy2(img_092101, os.path.join(dash_img_dir, '092101.jpg'))
+
 with open(source_path, 'r', encoding='utf-8') as f:
     content = f.read()
 
@@ -199,10 +203,85 @@ section3_content = """<!-- ===== 섹션 3: 하남 맘카페 HOT 이슈 ===== -->
 </div>
 </div>"""
 
-# Slice replace Section 3
+# 4. Section 4: ALL IN 하남라이프 (하남시 공지사항 - 전국 소등행사 교체)
+section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
+<div id="culture">
+<div class="section-title" style="background: linear-gradient(90deg, #319795, #4fd1c5);">🎭 ALL IN 하남라이프</div>
+<p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 21일 기준 한눈에 보는 하남시 최신 문화·행사·교육 안내 가이드</p>
+
+<!-- 문화 기사 1 (하남시 공지사항: 전국 소등행사 안내) -->
+<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
+<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">💡 매월 22일 21:00 (10분간) | 환경/시민참여</div>
+<h3 style="margin-top: 6px;"><a href="https://www.hanam.go.kr/www/selectBbsNttView.do?key=170&amp;bbsNo=30&amp;nttNo=502793" target="_blank" style="color: inherit; text-decoration: none;">매월 22일 밤 9시 '전국 소등행사' 안내 (불이 꺼진 자리, 별이 켜지는 시간)</a></h3>
+<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
+<div style="flex: 1;">
+<b>"지구를 위한 10분간의 짧은 불끄기! 일상 속 기후행동에 함께해주세요"</b><br/>
+기후에너지환경부와 하남시에서는 대국민 기후행동 실천을 유도하기 위해 매월 22일 밤 9시 10분간 소등행사를 정례화하여 추진합니다.<br/><br/>
+<b>🗓 일시:</b> 매월 22일 21:00 ~ 21:10 (10분간)<br/>
+<b>💡 참여 방법:</b> 실내외 불필요한 조명 소등하기<br/>
+<b>👥 참여 대상:</b> 하남시민 누구나<br/>
+<b>☎️ 문의:</b> 하남시청 환경정책과 <a href="tel:031-790-5586" style="color:#3182ce; font-weight:bold;">031-790-5586</a>
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/www/selectBbsNttView.do?key=170&amp;bbsNo=30&amp;nttNo=502793" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 시청 공고 보기 →</a></div>
+</div>
+<div class="img-box" style="width: 240px; flex-shrink: 0;">
+<img src="images/092101.jpg" alt="전국 소등행사 안내" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+</div>
+</div>
+<div class="source">
+📌 출처: 하남시청 (환경정책과)
+</div>
+</div>
+
+<!-- 문화 기사 2 (하남시어린이영어도서관 시민 추천도서 의견수렴) -->
+<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
+<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">📚 ~2026.11.30 | 도서관/시민참여</div>
+<h3 style="margin-top: 6px;"><a href="https://www.hanamlib.go.kr" target="_blank" style="color: inherit; text-decoration: none;">하남시어린이영어도서관 시민 추천도서 의견수렴 안내</a></h3>
+<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
+<div style="flex: 1;">
+<b>"여러분이 추천한 영어도서가 어린이영어도서관의 책이 됩니다!"</b><br/>
+하남시어린이영어도서관에서 시민들이 원하는 영문 서적을 구입·비치하기 위해 의견수렴을 진행합니다.<br/><br/>
+<b>👥 참여 대상:</b> 하남시민 누구나<br/>
+<b>📅 진행 기간:</b> 2026년 9월 14일(월) ~ 11월 30일(월)<br/>
+<b>📖 추천 분야:</b> 어린이 영어도서 (그림책, 챕터북 등)<br/>
+<b>📱 참여 방법:</b> 안내 포스터 QR코드 스캔 후 온라인 작성
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanamlib.go.kr" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">하남시립도서관 홈페이지 바로가기 →</a></div>
+</div>
+<div class="img-box" style="width: 240px; flex-shrink: 0;">
+<img src="images/091804.jpg" alt="시민 추천도서 의견수렴 안내" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+</div>
+</div>
+<div class="source">
+📌 출처: 하남시어린이영어도서관
+</div>
+</div>
+
+<!-- 문화 기사 3 (하남시위례도서관 10월 프로그램) -->
+<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
+<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🍁 2026.10월 운영 | 도서관/문화강좌</div>
+<h3 style="margin-top: 6px;"><a href="https://www.hanamlib.go.kr" target="_blank" style="color: inherit; text-decoration: none;">하남시위례도서관 10월 독서문화 프로그램 안내</a></h3>
+<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
+<div style="flex: 1;">
+<b>"가을의 풍요로움을 책과 함께! 10월 독서문화 프로그램"</b><br/>
+하남시위례도서관에서 단풍 계절 10월을 맞이하여 풍성한 독서 토론 및 유아·어린이·성인 대상 문화 프로그램을 진행합니다.<br/><br/>
+<b>📍 장소:</b> 하남시위례도서관 강당 및 문화교실<br/>
+<b>📝 신청 방법:</b> 하남시립도서관 홈페이지 온라인 선착순 접수<br/>
+<b>☎️ 문의:</b> 위례도서관 안내 desk
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanamlib.go.kr" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 신청하기 (위례도서관) →</a></div>
+</div>
+<div class="img-box" style="width: 240px; flex-shrink: 0;">
+<img src="images/091805.jpg" alt="위례도서관 10월 프로그램" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+</div>
+</div>
+<div class="source">
+📌 출처: 하남시위례도서관
+</div>
+</div>
+</div>"""
+
+# Slice replace Section 3 & Section 4
 idx_mom = content.find('<div id="mom-cafe">')
-idx_culture = content.find('<div id="culture">')
-content = content[:idx_mom] + section3_content + '\n\n' + content[idx_culture:]
+idx_public = content.find('<div id="public-news">')
+content = content[:idx_mom] + section3_content + '\n\n' + section4_content + '\n\n' + content[idx_public:]
 
 # Update visitor counter path ID to 0921
 content = content.replace("lee-kwang-jae.news_letter.0918", "lee-kwang-jae.news_letter.0921")
