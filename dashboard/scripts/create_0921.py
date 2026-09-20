@@ -236,29 +236,7 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 </div>
 </div>
 
-<!-- 문화 기사 2 (하남시위례도서관 10월 프로그램) -->
-<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795; margin-top: 16px;">
-<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🍁 2026.10월 운영 | 도서관/문화강좌</div>
-<h3 style="margin-top: 6px;"><a href="https://www.hanamlib.go.kr" target="_blank" style="color: inherit; text-decoration: none;">하남시위례도서관 10월 독서문화 프로그램 안내</a></h3>
-<div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
-<div style="flex: 1;">
-<b>"가을의 풍요로움을 책과 함께! 10월 독서문화 프로그램"</b><br/>
-하남시위례도서관에서 단풍 계절 10월을 맞이하여 풍성한 독서 토론 및 유아·어린이·성인 대상 문화 프로그램을 진행합니다.<br/><br/>
-<b>📍 장소:</b> 하남시위례도서관 강당 및 문화교실<br/>
-<b>📝 신청 방법:</b> 하남시립도서관 홈페이지 온라인 선착순 접수<br/>
-<b>☎️ 문의:</b> 위례도서관 안내 desk
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanamlib.go.kr" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 신청하기 (위례도서관) →</a></div>
-</div>
-<div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="images/091805.jpg" alt="위례도서관 10월 프로그램" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
-</div>
-<div class="source">
-📌 출처: 하남시위례도서관
-</div>
-</div>
-
-<!-- 문화 기사 4 (하남시 나룰도서관 도서 재활용 이벤트 <다시봄>) -->
+<!-- 문화 기사 2 (하남시 나룰도서관 도서 재활용 이벤트 <다시봄>) -->
 <div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795; margin-top: 16px;">
 <div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">📖 2026.09.19~ | 도서관/시민나눔</div>
 <h3 style="margin-top: 6px;"><a href="https://www.hanamlib.go.kr/nalib/selectBbsNttView.do?key=76&amp;bbsNo=6&amp;nttNo=89864" target="_blank" style="color: inherit; text-decoration: none;">하남시 나룰도서관 도서 재활용 이벤트 &lt;다시봄&gt; 운영 안내</a></h3>
@@ -282,10 +260,10 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 </div>
 </div>"""
 
-# Slice replace Section 3 & Section 4
+# Slice replace Section 3 & Section 4 (Section 5 removed per request)
 idx_mom = content.find('<div id="mom-cafe">')
-idx_public = content.find('<div id="public-news">')
-content = content[:idx_mom] + section3_content + '\n\n' + section4_content + '\n\n' + content[idx_public:]
+idx_bottom = content.find('<div class="bottom-nav"')
+content = content[:idx_mom] + section3_content + '\n\n' + section4_content + '\n\n' + content[idx_bottom:]
 
 # Update visitor counter path ID to 0921
 content = content.replace("lee-kwang-jae.news_letter.0918", "lee-kwang-jae.news_letter.0921")
