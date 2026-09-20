@@ -164,6 +164,39 @@ idx_local = content.find('<div id="local-news">')
 idx_mom = content.find('<div id="mom-cafe">')
 content = content[:idx_local] + section2_content + '\n<hr/>\n' + content[idx_mom:]
 
+# 3. Section 3: 하남 맘카페 HOT 이슈 (2026년 9월 21일 기준 전면 교체 - 이광재 포함)
+section3_content = """<!-- ===== 섹션 3: 하남 맘카페 HOT 이슈 ===== -->
+<div id="mom-cafe">
+<div class="section-title pink">💬 하남 맘카페 HOT 이슈</div>
+<p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 21일 기준 하남 지역 커뮤니티(맘카페)에서 화제성과 댓글이 가장 폭발했던 HOT 이슈 TOP 3 소식입니다.</p>
+
+<div class="mom-issue-card">
+<h4>1️⃣ "방치된 미사 한강변 폐천부지 드디어 깨끗해지나요?" 이광재 의원·기후부 장관 현장 점검 소식에 맘카페 '기대감 뿜뿜'</h4>
+<div class="mom-detail"><strong>현황:</strong> 이광재 국회의원이 김성환 기후에너지환경부 장관과 함께 미사 한강변 방치된 폐천부지와 선동둔치 파크골프장 현장을 찾아 하남시와 정부의 소송 갈등을 풀고 시민들을 위한 힐링 공간으로 가꾸겠다는 소식이 전달되었습니다.</div>
+<div class="mom-point">💡 주민 포인트: 정부-지자체 소송 갈등으로 방치된 한강변 폐천부지 정비 및 시민 친화 공간 재탄생 추진.</div>
+<div class="mom-reaction">💬 주민 반응: "누가 잘못했나 다투는 것보다 언제 깨끗해지나 궁금했는데 반가운 소식이네요!", "아이들과 미사 한강변 산책하기 더 좋은 힐링 명소로 잘 정비되면 좋겠습니다" 맘카페 큰 호응.</div>
+</div>
+
+<div class="mom-issue-card">
+<h4>2️⃣ "학교 밖 청소년 85명 검정고시 최종 합격 소식에 가슴 뭉클" 하남 엄마들 응원 물결</h4>
+<div class="mom-detail"><strong>현황:</strong> 하남시학교밖청소년지원센터(꿈드림)에서 1:1 학습 멘토링과 맞춤형 교재 지원을 받아온 학교 밖 청소년 85명이 2026년 검정고시에 최종 합격했다는 소식이 맘카페 게시판을 훈훈하게 달궜습니다.</div>
+<div class="mom-point">💡 주민 포인트: 하남시 꿈드림 센터 1:1 멘토링 지원 및 학교 밖 청소년 85명 검정고시 최종 합격 성과.</div>
+<div class="mom-reaction">💬 주민 반응: "어려운 환경에서도 포기하지 않고 결실을 맺은 하남의 청소년들 정말 대견해요!", "꿈드림 선생님들과 멘토 선생님들 노고에 마음 깊이 감사드립니다" 따뜻한 댓글 연이어.</div>
+</div>
+
+<div class="mom-issue-card">
+<h4>3️⃣ "추석 연휴 명절 장보기 주차 걱정 덜었네요!" 공영주차장 4일간 무료 개방 소식에 학부모들 '환호'</h4>
+<div class="mom-detail"><strong>현황:</strong> 하남시가 추석 연휴 나흘간(9/24~27) 관내 공영주차장을 무료 개방하고 전통시장 주변 주정차 단속을 한시적으로 유예한다는 발표에 장보기를 앞둔 학부모들의 호응이 이어졌습니다.</div>
+<div class="mom-point">💡 주민 포인트: 추석 연휴 나흘간 관내 공영주차장 전면 무료 개방 및 전통시장 주변 장보기 주차 편의 지원.</div>
+<div class="mom-reaction">💬 주민 반응: "명절 장볼 때 전통시장 주차가 늘 걱정이었는데 다행이네요", "추석에 고향 친지들 오실 때도 주차하기 수월하겠어요" 긍정적 반응 연속.</div>
+</div>
+</div>"""
+
+# Slice replace Section 3
+idx_mom = content.find('<div id="mom-cafe">')
+idx_culture = content.find('<div id="culture">')
+content = content[:idx_mom] + section3_content + '\n\n' + content[idx_culture:]
+
 # Update visitor counter path ID to 0921
 content = content.replace("lee-kwang-jae.news_letter.0918", "lee-kwang-jae.news_letter.0921")
 
