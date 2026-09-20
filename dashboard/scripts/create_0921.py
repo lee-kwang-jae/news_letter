@@ -260,10 +260,51 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 </div>
 </div>"""
 
-# Slice replace Section 3 & Section 4 (Section 5 removed per request)
+# 5. Section 5: 공공기관 소식지
+section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
+<div id="public-news">
+<div class="section-title purple">🏛️ 공공기관 소식지</div>
+<p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 21일 기준 경기도 및 하남시 공공기관 주요 공고·신청 안내입니다.</p>
+
+<!-- 공공기관 소식 1 (하남도시공사 초이동 거주자우선주차장 정기권 모집) -->
+<div class="article-card">
+<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">🚗 하남도시공사 | 공고 제2026-126호</div>
+<h3><a href="https://www.huic.co.kr/www/selectBbsNttView.do?key=102&amp;bbsNo=36&amp;nttNo=11518" target="_blank" style="color: inherit; text-decoration: none;">초이동 거주자우선주차장 순환배정 정기권 모집 공고 (하남도시공사 공고 제2026-126호)</a></h3>
+<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
+하남도시공사에서는 공영주차장 정기권 이용 기회의 편중을 완화하고 공정한 이용 기회를 제공하기 위해 2027년 1월 1일부터 2년 주기 순환배정제로 전환됨에 따라, 초이동 78-4번지 일원 거주자우선주차장 정기권 이용자를 모집합니다.<br/><br/>
+<b>📍 위치:</b> 경기도 하남시 초이동 78-4번지 일원 (초이동 거주자우선주차장)<br/>
+<b>📋 운영 방식:</b> 2027. 1. 1.부터 2년 주기 순환배정제 전환에 따른 모집<br/>
+<b>📞 문의처:</b> 하남도시공사 대표전화 <a href="tel:031-790-9500" style="color:#3182ce; font-weight:bold;">031-790-9500</a>
+<div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://www.huic.co.kr/www/selectBbsNttView.do?key=102&amp;bbsNo=36&amp;nttNo=11518" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 공고문 및 신청서 다운로드 (하남도시공사) →</a></div>
+</div>
+<div class="source">
+📌 출처: 하남도시공사
+</div>
+</div>
+
+<!-- 공공기관 소식 2 (하남시미사노인복지관 10월 전문 세무상담) -->
+<div class="article-card" style="margin-top: 16px;">
+<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">💼 하남시미사노인복지관 | 2026.10.23</div>
+<h3><a href="https://misanoin.co.kr/contents.html?pageId=HWNWWCQ8591VBVE9K1DL&amp;type=3&amp;wr_id=484&amp;page=1" target="_blank" style="color: inherit; text-decoration: none;">하남시미사노인복지관 10월 전문 세무상담 신청자 모집 (상속·증여·양도소득세 1:1 상담)</a></h3>
+<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
+하남시미사노인복지관에서 평소 궁금했던 상속·증여세 및 부동산 양도소득세 등 세금 관련 고민 해결을 위해 전문 세무사(김태진 세무사)와 함께하는 1:1 맞춤형 세무상담 신청자를 모집합니다.<br/><br/>
+<b>🗓 상담 일시:</b> 2026년 10월 23일(금) 15:00 ~ 17:00 (1인당 30~40분 소요)<br/>
+<b>👥 신청 대상:</b> 복지관 이용회원 4명 (선착순 마감)<br/>
+<b>💡 상담 내용:</b> 상속·증여 세금, 부동산 양도세 및 기타 세금 관련 문의<br/>
+<b>🏢 신청 장소:</b> 복지관 2층 제2사무실 (방문 및 유선 신청 가능)<br/>
+<b>📞 문의처:</b> 문화복지팀 <a href="tel:070-4774-4490" style="color:#3182ce; font-weight:bold;">070-4774-4490</a>
+<div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://misanoin.co.kr/contents.html?pageId=HWNWWCQ8591VBVE9K1DL&amp;type=3&amp;wr_id=484&amp;page=1" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 신청 방법 확인 (미사노인복지관) →</a></div>
+</div>
+<div class="source">
+📌 출처: 하남시미사노인복지관 (문화복지팀)
+</div>
+</div>
+</div>"""
+
+# Slice replace Section 3, Section 4 & Section 5
 idx_mom = content.find('<div id="mom-cafe">')
 idx_bottom = content.find('<div class="bottom-nav"')
-content = content[:idx_mom] + section3_content + '\n\n' + section4_content + '\n\n' + content[idx_bottom:]
+content = content[:idx_mom] + section3_content + '\n\n' + section4_content + '\n\n' + section5_content + '\n\n' + content[idx_bottom:]
 
 # Update visitor counter path ID to 0921
 content = content.replace("lee-kwang-jae.news_letter.0918", "lee-kwang-jae.news_letter.0921")
