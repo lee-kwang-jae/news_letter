@@ -25,6 +25,10 @@ if os.path.exists(primary_thumb):
             shutil.copy2(primary_thumb, dst1)
         shutil.copy2(primary_thumb, dst2)
 
+thumb092100 = os.path.join(img_dir, 'thumbnail-092100.jpg')
+if os.path.exists(thumb092100):
+    shutil.copy2(thumb092100, os.path.join(dash_img_dir, 'thumbnail-092100.jpg'))
+
 with open(source_path, 'r', encoding='utf-8') as f:
     content = f.read()
 
@@ -52,7 +56,7 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 현장일지 &
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 어제 미사 한강변을 김성환 기후에너지환경부 장관, 김용만 국회의원과 함께 걸으며 하남시와 정부 간 소송으로 방치되어온 폐천부지 현장을 점검했습니다. "누가 잘못했나"보다 "언제 깨끗해지나"라는 시민들의 요구에 따라 책임 가리기와 땅 살리기를 동시에 추진할 것을 장관께 제안했습니다. 이어 선동둔치 파크골프장을 방문해 어르신들의 소통 현장을 살피며, 한강이 하남시민이 매일 누리는 공간이 되도록 현장에서 답을 찾겠습니다.
 <div style="margin-top: 14px; text-align: center;">
-  <img src="images/thumbnail-0921.jpg" alt="한강변에 기후부 장관님과 갔습니다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+  <img src="images/thumbnail-092100.jpg" alt="한강변에 기후부 장관님과 갔습니다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://blog.naver.com/lee_kwang_jae/224416869021" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">현장일지 전문 보기 (이광재 블로그) →</a></div>
 </div>
