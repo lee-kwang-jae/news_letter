@@ -14,20 +14,19 @@ dash_img_dir = 'dashboard/news/images'
 os.makedirs(img_dir, exist_ok=True)
 os.makedirs(dash_img_dir, exist_ok=True)
 
-# Thumbnail aliases for 0921
-primary_thumb = os.path.join(img_dir, 'thumbnail-921.jpg')
+# Thumbnail aliases for 0921 (Representative thumbnail: thumbnail-092100.jpg)
+primary_thumb = os.path.join(img_dir, 'thumbnail-092100.jpg')
+if not os.path.exists(primary_thumb):
+    primary_thumb = os.path.join(img_dir, 'thumbnail-921.jpg')
+
 if os.path.exists(primary_thumb):
-    aliases = ['thumbnail-0921.jpg', 'thumbnail0921.jpg', '09.jpg']
+    aliases = ['thumbnail-092100.jpg', 'thumbnail-0921.jpg', 'thumbnail0921.jpg', 'thumbnail-921.jpg', '09.jpg']
     for alias in aliases:
         dst1 = os.path.join(img_dir, alias)
         dst2 = os.path.join(dash_img_dir, alias)
         if primary_thumb != dst1:
             shutil.copy2(primary_thumb, dst1)
         shutil.copy2(primary_thumb, dst2)
-
-thumb092100 = os.path.join(img_dir, 'thumbnail-092100.jpg')
-if os.path.exists(thumb092100):
-    shutil.copy2(thumb092100, os.path.join(dash_img_dir, 'thumbnail-092100.jpg'))
 
 shorts_poster = os.path.join(img_dir, 'shorts_0921_poster.jpg')
 if os.path.exists(shorts_poster):
@@ -47,9 +46,11 @@ with open(source_path, 'r', encoding='utf-8') as f:
 # Update Title, Issue Number, Date, Meta Image Tags
 content = content.replace("43호 | 2026년 9월 18일 발행", "44호 | 2026년 9월 21일 발행")
 content = content.replace("2026년 9월 18일 기준", "2026년 9월 21일 기준")
-content = content.replace("images/thumbnail-0918.jpg", "images/thumbnail-0921.jpg")
-content = content.replace("images/thumbnail-918.jpg", "images/thumbnail-0921.jpg")
-content = content.replace("https://lee-kwang-jae.github.io/news_letter/images/thumbnail-0918.jpg", "https://lee-kwang-jae.github.io/news_letter/images/thumbnail-0921.jpg")
+content = content.replace("images/thumbnail-0918.jpg", "images/thumbnail-092100.jpg")
+content = content.replace("images/thumbnail-918.jpg", "images/thumbnail-092100.jpg")
+content = content.replace("images/thumbnail-0921.jpg", "images/thumbnail-092100.jpg")
+content = content.replace("https://lee-kwang-jae.github.io/news_letter/images/thumbnail-0918.jpg", "https://lee-kwang-jae.github.io/news_letter/images/thumbnail-092100.jpg")
+content = content.replace("https://lee-kwang-jae.github.io/news_letter/images/thumbnail-0921.jpg", "https://lee-kwang-jae.github.io/news_letter/images/thumbnail-092100.jpg")
 
 # 1. Section 1: 우리동네 국회의원 이광재 (현장일지 선배치 + 언론보도 후배치 지침 준수)
 section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 현장일지 & 언론보도 ===== -->
