@@ -74,17 +74,17 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 현장일지 &
 </div>
 </div>
 
-<!-- [현장일지 3] (유튜브 숏폼 영상: 위례길 걷기 & 생활체육 현장) -->
+<!-- [현장일지 3] (유튜브 숏폼 영상: 최대 권력 도시계획권 & 국공유지 발굴 현장) -->
 <div class="article-card card-field">
 <div class="badge badge-field">🎥 현장일지 (영상)</div>
-<h3><a href="javascript:void(0)" onclick="playNewsletterVideo()" style="color: inherit; text-decoration: none;" title="클릭하여 페이지에서 영상 재생">"위례길 걷기 & 생활체육 현장" 이광재 국회의원 주말 하남 현장일지 숏폼</a></h3>
+<h3><a href="javascript:void(0)" onclick="playNewsletterVideo()" style="color: inherit; text-decoration: none;" title="클릭하여 페이지에서 영상 재생">이광재, "최대 권력은 도시계획권… 숨어있는 국공유지를 찾자" 현장 숏폼</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
-주말 하남 산책길 걷기와 생활체육 현장에서 하남시민들과 생생하게 소통하는 모습을 담은 숏폼 영상입니다. 시민들과 함께 어울리는 활기찬 현장을 영상으로 확인해 보세요.
+지방자치와 의정활동의 핵심 동력인 도시계획권을 적극 활용하여 하남시 관내에 숨어있는 국공유지를 발굴하고, 시민들을 위한 휴식·문화·공공 복지 공간으로 재창조하는 현장 구상을 담은 숏폼 영상입니다.
 <div style="margin-top: 14px; margin-bottom: 12px; display: flex; justify-content: center;">
   <div id="yt-container-HHx77yzsWrY" style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); display: block; background: #000;">
     <video id="video-HHx77yzsWrY" poster="images/thumbnail-0921.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
       <source src="images/shorts_0921.mp4" type="video/mp4">
-      <iframe src="https://www.youtube.com/embed/HHx77yzsWrY?feature=oembed" title="&quot;위례길 걷기 &amp; 생활체육 현장&quot; 이광재 국회의원 주말 하남 현장일지 숏폼" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/HHx77yzsWrY?feature=oembed" title="이광재, &quot;최대 권력은 도시계획권… 숨어있는 국공유지를 찾자&quot; 현장 숏폼" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </video>
   </div>
 </div>
