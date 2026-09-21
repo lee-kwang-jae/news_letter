@@ -200,24 +200,8 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 <div class="section-title purple">🏛️ 공공기관 소식지</div>
 <p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 9월 22일 기준 경기도 및 하남시 공공기관 주요 공고·신청 안내입니다.</p>
 
-<!-- 공공기관 소식 1 -->
+<!-- 공공기관 소식 1 (하남시가족센터 가족상담 신청 안내) -->
 <div class="article-card">
-<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">💉 하남시보건소 | 건강/복지</div>
-<h3><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=502516" target="_blank" style="color: inherit; text-decoration: none;">2026-2027절기 인플루엔자(독감)·코로나19 무료 예방접종 안내</a></h3>
-<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; line-height: 1.6;">
-하남시 보건소에서는 2026-2027절기 인플루엔자 및 코로나19 무료 예방접종을 실시합니다. 접종 쏠림 방지를 위해 연령 및 대상별로 접종 날짜를 다르게 운영하오니 지정 위탁의료기관 방문 전 날짜를 확인하시기 바랍니다.<br/><br/>
-<b>👥 대상:</b> 65세 이상 어르신, 어린이, 임신부, 취약계층 등<br/>
-<b>📍 장소:</b> 관내 지정 위탁의료기관 (보건소 직접 접종은 하지 않음)<br/>
-<b>📞 문의처:</b> 하남시 보건소 예방접종실 <a href="tel:031-790-6575" style="color:#3182ce; font-weight:bold;">031-790-6575</a>
-<div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=502516" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 지정 의료기관 확인 (하남시보건소) →</a></div>
-</div>
-<div class="source">
-📌 출처: 하남시 보건소 (보건정책과)
-</div>
-</div>
-
-<!-- 공공기관 소식 2 -->
-<div class="article-card" style="margin-top: 16px;">
 <div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">🏠 하남시가족센터 | 가족/상담</div>
 <h3><a href="https://hanam.familynet.or.kr/center/lay1/program/S295T322C449/receipt/view.do?seq=192310" target="_blank" style="color: inherit; text-decoration: none;">[연중사업] 2026년 하남시가족센터 가족상담 신청 안내</a></h3>
 <div class="summary flex-summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid #e9d5ff; color: #4c1d95;">
@@ -236,7 +220,6 @@ section5_content = """<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
 </div>
 <div class="source">
 📌 출처: 하남시가족센터
-</div>
 </div>
 </div>"""
 
