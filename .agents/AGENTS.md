@@ -17,7 +17,8 @@
 
 ## 4. 유튜브 링크 처리 지침 (YouTube Embedding Rule)
 - 사용자가 유튜브 링크(Shorts 또는 일반 동영상)를 가져오면 [YOUTUBE_EMBEDDING_RULE.md](file:///d:/github/newsletter/newsletter/YOUTUBE_EMBEDDING_RULE.md) 지침을 **무조건 자동 실행**합니다.
-- `yt-dlp`로 로컬 `.mp4` 동영상을 자동 다운로드하고, 외부 차단(오류 153) 없는 인라인 HTML5 `<video>` 플레이어로 현장일지 카드를 구축합니다.
+- **요약글 작성 금지**: 텍스트 요약글은 넣지 않고, 오직 영상 플레이어와 '유튜브에서 보기' 링크만 생성합니다.
+- `yt-dlp`로 로컬 `.mp4` 동영상 및 포스터 이미지를 자동 다운로드하고 `images/`와 `dashboard/news/images/` 양쪽에 복사하여 외부 차단(오류 153) 없는 HTML5 `<video>` 플레이어로 현장일지 카드를 구축합니다.
 
 ## 5. 추석 특별 디자인 기간 및 복구 지침 (Chuseok Banner Design Schedule)
 - **~ 2026년 9월 23일까지**: 현재 추석 한가위 달빛 감성 디자인(달빛 후광 애니메이션 및 황금빛 밤하늘 그라데이션 타이틀 배너)을 유지하여 뉴스레터를 제작합니다.
