@@ -64,6 +64,24 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 현장일지 &
 </div>
 </div>
 
+<!-- [현장일지 2] (유튜브 숏폼 영상: 세금 없이 골목상권 살리는 20조 원의 비밀) -->
+<div class="article-card card-field" style="margin-top: 16px;">
+<div class="badge badge-field">🎥 현장일지 (영상)</div>
+<h3><a href="https://youtube.com/shorts/lhLfoDigJc4?si=PewW4OHKQ5e5u1ks" target="_blank" style="color: inherit; text-decoration: none;">이광재, "세금 없이 골목상권 살리는 20조 원의 비밀" 현장 숏폼</a></h3>
+<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
+세금 부담 없이 소상공인과 자영업자를 살리고 지역 자금 선순환을 만드는 20조 원 규모의 혁신 정책 제안! 마일리지와 지역화폐 연계를 통해 전국 골목상권에 생기를 불어넣는 방안을 이광재 의원의 숏폼 영상으로 확인하세요.
+<div style="margin-top: 14px; margin-bottom: 12px; display: flex; justify-content: center;">
+  <div style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); background: #000;">
+    <iframe src="https://www.youtube.com/embed/lhLfoDigJc4" title="이광재, 세금 없이 골목상권 살리는 20조 원의 비밀" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://youtube.com/shorts/lhLfoDigJc4?si=PewW4OHKQ5e5u1ks" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">유튜브에서 보기 (이광재 TV) →</a></div>
+</div>
+<div class="source">
+📌 출처: 이광재 공식 유튜브 (이광재 TV)
+</div>
+</div>
+
 <!-- [언론보도 1] (조선비즈: [인터뷰] 이광재 예결위원장 "아이 태어나면 나라가 1억씩 펀드 넣어주자") -->
 <div class="article-card card-press">
 <div class="badge badge-press">📰 언론보도</div>
