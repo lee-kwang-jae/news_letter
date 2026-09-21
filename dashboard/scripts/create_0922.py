@@ -24,6 +24,14 @@ if os.path.exists(primary_thumb):
         shutil.copy2(primary_thumb, dst1)
     shutil.copy2(primary_thumb, dst2)
 
+shorts_poster = os.path.join(img_dir, 'shorts_0922_poster.jpg')
+if os.path.exists(shorts_poster):
+    shutil.copy2(shorts_poster, os.path.join(dash_img_dir, 'shorts_0922_poster.jpg'))
+
+shorts_video = os.path.join(img_dir, 'shorts_0922.mp4')
+if os.path.exists(shorts_video):
+    shutil.copy2(shorts_video, os.path.join(dash_img_dir, 'shorts_0922.mp4'))
+
 with open(source_path, 'r', encoding='utf-8') as f:
     content = f.read()
 
@@ -71,7 +79,8 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 현장일지 &
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 <div style="margin-top: 14px; margin-bottom: 12px; display: flex; justify-content: center;">
   <div id="yt-container-lhLfoDigJc4" style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); display: block; background: #000;">
-    <video id="video-lhLfoDigJc4" poster="https://img.youtube.com/vi/lhLfoDigJc4/hqdefault.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+    <video id="video-lhLfoDigJc4" poster="images/shorts_0922_poster.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+      <source src="images/shorts_0922.mp4" type="video/mp4">
       <iframe src="https://www.youtube.com/embed/lhLfoDigJc4?feature=oembed" title="이광재, &quot;세금 없이 골목상권 살리는 20조 원의 비밀&quot; 현장 숏폼" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </video>
   </div>
