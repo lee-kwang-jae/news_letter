@@ -67,12 +67,13 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 현장일지 &
 <!-- [현장일지 2] (유튜브 숏폼 영상: 세금 없이 골목상권 살리는 20조 원의 비밀) -->
 <div class="article-card card-field" style="margin-top: 16px;">
 <div class="badge badge-field">🎥 현장일지 (영상)</div>
-<h3><a href="https://youtube.com/shorts/lhLfoDigJc4?si=PewW4OHKQ5e5u1ks" target="_blank" style="color: inherit; text-decoration: none;">이광재, "세금 없이 골목상권 살리는 20조 원의 비밀" 현장 숏폼</a></h3>
+<h3><a href="javascript:void(0)" onclick="playNewsletterVideo()" style="color: inherit; text-decoration: none;" title="클릭하여 페이지에서 영상 재생">이광재, "세금 없이 골목상권 살리는 20조 원의 비밀" 현장 숏폼</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
-세금 부담 없이 소상공인과 자영업자를 살리고 지역 자금 선순환을 만드는 20조 원 규모의 혁신 정책 제안! 마일리지와 지역화폐 연계를 통해 전국 골목상권에 생기를 불어넣는 방안을 이광재 의원의 숏폼 영상으로 확인하세요.
 <div style="margin-top: 14px; margin-bottom: 12px; display: flex; justify-content: center;">
-  <div style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); background: #000;">
-    <iframe src="https://www.youtube.com/embed/lhLfoDigJc4" title="이광재, 세금 없이 골목상권 살리는 20조 원의 비밀" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div id="yt-container-lhLfoDigJc4" style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); display: block; background: #000;">
+    <video id="video-lhLfoDigJc4" poster="https://img.youtube.com/vi/lhLfoDigJc4/hqdefault.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+      <iframe src="https://www.youtube.com/embed/lhLfoDigJc4?feature=oembed" title="이광재, &quot;세금 없이 골목상권 살리는 20조 원의 비밀&quot; 현장 숏폼" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </video>
   </div>
 </div>
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://youtube.com/shorts/lhLfoDigJc4?si=PewW4OHKQ5e5u1ks" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">유튜브에서 보기 (이광재 TV) →</a></div>
@@ -273,8 +274,26 @@ content = content[:idx_mom] + section3_content + '\n\n' + section4_content + '\n
 # Update visitor counter path ID to 0922
 content = content.replace("lee-kwang-jae.news_letter.0921", "lee-kwang-jae.news_letter.0922")
 
-# Remove visitor counter element from footer if present
-content = re.sub(r'<div style="margin-top: 2px; text-align: center;">\s*<span[^>]*><span id="visitor_counter_val">.*?</span></span>\s*</div>', '', content, flags=re.DOTALL)
+# Update playNewsletterVideo function for video-lhLfoDigJc4
+new_script = """function playNewsletterVideo() {
+    var v = document.getElementById('video-lhLfoDigJc4') || document.getElementById('video-HHx77yzsWrY') || document.getElementById('video-shorts0921');
+    if (v) {
+        v.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (v.paused) {
+            var promise = v.play();
+            if (promise !== undefined) {
+                promise.catch(function(error) {
+                    console.log("Autoplay blocked:", error);
+                    v.muted = true;
+                    v.play();
+                });
+            }
+        } else {
+            v.pause();
+        }
+    }
+}"""
+content = re.sub(r'function playNewsletterVideo\(\)\s*\{.*?\}', new_script, content, flags=re.DOTALL)
 
 # Save target_path
 with open(target_path, 'w', encoding='utf-8') as f:
