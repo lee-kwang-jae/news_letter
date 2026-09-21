@@ -185,7 +185,7 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hnart.or.kr/artcenter/showView.do?key=183&amp;programId=artcenter&amp;shNo=3456&amp;cal=1" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 안내 및 티켓 예매하기 (하남문화예술회관) →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="images/092005.jpg" alt="안중근, 천국에서의 춤 스페셜 발레 갈라" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/092201.jpg" alt="안중근, 천국에서의 춤 스페셜 발레 갈라" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
@@ -208,7 +208,7 @@ section4_content = """<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hnart.or.kr/artcenter/index.do" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">상세 공연 일정 및 예매 안내 (하남문화예술회관) →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="images/092201.jpg" alt="하남문화예술회관 기획공연 및 전시 안내" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/092202.jpg" alt="하남문화예술회관 기획공연 및 전시 안내" style="width: 100%; height: auto; max-height: 260px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
