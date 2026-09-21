@@ -948,16 +948,28 @@ function openImageModal(src) {
     document.getElementById('modalImage').src = src;
 }
 function playNewsletterVideo() {
-    var v = document.getElementById('video-shorts0918') || document.getElementsByTagName('video')[0];
+    var v = document.getElementById('video-lhLfoDigJc4') || 
+            document.getElementById('video-HHx77yzsWrY') || 
+            document.getElementById('video-shorts0921') || 
+            document.getElementById('video-shorts0918') || 
+            document.getElementById('video-A5H3SrB6qiE') || 
+            document.getElementById('video--X7EDD6ADSY') || 
+            document.getElementById('video-8BKrEO0X7I4') || 
+            document.getElementById('video-yclRLijNE14') || 
+            document.getElementById('video-3BlZC9feiyw') || 
+            document.getElementById('video-9VpL5CdPQls') || 
+            document.getElementsByTagName('video')[0];
     if (v) {
         v.scrollIntoView({ behavior: 'smooth', block: 'center' });
         if (v.paused) {
             var promise = v.play();
             if (promise !== undefined) {
                 promise.catch(function(error) {
-                    console.log("Autoplay blocked, playing muted:", error);
+                    console.log('Autoplay blocked, playing muted:', error);
                     v.muted = true;
-                    v.play();
+                    v.play().catch(function(err) {
+                        console.log('Muted play failed:', err);
+                    });
                 });
             }
         } else {

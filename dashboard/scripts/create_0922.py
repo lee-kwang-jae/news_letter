@@ -61,7 +61,7 @@ section1_content = """<!-- ===== 섹션 1: 이광재 국회의원 현장일지 &
 <div class="badge badge-field">📝 현장일지</div>
 <h3><a href="https://blog.naver.com/lee_kwang_jae/224418485113" target="_blank" style="color: inherit; text-decoration: none;">이광재, "국회에서 600조와 40조 이야기를 했습니다"… 제5차 국가철도망 구축계획 대규모 투자·제도 개혁 촉구</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
-오늘 아침 국회에서 철도 이야기를 했습니다. 전국 지방정부가 건의한 제5차 국가철도망 구축계획 신규 사업 규모는 600조 원에 달하지만, 40조 원 수준의 기존 정부 예산 틀에 매여 있어서는 안 됩니다. AI 시대를 맞아 대한민국을 '반나절 생활권'으로 묶고 국토 공간 혁명을 이루기 위해 철도망에 대한 대규모 투자 확대와 함께 낡은 예산 편성 및 예비타당성조사 체계의 전면 개편을 촉구했습니다.
+국회에서 철도 이야기를 했습니다. 전국 지방정부가 건의한 제5차 국가철도망 구축계획 신규 사업 규모는 600조 원에 달하지만, 40조 원 수준의 기존 정부 예산 틀에 매여 있어서는 안 됩니다. AI 시대를 맞아 대한민국을 '반나절 생활권'으로 묶고 국토 공간 혁명을 이루기 위해 철도망에 대한 대규모 투자 확대와 함께 낡은 예산 편성 및 예비타당성조사 체계의 전면 개편을 촉구했습니다.
 <div style="margin-top: 14px; text-align: center;">
   <img src="images/thumbnail-922.jpg" alt="국회에서 600조와 40조 이야기를 했습니다" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
