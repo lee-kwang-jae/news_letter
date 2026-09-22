@@ -645,6 +645,26 @@
 </div>
 </div>
 
+<!-- [현장일지 2] (유튜브 숏폼 영상) -->
+<div class="article-card card-field" style="margin-top: 16px;">
+<div class="badge badge-field">🎥 현장일지 (영상)</div>
+<h3><a href="javascript:void(0)" onclick="playNewsletterVideo()" style="color: inherit; text-decoration: none;" title="클릭하여 페이지에서 영상 재생">"전 국토를 반나절 생활권으로!" 현장 숏폼</a></h3>
+<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
+<div style="margin-top: 14px; margin-bottom: 12px; display: flex; justify-content: center;">
+  <div id="yt-container-AnKX7rcqFG8" style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); display: block; background: #000;">
+    <video id="video-AnKX7rcqFG8" poster="images/shorts_0923_poster.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+      <source src="images/shorts_0923.mp4" type="video/mp4">
+      <iframe src="https://www.youtube.com/embed/AnKX7rcqFG8?feature=oembed" title="전 국토를 반나절 생활권으로! #하남갑 #이광재" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </video>
+  </div>
+</div>
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://youtube.com/shorts/AnKX7rcqFG8?si=8pSb2EYaualcTkax" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">유튜브에서 보기 (이광재 TV) →</a></div>
+</div>
+<div class="source">
+📌 출처: 이광재 공식 유튜브 (이광재 TV)
+</div>
+</div>
+
 <!-- [언론보도 1] (연합뉴스: 메가성장특위, 발언하는 이광재 수석부위원장) -->
 <div class="article-card card-press">
 <div class="badge badge-press">📰 언론보도</div>
@@ -921,7 +941,8 @@ function openImageModal(src) {
     document.getElementById('modalImage').src = src;
 }
 function playNewsletterVideo() {
-    var v = document.getElementById('video-lhLfoDigJc4') || 
+    var v = document.getElementById('video-AnKX7rcqFG8') || 
+            document.getElementById('video-lhLfoDigJc4') || 
             document.getElementById('video-HHx77yzsWrY') || 
             document.getElementById('video-shorts0921') || 
             document.getElementById('video-shorts0918') || 
