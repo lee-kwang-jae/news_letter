@@ -1,20 +1,20 @@
 # 🎨 하남 뉴스레터 디자인 시스템 & 표준 가이드라인 (Newsletter Design System Guide)
 
-본 가이드라인은 **매일전하는 이광재의원의 하남인사이드** 뉴스레터의 레이아웃, 헤더 배너, 섹션 5대 구조, 카드 디자인, 폰트 및 OpenGraph 메타태그 규격을 정의합니다. 향후 모든 뉴스레터 생성 및 수정 시 본 스타일과 구조를 그대로 유지해야 합니다.
+본 가이드라인은 **매일전하는 이광재의원의 우리동네 하남소식** 뉴스레터의 레이아웃, 헤더 배너, 섹션 5대 구조, 카드 디자인, 폰트 및 OpenGraph 메타태그 규격을 정의합니다. 향후 모든 뉴스레터 생성 및 수정 시 본 스타일과 구조를 그대로 유지해야 합니다.
 
 ---
 
 ## 1. 🏷️ 표준 명칭 & Open Graph 메타 태그 [고정/LOCKED]
 
-* **공식 뉴스레터 제목**: `매일전하는 이광재의원의 하남인사이드`
+* **공식 뉴스레터 제목**: `매일전하는 이광재의원의 우리동네 하남소식`
 * **HTML Head OpenGraph 태그 규격**:
   ```html
-  <title>매일전하는 이광재의원의 하남인사이드</title>
+  <title>매일전하는 이광재의원의 우리동네 하남소식</title>
   <meta property="og:type" content="website"/>
   <meta property="og:locale" content="ko_KR"/>
   <meta property="og:url" content="https://lee-kwang-jae.github.io/news_letter/"/>
-  <meta property="og:site_name" content="매일전하는 이광재의원의 하남인사이드"/>
-  <meta property="og:title" content="매일전하는 이광재의원의 하남인사이드"/>
+  <meta property="og:site_name" content="매일전하는 이광재의원의 우리동네 하남소식"/>
+  <meta property="og:title" content="매일전하는 이광재의원의 우리동네 하남소식"/>
   <meta property="og:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, ALL IN 하남라이프 &amp; 공공기관 소식지"/>
   <meta property="og:image" content="https://lee-kwang-jae.github.io/news_letter/images/thumb.jpg"/>
   <meta property="og:image:url" content="https://lee-kwang-jae.github.io/news_letter/images/thumb.jpg"/>
@@ -22,9 +22,9 @@
   <meta property="og:image:type" content="image/jpeg"/>
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-  <meta property="og:image:alt" content="매일전하는 이광재의원의 하남인사이드"/>
+  <meta property="og:image:alt" content="매일전하는 이광재의원의 우리동네 하남소식"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="매일전하는 이광재의원의 하남인사이드"/>
+  <meta name="twitter:title" content="매일전하는 이광재의원의 우리동네 하남소식"/>
   <meta name="twitter:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, ALL IN 하남라이프 &amp; 공공기관 소식지"/>
   <meta name="twitter:image" content="https://lee-kwang-jae.github.io/news_letter/images/thumb.jpg"/>
   <meta name="twitter:image:width" content="1200"/>
@@ -40,7 +40,7 @@
 * **HTML 구조**:
   ```html
   <div class="header-box">
-    <img src="./images/top01.png" alt="매일전하는 이광재의원의 하남인사이드" style="width: 100%; height: auto; display: block;" onerror="this.src='./images/top.png'">
+    <img src="./images/top01.png" alt="매일전하는 이광재의원의 우리동네 하남소식" style="width: 100%; height: auto; display: block;" onerror="this.src='./images/top.png'">
     <div style="position: absolute; bottom: 12px; right: 16px; background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #ffffff; padding: 2px 8px; border-radius: 20px; font-size: 7px; font-weight: 600; border: 1px solid rgba(255, 255, 255, 0.3); opacity: 0.6;">
       {호수}호 | {발행일자} 발행
     </div>
