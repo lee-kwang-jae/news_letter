@@ -17,15 +17,12 @@
 - 메타태그 제목: `매일전하는 이광재의원의 우리동네 하남소식`
 
 ## 4. 유튜브 링크 처리 지침 (YouTube Embedding Rule)
-- 사용자가 유튜브 링크(Shorts 또는 일반 동영상)를 가져오면 [YOUTUBE_EMBEDDING_RULE.md](file:///d:/github/newsletter/newsletter/YOUTUBE_EMBEDDING_RULE.md) 지침을 **무조건 자동 실행**합니다.
+- 사용자가 유튜브 링크(Shorts 또는 일반 동영상)를 가져오면 [youtube_embedding_rule.md](rules/youtube_embedding_rule.md) 지침을 **무조건 자동 실행**합니다.
 - **요약글 작성 금지**: 텍스트 요약글은 넣지 않고, 오직 영상 플레이어와 '유튜브에서 보기' 링크만 생성합니다.
 - `yt-dlp`로 로컬 `.mp4` 동영상 및 포스터 이미지를 자동 다운로드하고 `images/`와 `dashboard/news/images/` 양쪽에 복사하여 외부 차단(오류 153) 없는 HTML5 `<video>` 플레이어로 현장일지 카드를 구축합니다.
 
-## 5. 추석 특별 디자인 기간 및 복구 지침 (Chuseok Banner Design Schedule)
-- **~ 2026년 9월 23일까지**: 현재 추석 한가위 달빛 감성 디자인(달빛 후광 애니메이션 및 황금빛 밤하늘 그라데이션 타이틀 배너)을 유지하여 뉴스레터를 제작합니다.
-- **2026년 9월 28일부터**: 추석 특별 디자인을 종료하고, 수정 전 원래 기본 타이틀 배너 디자인(`linear-gradient(90deg, #2b6cb0, #4299e1)`)으로 복원하여 제작합니다.
-
-
+## 5. 타이틀 배너 색상
+- 섹션 타이틀 배너는 기본 디자인 `linear-gradient(90deg, #2b6cb0, #4299e1)`을 사용합니다. (추석 특별 디자인은 2026-09-23에 종료)
 
 ## 6. 단일 발행 규칙 (Daily Overwrite Rule)
 - 뉴스레터는 매일 발행하며, **누적 저장하지 않습니다.** 항상 오늘 호 1개만 존재합니다.

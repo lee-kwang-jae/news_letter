@@ -25,15 +25,19 @@
   - `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json`
 
 ### 2단계: MP4 비디오 및 썸네일 포스터 저장
-- `yt-dlp`로 H.264/AAC MP4 비디오를 다운로드합니다:
+- `yt-dlp`로 iOS Safari 및 모바일 호환 H.264/AAC MP4 비디오를 다운로드합니다 (AV1 코덱은 모바일 재생 불가):
   ```bash
-  yt-dlp -o "images/shorts_MMDD.mp4" "https://youtube.com/shorts/VIDEO_ID"
+  yt-dlp -f "bestvideo[ext=mp4][vcodec^=avc1]+bestaudio[ext=m4a]/best[ext=mp4]/mp4" -o "images/shorts_MMDD.mp4" "https://youtube.com/shorts/VIDEO_ID"
   ```
-- 썸네일 포스터 이미지(`shorts_MMDD_poster.jpg`)를 `https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg` (또나 `hqdefault.jpg`)에서 다운로드합니다.
+  - 만약 다운로드된 비디오가 AV1 코덱인 경우 `ffmpeg`로 H.264/AAC로 변환합니다:
+  ```bash
+  ffmpeg -y -i images/shorts_MMDD.mp4 -c:v libx264 -preset fast -crf 23 -c:a aac -b:a 128k -movflags +faststart images/shorts_MMDD_h264.mp4
+  ```
+- 썸네일 포스터 이미지(`shorts_MMDD_poster.jpg`)를 `https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg` (또는 `hqdefault.jpg`)에서 다운로드합니다.
 - 동영상과 포스터를 `images/` 및 `dashboard/news/images/` 양쪽 폴더에 모두 복사합니다.
 
 ### 3단계: 현장일지 영상 카드 마크업 (요약글 없음)
-- `create_MMDD.py`, `index.html`, `dashboard/news/index.html`에 아래 표준 HTML 카드 마크업을 적용합니다:
+- `index.html`, `dashboard/news/index.html` 두 파일에 아래 표준 HTML 카드 마크업을 적용합니다:
 
 ```html
 <!-- [현장일지] (유튜브 숏폼 영상) -->
@@ -61,7 +65,7 @@
 - 페이지 하단 스크립트에 `video-VIDEO_ID` 요소를 포함한 `playNewsletterVideo()` 재생 함수를 연동합니다:
   ```javascript
   function playNewsletterVideo() {
-      var v = document.getElementById('video-VIDEO_ID') || document.getElementById('video-shorts0921');
+      var v = document.getElementById('video-VIDEO_ID');
       if (v) {
           v.scrollIntoView({ behavior: 'smooth', block: 'center' });
           if (v.paused) {
@@ -79,4 +83,3 @@
       }
   }
   ```
-
