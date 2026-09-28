@@ -37,7 +37,7 @@
 - 동영상과 포스터를 `images/` 및 `dashboard/news/images/` 양쪽 폴더에 모두 복사합니다.
 
 ### 3단계: 현장일지 영상 카드 마크업 (요약글 없음)
-- `create_MMDD.py`, `index.html`, `dashboard/news/index.html`, `dashboard/news/kj_hanam_inside_YYYYMMDD.html`에 아래 표준 HTML 카드 마크업을 적용합니다:
+- `create_MMDD.py`, `index.html`, `dashboard/news/index.html`에 아래 표준 HTML 카드 마크업을 적용합니다:
 
 ```html
 <!-- [현장일지] (유튜브 숏폼 영상) -->
