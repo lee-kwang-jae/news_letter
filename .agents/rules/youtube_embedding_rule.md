@@ -13,7 +13,7 @@
 
 2. **로컬 MP4 동영상 및 포스터 이미지 필수 동기화**:
    - 유튜브 영상의 재생 오류(`Error 153`)를 방지하기 위해 `yt-dlp`로 모바일 호환 H.264/AAC MP4 파일(`shorts_MMDD.mp4`) 및 포스터 썸네일(`shorts_MMDD_poster.jpg`)을 다운로드합니다.
-   - MP4 비디오 및 포스터 이미지는 반드시 `images/`와 `dashboard/news/images/` 양쪽 폴더에 동시에 복사/동기화합니다.
+   - MP4 비디오 및 포스터 이미지는 `images/` 폴더에 저장합니다.
 
 ---
 
@@ -34,10 +34,10 @@
   ffmpeg -y -i images/shorts_MMDD.mp4 -c:v libx264 -preset fast -crf 23 -c:a aac -b:a 128k -movflags +faststart images/shorts_MMDD_h264.mp4
   ```
 - 썸네일 포스터 이미지(`shorts_MMDD_poster.jpg`)를 `https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg` (또는 `hqdefault.jpg`)에서 다운로드합니다.
-- 동영상과 포스터를 `images/` 및 `dashboard/news/images/` 양쪽 폴더에 모두 복사합니다.
+- 동영상과 포스터를 `images/` 폴더에 저장합니다.
 
 ### 3단계: 현장일지 영상 카드 마크업 (요약글 없음)
-- `index.html`, `dashboard/news/index.html` 두 파일에 아래 표준 HTML 카드 마크업을 적용합니다:
+- `index.html`에 아래 표준 HTML 카드 마크업을 적용합니다:
 
 ```html
 <!-- [현장일지] (유튜브 숏폼 영상) -->
