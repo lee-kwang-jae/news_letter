@@ -42,7 +42,7 @@
 ```html
 <!-- [현장일지] (유튜브 숏폼 영상) -->
 <div class="article-card card-field" style="margin-top: 16px;">
-<div class="badge badge-field">🎥 현장일지 (영상)</div>
+<div class="badge badge-field">🎥 이광재TV</div>
 <h3><a href="javascript:void(0)" onclick="playNewsletterVideo()" style="color: inherit; text-decoration: none;" title="클릭하여 페이지에서 영상 재생">"[영상 제목]" 현장 숏폼</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 <div style="margin-top: 14px; margin-bottom: 12px; display: flex; justify-content: center;">
