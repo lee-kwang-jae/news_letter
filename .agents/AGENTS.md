@@ -33,3 +33,10 @@
 - `kj_hanam_inside_YYYYMMDD.html` 같은 **날짜별 아카이브 파일을 만들지 않습니다.**
 - 이미지도 매일 교체합니다. 새 호 이미지를 넣을 때 전날 호 이미지(기사 사진, 썸네일, 쇼츠 영상/포스터)는 `images/`, `images/today/`에서 모두 삭제합니다.
 - 삭제하지 않는 고정 자산: `kjicon.png`, `top01.png`, `top.png`
+
+## 7. 방문 통계 (GoatCounter)
+- `index.html`의 `</body>` 바로 앞에 아래 통계 스크립트를 **항상 유지**합니다. (2026-10-12 추가, 화면에는 표시하지 않음)
+  ```html
+  <script data-goatcounter="https://hanamnews.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  ```
+- 통계 확인: https://hanamnews.goatcounter.com (하루·누적 방문수, 유입 경로)
