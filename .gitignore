@@ -22,3 +22,6 @@ ENV/
 # Local data (Optional, assuming we want to keep the markdown files but hide logs if any)
 *.log
 scratch/
+
+# Claude local preview config
+.claude/
