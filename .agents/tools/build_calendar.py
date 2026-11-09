@@ -19,6 +19,7 @@ import html as html_mod
 import json
 import os
 import sys
+from urllib.parse import urlsplit
 
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -46,6 +47,9 @@ def main():
         if e["id"] in seen:
             sys.exit(f"id 중복: {e['id']}")
         seen.add(e["id"])
+        # 링크는 http/https 주소만 허용 (javascript: 같은 주소가 섞여 들어오는 것을 막음)
+        if e.get("link") and urlsplit(e["link"]).scheme.lower() not in ("http", "https"):
+            sys.exit(f"link 는 http:// 또는 https:// 주소만 쓸 수 있습니다: {e['id']} → {e['link']}")
         if e["category"] not in CATS:
             sys.exit(f"분류는 {CATS} 중 하나여야 합니다: {e['id']} → {e['category']}")
         s, t = datetime.date.fromisoformat(e["start"]), datetime.date.fromisoformat(e["end"])
@@ -133,7 +137,7 @@ def card(e, colors, note=""):
     period = md(s) if s == t else f"{md(s)} ~ {md(t)}"
     title = esc(e["title"])
     if e.get("link"):
-        title = f'<a href="{esc(e["link"])}" target="_blank">{title}</a>'
+        title = f'<a href="{esc(e["link"])}" target="_blank" rel="noopener noreferrer">{title}</a>'
     meta = [f"🗓 {esc(note + period)}"]
     if e.get("time"):
         meta.append(f"⏰ {esc(e['time'])}")
@@ -145,7 +149,7 @@ def card(e, colors, note=""):
     link = ""
     if e.get("link"):
         label = "공고원문클릭 →"
-        link = f'\n<div class="today-link"><a href="{esc(e["link"])}" target="_blank">{label}</a></div>'
+        link = f'\n<div class="today-link"><a href="{esc(e["link"])}" target="_blank" rel="noopener noreferrer">{label}</a></div>'
     return (f'<div class="today-card" style="border-left-color: {color};">\n'
             f'<span class="today-tag" style="background: {color};">{ICON.get(e["category"], "")} {esc(e["category"])}</span>\n'
             f'<h3>{title}</h3>\n<div class="today-meta">{lines}</div>{link}\n</div>\n')
@@ -168,10 +172,8 @@ def build_today(events, colors, base):
     if main:
         out += [card(e, colors) for e in main]
     if ongoing:
-        out.append('<div class="today-sub">⏳ 기간 중 진행 중인 일정</div>\n')
         out += [card(e, colors, "진행 중 · ") for e in ongoing]
     if sign_today:
-        out.append('<div class="today-sub">✍️ 오늘 시작하거나 마감하는 접수</div>\n')
         out += [card(e, colors, "오늘 마감 · " if e["end"] == day else "오늘부터 접수 · ") for e in sign_today]
     todays = todays + sign_today
     if not todays:
