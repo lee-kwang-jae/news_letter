@@ -130,29 +130,15 @@ def md(d):
     return f"{d.month}.{d.day}({DOW[d.weekday()]})"
 
 
-def card(e, colors, note=""):
+def card(e, colors):
+    """오늘의 하남일정 카드: 제목과 공고원문 링크만 (2026-11-10 사용자 요청)"""
     esc = html_mod.escape
     color = colors.get(e["category"], "#cbd5e0")
-    s, t = datetime.date.fromisoformat(e["start"]), datetime.date.fromisoformat(e["end"])
-    period = md(s) if s == t else f"{md(s)} ~ {md(t)}"
-    title = esc(e["title"])
-    if e.get("link"):
-        title = f'<a href="{esc(e["link"])}" target="_blank" rel="noopener noreferrer">{title}</a>'
-    meta = [f"🗓 {esc(note + period)}"]
-    if e.get("time"):
-        meta.append(f"⏰ {esc(e['time'])}")
-    lines = " · ".join(meta)
-    if e.get("place"):
-        lines += f"<br/>📍 {esc(e['place'])}"
-    if e.get("signup"):
-        lines += f"<br/>✍️ 신청: {esc(e['signup'])}"
     link = ""
     if e.get("link"):
-        label = "공고원문클릭 →"
-        link = f'\n<div class="today-link"><a href="{esc(e["link"])}" target="_blank" rel="noopener noreferrer">{label}</a></div>'
+        link = f'\n<div class="today-link"><a href="{esc(e["link"])}" target="_blank" rel="noopener noreferrer">공고원문클릭 →</a></div>'
     return (f'<div class="today-card" style="border-left-color: {color};">\n'
-            f'<span class="today-tag" style="background: {color};">{ICON.get(e["category"], "")} {esc(e["category"])}</span>\n'
-            f'<h3>{title}</h3>\n<div class="today-meta">{lines}</div>{link}\n</div>\n')
+            f'<h3>{esc(e["title"])}</h3>{link}\n</div>\n')
 
 
 def build_today(events, colors, base):
@@ -172,9 +158,9 @@ def build_today(events, colors, base):
     if main:
         out += [card(e, colors) for e in main]
     if ongoing:
-        out += [card(e, colors, "진행 중 · ") for e in ongoing]
+        out += [card(e, colors) for e in ongoing]
     if sign_today:
-        out += [card(e, colors, "오늘 마감 · " if e["end"] == day else "오늘부터 접수 · ") for e in sign_today]
+        out += [card(e, colors) for e in sign_today]
     todays = todays + sign_today
     if not todays:
         upcoming = []
@@ -188,7 +174,7 @@ def build_today(events, colors, base):
         upcoming.sort(key=lambda x: (x[0], x[1]["title"]))
         if upcoming:
             out.append('<div class="today-sub">🔜 다가오는 일정</div>\n')
-            out += [card(e, colors, f"{md(d)} 예정 · ") for d, e in upcoming[:3]]
+            out += [card(e, colors) for d, e in upcoming[:3]]
     return todays, "".join(out)
 
 
