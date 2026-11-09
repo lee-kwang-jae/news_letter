@@ -9,23 +9,25 @@
 <meta property="og:url" content="https://lee-kwang-jae.github.io/news_letter/"/>
 <meta property="og:site_name" content="매일전하는 이광재의원의 우리동네 하남소식"/>
 <meta property="og:title" content="매일전하는 이광재의원의 우리동네 하남소식"/>
-<meta property="og:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, ALL IN 하남라이프 &amp; 공공기관 소식지"/>
-<meta property="og:image" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-1109.jpg?v=2026110901"/>
-<meta property="og:image:url" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-1109.jpg?v=2026110901"/>
-<meta property="og:image:secure_url" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-1109.jpg?v=2026110901"/>
+<meta property="og:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, 공공기관 소식지 &amp; 오늘의 하남일정"/>
+<meta property="og:image" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-1110.jpg?v=2026111001"/>
+<meta property="og:image:url" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-1110.jpg?v=2026111001"/>
+<meta property="og:image:secure_url" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-1110.jpg?v=2026111001"/>
 <meta property="og:image:type" content="image/jpeg"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
 <meta property="og:image:alt" content="매일전하는 이광재의원의 우리동네 하남소식"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="매일전하는 이광재의원의 우리동네 하남소식"/>
-<meta name="twitter:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, ALL IN 하남라이프 &amp; 공공기관 소식지"/>
-<meta name="twitter:image" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-1109.jpg?v=2026110901"/>
+<meta name="twitter:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, 공공기관 소식지 &amp; 오늘의 하남일정"/>
+<meta name="twitter:image" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-1110.jpg?v=2026111001"/>
 <meta name="twitter:image:width" content="1200"/>
 <meta name="twitter:image:height" content="630"/>
-<link rel="image_src" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-1109.jpg?v=2026110901"/>
+<link rel="image_src" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-1110.jpg?v=2026111001"/>
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSans.css" />
+<!-- 목차 '우하소' 필기체 (나눔손글씨 펜, 세 글자만 받아 가볍게) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&text=%EC%9A%B0%ED%95%98%EC%86%8C&display=swap" />
 <style>
         * {
             font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
@@ -180,6 +182,14 @@
             font-size: 1rem;
             color: #2c5282;
         }
+        .toc h3 .brand-script {
+            font-family: 'Nanum Pen Script', cursive !important;
+            font-size: 1.55em;
+            font-weight: 400;
+            color: #2b6cb0;
+            letter-spacing: 1px;
+            vertical-align: -2px;
+        }
         .toc ol {
             margin: 0;
             padding-left: 20px;
@@ -187,7 +197,7 @@
         .toc ol li {
             margin-bottom: 4px;
         }
-        .toc ol li a {
+        .toc ol li {   /* 목차는 글자만 보여 줌 (클릭 이동 없음, 2026-11-10) */
             color: #2b6cb0;
             text-decoration: none;
             font-size: 0.92rem;
@@ -682,6 +692,61 @@
             .pledge-card.is-stamping .pledge-stamp, .pledge-card.is-hit, .pledge-card.is-hit .pledge-result::after, .pledge-stamp .stamp-ring-spin { animation: none; }
         }
 
+        /* ---- 오늘의 하남일정 (달력 데이터로 매호 자동 생성) ---- */
+        .today-intro { color:#4a5568; font-size:0.93rem; margin-bottom:16px; }
+        .today-card { background:#ffffff; border-radius:12px; padding:16px 18px; margin-bottom:12px; box-shadow:0 4px 15px rgba(0,0,0,0.04); border-left:6px solid #cbd5e0; }
+        .today-card .today-tag { display:inline-block; font-size:0.78rem; font-weight:700; color:#2d3748; padding:2px 9px; border-radius:5px; margin-bottom:8px; }
+        .today-card h3 { font-size:1.05rem; margin:0 0 8px 0; color:#2d3748; line-height:1.45; word-break:keep-all; }
+        .today-card h3 a { color:inherit; text-decoration:none; }
+        .today-card .today-meta { font-size:0.9rem; color:#4a5568; line-height:1.7; word-break:keep-all; }
+        .today-card .today-link { margin-top:6px; font-size:0.86rem; }
+        .today-card .today-link a { color:#3182ce; font-weight:700; text-decoration:none; }
+        .today-sub { font-size:0.95rem; font-weight:800; color:#2c7a7b; margin:18px 0 10px; }
+        @media (max-width: 600px) { .today-card { padding:12px 12px; } .today-card h3 { font-size:1rem; } }
+        /* ---- 행사일정 달력 (매호 유지, 데이터는 events.json → build_calendar.py) ---- */
+        .section-title.orange { background: linear-gradient(90deg, #c05621, #ed8936); }
+        .ev-cal { background: #fffaf5; border-radius: 14px; padding: 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); }
+        .ev-legend { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-bottom: 12px; font-size: 0.85rem; color: #4a5568; }
+        .ev-legend span { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; }
+        .ev-legend i { display: inline-block; width: 22px; height: 10px; border-radius: 3px; }
+        .ev-head { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 10px; }
+        .ev-head strong { font-family: 'GmarketSansBold', 'Pretendard', sans-serif; font-size: 1.15rem; color: #2d3748; min-width: 120px; text-align: center; }
+        .ev-head button { border: 1px solid #e2e8f0; background: #fff; color: #4a5568; width: 34px; height: 34px; border-radius: 50%; font-size: 0.95rem; cursor: pointer; }
+        .ev-head button:disabled { opacity: 0.3; cursor: default; }
+        .ev-dow { display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; font-size: 0.78rem; font-weight: 700; color: #718096; padding-bottom: 4px; border-bottom: 2px solid #e2e8f0; }
+        .ev-dow div:first-child { color: #e53e3e; }
+        .ev-dow div:last-child { color: #3182ce; }
+        .ev-week { display: grid; grid-template-columns: repeat(7, 1fr); column-gap: 0; row-gap: 3px; border-bottom: 1px solid #edf2f7; padding-bottom: 6px; }
+        .ev-cell { grid-row-start: 1; border-right: 1px solid #f1f5f9; cursor: pointer; border-radius: 6px; }
+        .ev-cell:last-child { border-right: none; }
+        .ev-cell.other { background: #f7fafc; opacity: 0.6; }
+        .ev-cell.today { background: #fff3c4; }
+        .ev-cell.sel { box-shadow: inset 0 0 0 2px #ed8936; }
+        .ev-num { grid-row: 1; text-align: center; font-size: 0.82rem; font-weight: 700; color: #4a5568; padding: 4px 0 2px; pointer-events: none; }
+        .ev-num.sun { color: #e53e3e; }
+        .ev-num.sat { color: #3182ce; }
+        .ev-num.other { color: #cbd5e0; }
+        .ev-num.today span { background: #ed8936; color: #fff; border-radius: 10px; padding: 0 6px; }
+        .ev-bar { height: 19px; line-height: 19px; margin: 0 2px; padding: 0 5px; border-radius: 5px; color: #2d3748; font-size: 0.7rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; position: relative; z-index: 1; letter-spacing: -0.3px; }
+        .ev-bar.cont-l { border-top-left-radius: 0; border-bottom-left-radius: 0; margin-left: 0; }
+        .ev-bar.cont-r { border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 0; }
+        .ev-bar.pick { outline: 2px solid #1a202c; outline-offset: 1px; }
+        .ev-bar.sign-end { box-shadow: inset 0 0 0 1.5px #868e96; }
+        .ev-detail { margin-top: 16px; background: #fff; border: 1px solid #fbd38d; border-radius: 10px; padding: 14px 16px; }
+        .ev-detail h4 { margin: 0 0 10px 0; font-size: 1rem; color: #c05621; }
+        .ev-item { padding: 10px 0; border-top: 1px dashed #edf2f7; font-size: 0.88rem; color: #4a5568; line-height: 1.6; word-break: keep-all; }
+        .ev-item:first-of-type { border-top: none; padding-top: 0; }
+        .ev-item .ev-tag { display: inline-block; color: #2d3748; font-size: 0.72rem; font-weight: 700; padding: 1px 7px; border-radius: 4px; margin-right: 6px; vertical-align: 1px; }
+        .ev-item b { color: #2d3748; }
+        .ev-item a { color: #3182ce; font-weight: 700; text-decoration: none; font-size: 0.85rem; }
+        .ev-empty { font-size: 0.88rem; color: #a0aec0; }
+        @media (max-width: 600px) {
+            .ev-cal { padding: 10px 4px; border-radius: 10px; }
+            .ev-legend { padding: 0 6px; font-size: 0.8rem; }
+            .ev-bar { font-size: 0.62rem; padding: 0 3px; height: 17px; line-height: 17px; margin: 0 1px; }
+            .ev-num { font-size: 0.75rem; }
+            .ev-detail { margin: 12px 4px 0; padding: 12px 10px; }
+        }
 </style>
 </head>
 <body>
@@ -689,21 +754,22 @@
 <!-- 헤더 -->
 <div class="header-box">
   <a href="index.html" style="display: block; text-decoration: none; cursor: pointer;" title="홈으로 이동">
-    <img src="images/top01.png?v=1109" alt="매일전하는 이광재의원의 우리동네 하남소식" style="width: 100%; height: auto; display: block; cursor: pointer;" onerror="this.src='./images/top.png'">
+    <img src="images/top01.png?v=1110" alt="매일전하는 이광재의원의 우리동네 하남소식" style="width: 100%; height: auto; display: block; cursor: pointer;" onerror="this.src='./images/top.png'">
   </a>
   <div style="position: absolute; bottom: 12px; right: 16px; background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #ffffff; padding: 2px 8px; border-radius: 20px; font-size: 7px; font-weight: 600; border: 1px solid rgba(255, 255, 255, 0.3); opacity: 0.6;">
-    75호 | 2026년 11월 9일 발행
+    76호 | 2026년 11월 10일 발행
   </div>
 </div>
 <!-- 목차 -->
 <div class="toc">
-  <h3>📌 이번 호 주요 목차</h3>
+  <h3>📌 <span class="brand-script">우하소</span> 뉴스레터 목차</h3>
   <ol>
-  <li><a href="#lawmaker">우리동네 국회의원 이광재</a></li>
-  <li><a href="#local-news">하남 지역 주요 뉴스</a></li>
-  <li><a href="#mom-cafe">하남 맘카페 HOT 이슈</a></li>
-  <li><a href="#culture">ALL IN 하남라이프</a></li>
-  <li><a href="#public-news">공공기관 소식지</a></li>
+  <li>우리동네 국회의원 이광재</li>
+  <li>하남 지역 주요 뉴스</li>
+  <li>하남 맘카페 HOT 이슈</li>
+  <li>공공기관 소식지</li>
+  <li>오늘의 하남일정</li>
+  <li>하남 행사일정 달력</li>
   </ol>
 </div>
 <!-- ===== 섹션 1: 이광재 국회의원 현장일지 & 언론보도 ===== -->
@@ -715,52 +781,81 @@
   </div>
 </a>
 
-<!-- [현장일지 1] (네이버 블로그: 예결위 종합정책질의 위원장 인사말) -->
+<!-- [현장일지 1] (네이버 블로그: 하남시자전거연맹 국회 방문) -->
 <div class="article-card card-field">
 <div class="badge badge-field">📝 현장일지</div>
-<h3><a href="https://blog.naver.com/lee_kwang_jae/224466790842" target="_blank" style="color: inherit; text-decoration: none;">이광재의원, "FBI·CIA는 벤처를 찾아갔다… 기술 전쟁의 승자가 되려면 국가 시스템을 총동원해야"</a></h3>
+<h3><a href="https://blog.naver.com/lee_kwang_jae/224470578387" target="_blank" style="color: inherit; text-decoration: none;">이광재의원, "자전거 타기 좋은 하남, 사람도 상권도 살아납니다"</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
-• 11월 5일 예결위 종합정책질의 2일차, 위원장 인사말로 AI 해킹과 기술 경쟁 화두 제시<br/>• 컴퓨터 이론을 세운 수학자 노이만이 미국 CIA와 협력한 사례 소개<br/>• 카드 사기 방지 벤처와 손잡은 FBI, 팔란티어에 투자한 CIA 투자회사 사례 언급<br/>• 유럽 냉장고 해킹 사례를 들며 우리 국정원의 대응 역량 점검 필요성 강조<br/>• 국가 시스템을 총동원해 기술 전쟁의 승자가 될 길을 함께 찾자고 제안
+• 하남시자전거연맹 임원진이 국회를 찾아 예결위원장실을 함께 둘러보고 '자전거 도시 하남'을 논의<br/>• 창립 1년 만에 10개 클럽·400여 명, 어린이 1,100여 명에게 자전거 안전교육<br/>• 한강·검단산·덕풍천을 살려 전국 자전거대회와 시민 축제로 키우는 구상<br/>• 미사섬에 자전거 수리점·전문매장·카페가 어우러진 명소 조성 제안<br/>• 위험 구간 정비와 한강~감일·위례 자전거길 연결, 필요한 사업·예산 챙기겠다는 다짐
 <div style="margin-top: 14px; text-align: center;">
-  <img src="images/110901.jpg" alt="이광재의 예결위 한마디 - 기술 전쟁의 승자가 되려면" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+  <img src="images/111001.jpg" alt="국회를 찾은 하남시자전거연맹 임원진과 이광재 예결위원장" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
-<div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://blog.naver.com/lee_kwang_jae/224466790842" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">현장일지 전문 보기 (이광재 블로그) →</a></div>
+<div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://blog.naver.com/lee_kwang_jae/224470578387" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">현장일지 전문 보기 (이광재 블로그) →</a></div>
 </div>
 <div class="source">
 📌 출처: 이광재 공식 네이버 블로그
 </div>
 </div>
 
-<!-- [이광재TV] (유튜브 숏폼 영상 · mp4 다운로드가 막혀 유튜브 임베드로 재생) -->
+<!-- [현장일지 2] (네이버 블로그: 제64주년 소방의 날) -->
+<div class="article-card card-field" style="margin-top: 16px;">
+<div class="badge badge-field">📝 현장일지</div>
+<h3><a href="https://blog.naver.com/lee_kwang_jae/224470398194" target="_blank" style="color: inherit; text-decoration: none;">이광재의원, "소방관의 안전도 국가가 지키겠습니다"… 제64주년 소방의 날</a></h3>
+<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
+• 11월 9일 제64주년 소방의 날을 맞아 소방관들에게 감사 메시지<br/>• 국민의 생명과 안전을 지키는 소방관의 헌신과 노고에 깊은 감사와 존경<br/>• "소방관의 안전도 국가가 지키겠습니다"라는 다짐
+<div style="margin-top: 14px; text-align: center;">
+  <img src="images/111002.jpg" alt="제64주년 소방의 날 이광재 의원 감사 메시지" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+</div>
+<div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="https://blog.naver.com/lee_kwang_jae/224470398194" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">현장일지 전문 보기 (이광재 블로그) →</a></div>
+</div>
+<div class="source">
+📌 출처: 이광재 공식 네이버 블로그
+</div>
+</div>
+
+<!-- [이광재TV] (유튜브 숏폼 영상) -->
 <div class="article-card card-field" style="margin-top: 16px;">
 <div class="badge badge-field">🎥 이광재TV</div>
-<h3><a href="javascript:void(0)" onclick="playNewsletterVideo()" style="color: inherit; text-decoration: none;" title="클릭하여 페이지에서 영상 재생">이광재의원 "정부의 자산, 어디에 먼저 쓰면 좋을까요?" 숏폼</a></h3>
+<h3><a href="javascript:void(0)" onclick="playNewsletterVideo()" style="color: inherit; text-decoration: none;" title="클릭하여 페이지에서 영상 재생">이광재의원 "배달 많이 팔수록 '가짜 부자'가 되는 식당?" 숏폼</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 <div style="margin-top: 14px; margin-bottom: 12px; display: flex; justify-content: center;">
-  <div id="yt-container-LSasUB3T86A" style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); display: block; background: #000;">
-    <iframe id="video-LSasUB3T86A" src="https://www.youtube.com/embed/LSasUB3T86A?playsinline=1&rel=0" title="정부의 자산, 어디에 먼저 쓰면 좋을까요?" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <div id="yt-container-lLyXlXs7BdE" style="position: relative; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e0; box-shadow: 0 8px 24px rgba(0,0,0,0.2); display: block; background: #000;">
+    <video id="video-lLyXlXs7BdE" poster="images/shorts_1110_poster.jpg" controls playsinline webkit-playsinline="true" x5-playsinline="true" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+      <source src="images/shorts_1110.mp4" type="video/mp4">
+      <iframe src="https://www.youtube.com/embed/lLyXlXs7BdE?feature=oembed" title="배달 많이 팔수록 '가짜 부자'가 되는 식당?" style="width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </video>
   </div>
 </div>
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://youtube.com/shorts/LSasUB3T86A" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">유튜브에서 보기 (이광재 TV) →</a></div>
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://youtube.com/shorts/lLyXlXs7BdE" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">유튜브에서 보기 (이광재 TV) →</a></div>
 </div>
 <div class="source">
 📌 출처: 이광재 공식 유튜브 (이광재 TV)
 </div>
 </div>
 
-<!-- [언론보도 1] (강원일보: 평창 고랭지 김장축제) -->
+<!-- [언론보도 1] (뉴스1: 예결위 제6차 전체회의) -->
 <div class="article-card card-press">
 <div class="badge badge-press">📰 언론보도</div>
-<h3><a href="https://www.kwnews.co.kr/article/20261108500634" target="_blank" style="color: inherit; text-decoration: none;">[강원일보] 이광재의원, 하남 시민들과 고향 평창 김장축제… "제기된 지역 현안 해결에 힘 보태겠다"</a></h3>
+<h3><a href="https://www.news1.kr/photos/8204593" target="_blank" style="color: inherit; text-decoration: none;">[뉴스1] 이광재의원, 예결위 전체회의서 야당 의원들과 인사… 2027년도 예산안 경제부처 심사</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
-이광재 국회 예산결산특별위원장은 7일 하남 시민들과 함께 고향 평창 진부면에서 열린 '제9회 평창 고랭지 김장축제'를 찾아 김장체험을 했습니다. 이 자리에서 배추가 농산물가격안정제 대상에서 빠져 농민들이 어려움을 겪는다는 건의를 듣고, 진부 지역 단체장들과 간담회도 가졌습니다. 이 위원장은 "주민들과 김장을 담그고 정을 나누게 돼 기쁘다"며 "오늘 제기된 지역 현안 해결에도 힘을 보태겠다"고 말했습니다. 축제는 16일까지 매일 오전 9시부터 오후 5시까지 열립니다.
-<div style="margin-top: 14px; text-align: center;">
-  <img src="images/110902.jpg" alt="평창 고랭지 김장축제에서 김장체험을 하는 이광재 예결위원장" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.kwnews.co.kr/article/20261108500634" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">기사 원문 보기 (강원일보) →</a></div>
+이광재 국회 예산결산특별위원장이 9일 국회에서 열린 제439회 국회(정기회) 예산결산특별위원회 제6차 전체회의에서 국민의힘 의원들과 인사를 나눴습니다. 이날 예결위는 2027년도 예산안 경제부처 부별심사를 진행했습니다.
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.news1.kr/photos/8204593" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">기사 원문 보기 (뉴스1) →</a></div>
 </div>
 <div class="source">
-📌 출처: 강원일보 (강동휘 기자)
+📌 출처: 뉴스1 (유승관 기자)
+</div>
+</div>
+
+<!-- [언론보도 2] (아시아경제: 신보 AI·AX 혁신 콘퍼런스 강연) -->
+<div class="article-card card-press" style="margin-top: 16px;">
+<div class="badge badge-press">📰 언론보도</div>
+<h3><a href="https://view.asiae.co.kr/article/2026110914195058017" target="_blank" style="color: inherit; text-decoration: none;">[아시아경제] 이광재의원 "국민을 부자로 만드는 나라"… 신보 AI·AX 콘퍼런스서 "투자금 회수시장·무형자산 금융 키워야"</a></h3>
+<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
+이광재 국회 예산결산특별위원장은 지난 6일 서울 광진구 NEST 광진에서 열린 신용보증기금 'AI·AX 혁신 콘퍼런스'에서 '국민을 부자로 만드는 나라, 국민에게 투자하는 나라'를 주제로 강연했습니다. 이 위원장은 벤처기업을 키우려면 투자금 회수시장을 활성화하고, 지식재산 등 무형자산을 기반으로 한 금융을 넓혀야 한다고 강조했습니다. 강연에는 강승준 이사장 등 신보 임직원 120여 명이 참석했습니다.
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://view.asiae.co.kr/article/2026110914195058017" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">기사 원문 보기 (아시아경제) →</a></div>
+</div>
+<div class="source">
+📌 출처: 아시아경제 (이은주 기자)
 </div>
 </div>
 
@@ -771,51 +866,28 @@
 <div id="local-news">
 <div class="section-title green">📰 하남 지역 주요 뉴스</div>
 
-<!-- 지역 뉴스 기사 1 (뉴스투데이24: 오민용 도의원 위례중 과밀 공동학군 제안) -->
+<!-- 지역 뉴스 기사 1 (하남일보: 하남 철도망) -->
 <div class="article-card">
-<div class="badge">🏫 교육</div>
-<h3><a href="https://www.newstoday.or.kr/news/articleView.html?idxno=27667" target="_blank" style="color: inherit; text-decoration: none;">오민용 도의원 "위례, 생활은 하나인데 행정은 셋"… 위례중 과밀 해소 위해 서울과 '공동학군' 제안</a></h3>
+<div class="badge">🚇 교통</div>
+<h3><a href="http://www.hanamilbo.net/news/articleView.html?idxno=12765" target="_blank" style="color: inherit; text-decoration: none;">"이번 달 하남 철도망 운명 가른다"… GTX-D 황산·교산 경유, 위례신사선 감일 연장 반영 촉각</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
-경기도의회 오민용 의원(더불어민주당, 하남1)이 5일 본회의 5분 자유발언에서 위례중학교 과밀 해소를 위해 경기도교육청과 서울시교육청의 공동학군 도입을 제안했습니다. 하남 위례의 중학교는 위례중 한 곳뿐으로, 전교생 1,369명에 학급당 31.1명이 공부해 과밀 기준(28명)을 넘었고 2030년에는 200명가량 더 늘 전망입니다. 오 의원은 길 건너 서울 위례솔중학교와 연계한 공동학군·위탁교육을 제안하며, 안민석 경기도교육감에게 두 교육청 공동 TF를 서둘러 꾸려 달라고 촉구했습니다.
-<div style="margin-top: 14px; text-align: center;">
-  <img src="images/110903.jpg" alt="5분 자유발언을 하는 오민용 경기도의원" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.newstoday.or.kr/news/articleView.html?idxno=27667" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">기사 원문 보기 (뉴스투데이24) →</a></div>
+정부가 이달 '제5차 국가철도망 구축계획'과 '제5차 광역교통시행계획' 발표를 앞두면서 하남 철도망의 향방이 주목받고 있습니다. 핵심은 GTX-D의 황산사거리·교산지구 경유와 위례신사선 감일·하남 연장(약 5㎞)의 국가계획 반영 여부입니다. 이현재 하남시장은 송파하남선·강동하남남양주선 적기 개통까지 묶어 국토부에 건의했고, 이광재 의원도 예결위·국토위 차원에서 국가계획 반영을 강하게 요구하며 정부를 설득하고 있습니다. 미사강변도시의 한 주민은 "서울 한 번 나가려면 황산사거리에서만 20~30분을 버린다"며 반영을 촉구했습니다.
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="http://www.hanamilbo.net/news/articleView.html?idxno=12765" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">기사 원문 보기 (하남일보) →</a></div>
 </div>
 <div class="source">
-📌 출처: 뉴스투데이24
+📌 출처: 하남일보 (이재연 기자)
 </div>
 </div>
-
 <!-- 지역 뉴스 기사 2 (하남Times: 위례선 트램 연내 개통 무산) -->
 <div class="article-card" style="margin-top: 16px;">
 <div class="badge">🚋 교통</div>
 <h3><a href="http://www.hanamtimes.com/news/articleView.html?idxno=13351" target="_blank" style="color: inherit; text-decoration: none;">공정률 97%인데… 위례선 트램, 행정절차 지연에 연내 개통 '물 건너가'</a></h3>
 <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
 위례신도시 주민 숙원인 위례선 트램 개통이 또 해를 넘기게 됐습니다. 공정률 97%로 시운전까지 진행됐지만, 노면전차 구간을 도로로 볼지 철도로 볼지를 두고 서울시와 서울경찰청의 협의가 늦어지면서 교통안전 심의 등 행정절차가 지연됐습니다. 마천역에서 복정역, 남위례역을 잇는 5.4㎞ 노선으로 정거장 12곳이 들어섭니다. 서울시는 내년 3월까지 교통시설 안전진단을 마치고 심의를 거쳐 내년 상반기 중 개통 시기를 확정할 계획입니다. 하남 위례 주민들은 거듭된 지연에 불만을 나타냈습니다.
-<div style="margin-top: 14px; text-align: center;">
-  <img src="images/110904.jpg" alt="위례선 트램 이미지 (출처: 서울시)" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
 <div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="http://www.hanamtimes.com/news/articleView.html?idxno=13351" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">기사 원문 보기 (하남Times) →</a></div>
 </div>
 <div class="source">
 📌 출처: 하남Times (박필기 기자)
-</div>
-</div>
-
-<!-- 지역 뉴스 기사 3 (경기일보: 미사한강모랫길·위례강변길 건강 걷기대회) -->
-<div class="article-card" style="margin-top: 16px;">
-<div class="badge">🚶 생활·건강</div>
-<h3><a href="https://www.kyeonggi.com/article/20261108580158" target="_blank" style="color: inherit; text-decoration: none;">한강 따라 건강한 발걸음… 미사한강모랫길·위례강변길 걷기대회에 시민 700여 명</a></h3>
-<div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
-하남시체육회가 주최한 '미사한강모랫길·위례강변길 건강 걷기대회'가 7일 시민 700여 명이 참여한 가운데 열렸습니다. 참가자들은 하남시청에서 덕풍천과 미사한강 모랫길을 지나 유니온파크까지 걷는 6㎞ 코스와 미사호수공원에서 출발하는 8㎞ 코스 가운데 하나를 골라 늦가을 정취를 즐겼습니다. 중학생부터 91세 어르신까지 함께했고, 반려견과 나온 시민도 눈에 띄었습니다. 이현재 하남시장은 지역 걷기 코스를 25곳으로 늘리고 감일·서하남IC 일대와 황산사거리 상습 정체를 개선하겠다고 밝혔습니다.
-<div style="margin-top: 14px; text-align: center;">
-  <img src="images/110905.jpg" alt="단풍길을 따라 걷는 건강 걷기대회 참가자들" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.kyeonggi.com/article/20261108580158" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">기사 원문 보기 (경기일보) →</a></div>
-</div>
-<div class="source">
-📌 출처: 경기일보 (황선주 기자)
 </div>
 </div>
 </div>
@@ -823,163 +895,143 @@
 <!-- ===== 섹션 3: 하남 맘카페 HOT 이슈 ===== -->
 <div id="mom-cafe">
 <div class="section-title pink">💬 하남 맘카페 HOT 이슈</div>
-<p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">이번 주 하남 지역 맘카페(정다운 감일맘, 미사맘스클럽, 감일 교산 덕풍 미사 위례 하남맘, 하남미사교산4050 등)에서 많이 오르내린 HOT 이슈 TOP 3입니다.</p>
+<p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">이번 주 하남 지역 맘카페(미사맘스클럽, 하남맘 모여라, 미사한강이야기, 하남 미사맘 클라스 등)와 지역 커뮤니티에서 많이 오르내린 HOT 이슈 TOP 3입니다.</p>
 
 <div class="mom-issue-card">
-<h4>1️⃣ [보육] "확정 전화 아직 안 왔어요"… 내년 어린이집 입소 확정 시즌, 감일·덕풍·미사 엄마들 '어디로 보내나'</h4>
-<div class="mom-detail"><strong>현황:</strong> 내년 3월 신학기 어린이집 입소 확정 연락이 오가는 시기라 어린이집 후기를 묻는 글이 이어졌습니다. 감일맘 카페에는 "확정 전화는 아직인데 시립감일한별어린이집과 시립라포레숲속어린이집 중 어디가 좋을까요?"라는 글이, 덕풍에서는 "덕풍시립어린이집은 대기가 너무 많아 다들 어디 보내세요?"라는 질문이 올라왔습니다. 미사에서는 단지 안 민간·가정어린이집 비교 글이, 워킹맘들은 연장반을 운영하는 곳을 찾는 글이 많았습니다.</div>
-<div class="mom-point">💡 주민 포인트: 입소 대기 순번과 확정 여부는 '임신육아종합포털 아이사랑'에서 확인할 수 있습니다. 맞벌이 가정이라면 상담 때 연장보육 운영 여부와 하원 시간을 꼭 물어보고, 대기가 길면 여러 곳에 대기를 걸어 두는 것도 방법입니다.</div>
-<div class="mom-reaction">💬 주민 반응: 첫아이라 모르는 게 많다며 어린이집 분위기와 식사, 선생님 근속연수까지 꼼꼼히 묻는 글이 많았습니다.</div>
-<div class="source" style="margin-top: 8px;">📌 출처: 네이버 카페 (정다운 감일맘, 미사강변도시 미사맘스클럽, 감일 교산 덕풍 미사 위례 하남맘, 맘스홀릭 베이비)</div>
-</div>
-
-<div class="mom-issue-card">
-<h4>2️⃣ [생활] "수능과 김장의 달 11월"… 수능 예비소집 안내 공유, 김장축제 나들이 후기도</h4>
-<div class="mom-detail"><strong>현황:</strong> 입동(7일)을 지나 갑자기 추워지면서 "올해도 50일 남짓 남았다", "수능이라는 큰 산과 김장이 함께 오는 달"이라는 글이 공감을 얻었습니다. 고3 학부모 카페에는 11월 19일 수능을 앞두고 광주하남교육지원청 접수 수험생의 예비소집 안내가 공유됐고, 빈 김치통만 챙겨 가면 김장김치를 편하게 담가 올 수 있다는 김장축제 나들이 추천 글도 화제가 됐습니다. 이광재 의원도 7일 하남 시민들과 평창 고랭지 김장축제를 찾았습니다.</div>
-<div class="mom-point">💡 주민 포인트: 수능 당일(11.19) 미사도서관 자료실은 오전 10시에 문을 엽니다. 평창 고랭지 김장축제는 16일까지 매일 오전 9시~오후 5시 열리니, 김장이 부담된다면 가족 나들이 겸 다녀오는 것도 방법입니다.</div>
-<div class="mom-reaction">💬 주민 반응: 수험생 가족들의 평온한 11월을 기원하는 글과 함께, 올해는 김장을 축제장에서 해 볼까 고민한다는 반응도 보였습니다.</div>
-<div class="source" style="margin-top: 8px;">📌 출처: 네이버 카페 (하남미사교산4050 중고등, 감일 교산 덕풍 미사 위례 하남맘)</div>
+<h4>1️⃣ [교통] "이번엔 꼭 들어가길"… 국가철도망 발표 앞두고 GTX-D·위례신사선 감일 연장 촉각</h4>
+<div class="mom-detail"><strong>현황:</strong> 정부의 제5차 국가철도망 구축계획 발표가 다가오면서 하남 철도 소식이 지역 커뮤니티마다 공유됐습니다. 대국민 의견수렴 설문에 참여해 달라는 글, GTX-D와 3호선 연장이 예정된 하남시청역 입지를 분석한 글, 이현재 하남시장이 대광위에 위례신사선 감일 연장과 하남IC 개선을 건의했다는 소식이 잇따라 올라왔습니다. 인근 고덕·남양주 커뮤니티에서도 GTX-D 역 위치와 3호선 연장 노선을 두고 의견이 오갔습니다.</div>
+<div class="mom-point">💡 주민 포인트: GTX-D 황산·교산 경유와 위례신사선 하남 연장은 이번 국가계획에 들어가야 예산 확보와 예비타당성조사에 속도가 붙습니다. 이광재 의원도 예결위·국토위에서 국가계획 반영을 요구하고 있습니다. 이달 발표 내용을 함께 지켜봐 주세요.</div>
+<div class="mom-reaction">💬 주민 반응: 지역마다 원하는 역과 노선이 달라 의견이 갈렸고, 하남에서는 이번 계획에 하남 구간이 빠지지 않기를 바라는 분위기였습니다.</div>
+<div class="source" style="margin-top: 8px;">📌 출처: 네이버 카페 (부동산 스터디, 덕소총연, 강동 고덕지구를 사랑하는 사람들, 남양주 도심지구 커뮤니티)</div>
 </div>
 
 <div class="mom-issue-card">
-<h4>3️⃣ [교통] "벌써 네 번째 연기"… 97% 지어 놓고 멈춘 위례 트램, 내년 상반기로 또 밀려</h4>
-<div class="mom-detail"><strong>현황:</strong> 위례선 트램이 공정률 97%에도 행정절차 지연으로 연내 개통이 어려워졌다는 소식이 위례·하남 카페에 공유됐습니다. "이번이 네 번째 연기"라며 정책 신뢰가 떨어졌다는 글과, 서울시가 발주한 교통시설안전진단 용역 내용을 정리한 글이 올라왔습니다. 같은 주 오민용 도의원이 위례중 과밀 해소를 위해 서울과의 공동학군을 제안하면서 "생활은 하나인데 행정은 셋"인 위례의 현실을 다시 짚는 글도 이어졌습니다.</div>
-<div class="mom-point">💡 주민 포인트: 서울시는 내년 3월까지 교통시설 안전진단을 마치고 서울경찰청 교통안전심의를 거쳐 내년 상반기 중 개통 시기를 확정할 계획입니다. 트램이 지나는 교차로 13곳은 차량과 보행자 동선이 겹치니, 개통 전후로 아이들 통학길 안전 안내를 함께 챙겨 주세요.</div>
-<div class="mom-reaction">💬 주민 반응: 신도시 입주 10년이 넘도록 약속이 지켜지지 않았다는 아쉬움과 함께, 내년에는 꼭 개통되길 바란다는 의견이 많았습니다.</div>
-<div class="source" style="margin-top: 8px;">📌 출처: 네이버 카페 (돈이 되는 부동산 정보, 부동산 스터디)</div>
+<h4>2️⃣ [건강] "가까운 병원은 접종 마감이래요"… 독감 예방접종·영유아검진 병원 찾기</h4>
+<div class="mom-detail"><strong>현황:</strong> 날씨가 쌀쌀해지면서 독감 예방접종 글이 늘었습니다. "아이들은 맞혔는데 남편이 아직이고, 집 근처 병원은 마감이라더라"며 다른 병원에서도 맞을 수 있는지 묻는 글, 올해도 저렴하게 맞을 곳이 있는지 묻는 글이 올라왔습니다. 미사 카페에는 영유아검진을 꼼꼼히 봐주는 소아과를 고르는 기준(예약 대기, 설명, 야간·주말 진료)을 묻는 글도 있었습니다.</div>
+<div class="mom-point">💡 주민 포인트: 2026~2027절기 독감 무료 예방접종은 생후 6개월~13세 어린이, 14세 청소년, 임신부, 65세 이상에 더해 올해 60~64세까지 확대됐고, 2027년 4월 30일까지 지정 의료기관에서 맞을 수 있습니다. 지정 병원은 하남시보건소 홈페이지에서 확인하세요.</div>
+<div class="mom-reaction">💬 주민 반응: 접종이 가능한 병원과 소아과 정보를 서로 묻고 답하는 글이 많았습니다.</div>
+<div class="source" style="margin-top: 8px;">📌 출처: 네이버 카페 (하남맘 모여라, 미사강변도시 미사맘스클럽, 미사한강이야기)</div>
+</div>
+
+<div class="mom-issue-card">
+<h4>3️⃣ [교육] "이사 왔는데 학원은 어디로?"… 초등 수학 선행 속도 고민</h4>
+<div class="mom-detail"><strong>현황:</strong> 미사로 이사 온 초4 학부모가 "영어·수학 학원은 단지 아이들이 주로 어디 다니냐"고 묻는 글, 대형 학원이 한 학기를 3개월 만에 나가는데 이 속도가 적당한지 묻는 글이 올라왔습니다. 학원 후기 게시판에는 사고력 수학 학원의 반 정원·과제량·셔틀 여부를 정리한 후기가 이어졌습니다.</div>
+<div class="mom-point">💡 주민 포인트: 하남시 '권역 평생학교'가 학부모를 위한 '우리 아이 공부·진로 설계법' 강좌를 무료로 엽니다. 감일도서관(11.10~, 화)과 미사도서관(11.11~, 수)에서 4회씩 진행하며, 하남시 평생학습포털에서 선착순 신청할 수 있습니다. 아래 공공기관 소식지를 참고하세요.</div>
+<div class="mom-reaction">💬 주민 반응: 먼저 학원을 보내 본 학부모들의 후기와 정보 공유가 이어졌습니다.</div>
+<div class="source" style="margin-top: 8px;">📌 출처: 네이버 카페 (미사강변도시 미사맘스클럽, 하남 미사맘 클라스)</div>
 </div>
 </div>
 
-<!-- ===== 섹션 4: ALL IN 하남라이프 ===== -->
-<div id="culture">
-<div class="section-title" style="background: linear-gradient(90deg, #319795, #4fd1c5);">🎭 ALL IN 하남라이프</div>
-<p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 11월 9일 기준 한눈에 보는 하남시 최신 문화·행사·교육 안내 가이드</p>
-
-<!-- 라이프 1 (하남시평생학습관: 꿈틀캠퍼스 3기 신설 강좌 추가모집) -->
-<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795;">
-<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">📚 11.14(토) | 하남시평생학습관 2층 대강당 · 접수 ~11.13(금) 23:30</div>
-<h3 style="margin-top: 6px;"><a href="https://hanam.gseek.kr/user/homepage/notice/view?seq=1850" target="_blank" style="color: inherit; text-decoration: none;">[하남시평생학습관] 꿈틀캠퍼스 3기 신설 강좌 추가모집… 초등 현직교사가 알려주는 그림책 특강</a></h3>
-<div class="summary flex-summary" style="display: flex; gap: 16px; text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
-<div style="flex: 1;">
-<b>"그림책으로 아이 문해력을 키워 보세요"</b><br/>
-하남시평생학습관이 학부모를 위한 꿈틀캠퍼스 3기 신설 강좌 2개를 추가 모집합니다. 초등학교 현직교사 전은주 강사가 하루 동안 진행합니다.<br/><br/>
-<b>📖 강좌①:</b> 그림책으로 높이는 문해력 특강 · 11월 14일(토) 10:00~13:00<br/>
-<b>✏️ 강좌②:</b> 그림책 창작 특강 · 11월 14일(토) 14:00~17:00<br/>
-<b>📍 장소:</b> 하남시평생학습관 2층 대강당<br/>
-<b>👥 대상·정원:</b> 학부모 · 강좌별 20명 (선착순)<br/>
-<b>🗓 접수:</b> 11월 5일(목) 09:00 ~ 11월 13일(금) 23:30<br/>
-<b>💰 수강료:</b> 무료<br/>
-<b>☎️ 문의:</b> 하남시 평생교육과 <a href="tel:031-790-6042" style="color:#3182ce; font-weight:bold;">031-790-6042</a>
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://hanam.gseek.kr/user/course/offline/list?isbiz=Y&s_biz_sn=659" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">수강 신청하기 (하남시 평생학습포털) →</a><br/><a href="https://hanam.gseek.kr/user/homepage/notice/view?seq=1850" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">모집 공지 보기 →</a></div>
-</div>
-<div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="images/110906.jpg" alt="꿈틀캠퍼스 3기 신설 강좌 추가모집 안내 포스터" style="width: 100%; height: auto; max-height: 340px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
-</div>
-<div class="source">
-📌 출처: 하남시평생학습관
-</div>
-</div>
-
-<!-- 라이프 2 (하남문화재단: 2026 송년음악회 가장 완벽한 엔딩) -->
-<div class="article-card" style="background-color: #f0fdf4; border-left: 4px solid #319795; margin-top: 16px;">
-<div class="badge" style="background-color: #e6fffa; color: #2c7a7b; border: 1px solid #b2f5ea;">🎵 12.26(토) 17:00 | 하남문화예술회관 대극장 · 예매 진행 중</div>
-<h3 style="margin-top: 6px;"><a href="https://www.hnart.or.kr/artcenter/selectBbsNttView.do?key=219&bbsNo=1&nttNo=7157" target="_blank" style="color: inherit; text-decoration: none;">[하남문화재단] 2026 송년음악회 Ⅱ '가장 완벽한 엔딩'… 조기예매 20% 할인은 12월 6일까지</a></h3>
-<div class="summary flex-summary" style="display: flex; gap: 16px; text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(178, 245, 234, 0.6); color: #22543d;">
-<div style="flex: 1;">
-<b>"좋은 좌석은 빠르게 마감됩니다"</b><br/>
-크로스오버그룹 포르테나와 뮤지컬배우 박소연·이지수가 함께하는 하남문화재단 송년음악회 두 번째 무대입니다. 지난 6일 티켓이 열려 지금 예매할 수 있습니다.<br/><br/>
-<b>🗓 공연:</b> 2026년 12월 26일(토) 17:00 (110분)<br/>
-<b>📍 장소:</b> 하남문화예술회관 대극장(검단홀)<br/>
-<b>👥 관람연령:</b> 초등학생 이상<br/>
-<b>💰 티켓:</b> R석 80,000원 · S석 70,000원 · A석 50,000원<br/>
-<b>🎟 할인:</b> 하남시민 20% · 조기예매(~12/6) 20% · 재단 플러스친구 10%<br/>
-<b>✍️ 예매:</b> 하남문화재단 홈페이지, NOL 티켓<br/>
-<b>☎️ 문의:</b> 하남문화예술회관 <a href="tel:031-790-7979" style="color:#3182ce; font-weight:bold;">031-790-7979</a>
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hnart.or.kr/artcenter/showView.do?key=183&programId=artcenter&shNo=3491&cal=1" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">공연 보고 예매하기 (하남문화재단) →</a><br/><a href="https://www.hnart.or.kr/artcenter/selectBbsNttView.do?key=219&bbsNo=1&nttNo=7157" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">티켓 오픈 공지 보기 →</a></div>
-</div>
-<div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="images/110907.jpg" alt="2026 송년음악회 가장 완벽한 엔딩 티켓 오픈 포스터" style="width: 100%; height: auto; max-height: 340px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
-</div>
-</div>
-<div class="source">
-📌 출처: 하남문화재단
-</div>
-</div>
-</div>
-
-<!-- ===== 섹션 5: 공공기관 소식지 ===== -->
+<!-- ===== 섹션 4: 공공기관 소식지 ===== -->
 <div id="public-news">
 <div class="section-title purple">🏛️ 공공기관 소식지</div>
-<p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 11월 9일 기준 하남시 공공기관 주요 공고·신청 안내입니다.</p>
+<p style="color:#4a5568; font-size:0.93rem; margin-bottom:18px;">2026년 11월 10일 기준 하남시 공공기관 주요 공고·신청 안내입니다.</p>
 
-<!-- 공공 1 (하남시미사도서관: 수능일 자료실 운영시간 변경) -->
+<!-- 공공 1 (하남시 평생교육과: 2026 권역 평생학교) -->
 <div class="article-card">
-<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">📚 하남시미사도서관 | 11.19(목) 수능일</div>
-<h3><a href="https://www.hanamlib.go.kr/mslib/selectBbsNttView.do?key=695&bbsNo=106&nttNo=90041" target="_blank" style="color: inherit; text-decoration: none;">수능일(11.19) 미사도서관 자료실, 오전 10시에 문 엽니다</a></h3>
+<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">📚 하남시 평생교육과 | 11.9 ~ 12.3 · 4개 권역 7개 강좌 · 무료</div>
+<h3><a href="https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&bbsNo=16&nttNo=89995&integrDeptCode=silib" target="_blank" style="color: inherit; text-decoration: none;">2026 권역 평생학교 수강생 모집 — 은퇴 준비·자녀 진로·세금·디지털 부업까지 7개 무료 강좌</a></h3>
 <div class="summary flex-summary" style="display: flex; gap: 16px; text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid #e9d5ff; color: #4c1d95; padding: 14px; border-radius: 8px;">
 <div style="flex: 1;">
-<b>"수험생의 시험과 교통 혼잡 완화를 위해"</b><br/>
-2027학년도 대학수학능력시험 당일, 하남시미사도서관 자료실 운영 시작 시간이 한 시간 늦춰집니다.<br/><br/>
-<b>🗓 적용일:</b> 2026년 11월 19일(목) 수능 당일<br/>
-<b>⏰ 변경 전:</b> 오전 9시 운영 시작<br/>
-<b>⏰ 변경 후:</b> 오전 10시 운영 시작<br/>
-<b>📌 안내:</b> 수험생의 원활한 시험 진행과 교통 혼잡 완화를 위한 조정이니 이용에 참고해 주세요
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanamlib.go.kr/mslib/selectBbsNttView.do?key=695&bbsNo=106&nttNo=90041" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">공지 보기 (하남시미사도서관) →</a></div>
+<b>"은퇴 준비부터 자녀 교육, 실전 부업까지 완성하는 성인 진로 라이프 플랜"</b><br/>
+하남시가 우리 동네 도서관과 주민자치센터에서 권역별 평생학교를 엽니다. 강좌마다 4회 과정입니다.<br/><br/>
+<b>🏙 신장덕풍:</b> 5060 은퇴 후 월급 만들기 · 11.9~30 (월) 10~12시 · 신장도서관<br/>
+<b>🏙 미사:</b> 우리 아이 공부·진로 설계법 · 11.11~12.2 (수) 10~12시 · 미사도서관<br/>
+<b>🏙 위례:</b> 아는 만큼 지키는 우리집 세금 절약 노하우 · 11.11~12.2 (수) 10~12시 · 위례도서관<br/>
+<b>🏙 감일:</b> 우리 아이 공부·진로 설계법 (화 10~12시) · 디지털 부업 & 기록 재테크 (화 14~16시) · 감정코칭 & 엄마의 인문학독서 (목 10~12시) · 스마트폰 성장기록 클래스 (목 10~12시) · 감일도서관·감일동주민자치센터<br/>
+<b>👥 대상:</b> 하남시민 · 1인 1강좌<br/>
+<b>✍️ 신청:</b> 10월 21일(수) 09:00부터 하남시 평생학습포털 선착순<br/>
+<b>☎️ 문의:</b> 하남시 평생교육과 <a href="tel:031-790-6622" style="color:#3182ce; font-weight:bold;">031-790-6622</a>
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://hanam.gseek.kr" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">수강 신청하기 (하남시 평생학습포털) →</a><br/><a href="https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&bbsNo=16&nttNo=89995&integrDeptCode=silib" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">공지 보기 (신장도서관) →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="images/110908.jpg" alt="수능일 미사도서관 자료실 운영시간 변경 안내 포스터" style="width: 100%; height: auto; max-height: 340px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/111006.jpg" alt="2026 권역 평생학교 수강생 모집 포스터" style="width: 100%; height: auto; max-height: 340px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
-📌 출처: 하남시미사도서관
+📌 출처: 하남시 (평생교육과) · 하남시 신장도서관
 </div>
 </div>
 
-<!-- 공공 2 (하남시가족센터: 2026 가족축제 참여자 모집, 네이버 폼) -->
+<!-- 공공 2 (하남시 이동도서관: 운영지역 신규 모집) -->
 <div class="article-card" style="margin-top: 16px;">
-<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">👨‍👩‍👧 하남시가족센터 | 11.20(금) 09:30~13:00</div>
-<h3><a href="https://form.naver.com/response/vokTvVUjDg" target="_blank" style="color: inherit; text-decoration: none;">2026 하남시가족센터 가족축제 'My Way, My Family' 참여자 모집</a></h3>
+<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">🚌 하남시 이동도서관 | 신청 ~ 11.30(월)</div>
+<h3><a href="https://www.hanamlib.go.kr/wilib/selectBbsNttView.do?key=883&bbsNo=131&nttNo=89974" target="_blank" style="color: inherit; text-decoration: none;">하남시 이동도서관 운영지역 신규 모집 — 위례동 아파트 단지 2곳, 2027년 1월부터 찾아가는 도서관</a></h3>
 <div class="summary flex-summary" style="display: flex; gap: 16px; text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid #e9d5ff; color: #4c1d95; padding: 14px; border-radius: 8px;">
 <div style="flex: 1;">
-<b>"다른 길을 걸어도, 우리는 하나의 가족"</b><br/>
-하남시가족센터가 가족과 이웃이 함께 즐기는 가족축제를 열고 참여자를 모집합니다.<br/><br/>
-<b>🗓 일시:</b> 2026년 11월 20일(금) · 부스 행사 09:30~13:00 / 기념식 10:30~11:30<br/>
-<b>🎪 내용:</b> 기념식, 다양한 체험부스, 포토존, 선물과 커피 케이터링<br/>
-<b>✍️ 신청:</b> 네이버 폼 참여 신청 (장소와 세부 내용은 신청폼에서 확인해 주세요)
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://form.naver.com/response/vokTvVUjDg" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">참여 신청하기 (네이버 폼) →</a></div>
-</div>
-</div>
-<div class="source">
-📌 출처: 하남시가족센터
-</div>
-</div>
-
-<!-- 공공 3 (하남시청소년상담복지센터: 2026 상설부모교육(기본)) -->
-<div class="article-card" style="margin-top: 16px;">
-<div class="badge" style="background-color: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff;">👪 하남시청소년상담복지센터 | 11.9(월)·11.23(월) 18:30~20:30</div>
-<h3><a href="https://www.hanam.go.kr/youth/news/eduDetail/8" target="_blank" style="color: inherit; text-decoration: none;">2026 상설부모교육(기본) — 청소년 자녀 마음 이해하고 가족 소통법 배우기, 무료</a></h3>
-<div class="summary flex-summary" style="display: flex; gap: 16px; text-align: left; word-break: keep-all; letter-spacing: -0.3px; background: rgba(255, 255, 255, 0.75); border: 1px solid #e9d5ff; color: #4c1d95; padding: 14px; border-radius: 8px;">
-<div style="flex: 1;">
-<b>"아이와 대화가 잘 안 된다고 느끼시나요?"</b><br/>
-하남시청소년상담복지센터가 청소년 자녀를 둔 부모를 위한 상설 부모교육을 매달 격주 월요일 저녁에 엽니다.<br/><br/>
-<b>🗓 11월 일정:</b> 11월 9일(월)·23일(월) 18:30~20:30 (12월은 7일·14일)<br/>
-<b>👥 대상:</b> 청소년기(만 9~24세) 자녀를 둔 보호자<br/>
-<b>📖 내용:</b> 청소년 마음 이해하기(발달과 행동의 비밀), 우리 가족 소통법 배우기(MBTI로 보는 성격 이해와 대화기술)<br/>
-<b>💰 교육비:</b> 무료 · 매월 선착순 마감<br/>
-<b>✍️ 신청:</b> 전화로만 접수 <a href="tel:031-790-6680" style="color:#3182ce; font-weight:bold;">031-790-6680</a>
-<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanam.go.kr/youth/news/eduDetail/8" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">교육 안내 보기 (하남시청소년상담복지센터) →</a></div>
+<b>"5톤 차량에 3,000권, 우리 단지로 찾아오는 도서관"</b><br/>
+도서 열람·대출/반납, 독서문화프로그램을 이동 차량으로 운영하는 하남시 이동도서관이 새 운영지역을 모집합니다.<br/><br/>
+<b>🏢 모집대상:</b> 하남시 위례동 아파트 단지 2곳<br/>
+<b>🗓 신청기간:</b> 2026년 9월 1일 ~ 11월 30일(월)<br/>
+<b>✍️ 신청방법:</b> 관리사무소를 통해 신청서 제출<br/>
+<b>🚌 운영:</b> 2027년 1월부터 · 격주 목요일 14:00~15:30 또는 15:00~16:30 중 선택<br/>
+<b>📚 내용:</b> 도서관 회원가입, 도서 열람·대출/반납, 독서문화프로그램 (일반서·아동서 3,000권 비치)<br/>
+<b>☎️ 문의:</b> 나룰도서관 이동도서관 담당 <a href="tel:031-790-5461" style="color:#3182ce; font-weight:bold;">031-790-5461</a>
+<div style="margin-top: 12px; font-size: 0.9em; color: #718096;"><a href="https://www.hanamlib.go.kr/wilib/selectBbsNttView.do?key=883&bbsNo=131&nttNo=89974" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">공지 보기 (위례도서관) →</a></div>
 </div>
 <div class="img-box" style="width: 240px; flex-shrink: 0;">
-<img src="images/110909.jpg" alt="2026 상설부모교육(기본) 안내 포스터" style="width: 100%; height: auto; max-height: 340px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+<img src="images/111007.jpg" alt="하남시 이동도서관 운영지역 신규 모집 안내" style="width: 100%; height: auto; max-height: 340px; object-fit: contain; background-color: #ffffff; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer;" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
 </div>
 </div>
 <div class="source">
-📌 출처: 하남시청소년상담복지센터
+📌 출처: 하남시립도서관 (나룰도서관 이동도서관)
 </div>
 </div>
 
 
+
+<!-- ===== 섹션 5: 오늘의 하남일정 (하남 행사일정 달력의 당일 일정 · build_calendar.py가 채움) ===== -->
+<div id="today-schedule">
+<div class="section-title teal">🗓️ 오늘의 하남일정</div>
+<!-- TODAY-SCHEDULE:START -->
+<p class="today-intro">11월 10일(화) 하남 일정입니다. <span style="color:#a0aec0;">(하남 행사일정 달력 기준)</span></p>
+<div class="today-card" style="border-left-color: #b2f2bb;">
+<span class="today-tag" style="background: #b2f2bb;">📚 교육</span>
+<h3><a href="https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&amp;bbsNo=16&amp;nttNo=89995&amp;integrDeptCode=silib" target="_blank">2026 권역 평생학교 [감일권역] 우리 아이 공부·진로 설계법 (4회, 강사 이수경)</a></h3>
+<div class="today-meta">🗓 11.10(화) ~ 12.1(화) · ⏰ 화 10:00~12:00<br/>📍 감일도서관 3층 문화교실 · 무료(1인 1강좌) · 하남시민 · 하남시 평생학습포털 선착순 신청 · 문의 031-790-6622<br/>✍️ 신청: 10.21부터 선착순 · 하남시 평생학습포털</div>
+<div class="today-link"><a href="https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&amp;bbsNo=16&amp;nttNo=89995&amp;integrDeptCode=silib" target="_blank">공고원문클릭 →</a></div>
+</div>
+<div class="today-card" style="border-left-color: #b2f2bb;">
+<span class="today-tag" style="background: #b2f2bb;">📚 교육</span>
+<h3><a href="https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&amp;bbsNo=16&amp;nttNo=89995&amp;integrDeptCode=silib" target="_blank">2026 권역 평생학교 [감일권역] 디지털 부업 &amp; 기록 재테크 (4회, 강사 안선우)</a></h3>
+<div class="today-meta">🗓 11.10(화) ~ 12.1(화) · ⏰ 화 14:00~16:00<br/>📍 감일동주민자치센터 강의실3 · 무료(1인 1강좌) · 하남시민 · 하남시 평생학습포털 선착순 신청 · 문의 031-790-6622<br/>✍️ 신청: 10.21부터 선착순 · 하남시 평생학습포털</div>
+<div class="today-link"><a href="https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&amp;bbsNo=16&amp;nttNo=89995&amp;integrDeptCode=silib" target="_blank">공고원문클릭 →</a></div>
+</div>
+<div class="today-sub">⏳ 기간 중 진행 중인 일정</div>
+<div class="today-card" style="border-left-color: #ffd8a8;">
+<span class="today-tag" style="background: #ffd8a8;">🎉 행사</span>
+<h3><a href="https://www.hnyouth.kr/sub/community/notice?category=4&amp;postNo=238" target="_blank">제6회 루미나페스타 &#x27;가을페스타&#x27; (단풍 조명 사진 이벤트)</a></h3>
+<div class="today-meta">🗓 진행 중 · 10.22(목) ~ 11.30(월) · ⏰ 18:00~22:00<br/>📍 하남시청소년수련관 앞</div>
+<div class="today-link"><a href="https://www.hnyouth.kr/sub/community/notice?category=4&amp;postNo=238" target="_blank">공고원문클릭 →</a></div>
+</div>
+<div class="today-sub">✍️ 오늘 시작하거나 마감하는 접수</div>
+<div class="today-card" style="border-left-color: #dee2e6;">
+<span class="today-tag" style="background: #dee2e6;">✍️ 접수일정</span>
+<h3><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=504070" target="_blank">11월 모유수유 클리닉 참가 신청 (11.10 취약계층 우선 · 11.11 일반)</a></h3>
+<div class="today-meta">🗓 오늘부터 접수 · 11.10(화) ~ 11.11(수) · ⏰ 11.10(화) 10:00~18:00 우선접수 · 11.11(수) 10:00~ 일반접수(선착순 마감 시)<br/>📍 네이버 폼 신청</div>
+<div class="today-link"><a href="https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&amp;bbsNo=109&amp;nttNo=504070" target="_blank">공고원문클릭 →</a></div>
+</div>
+<!-- TODAY-SCHEDULE:END -->
+</div>
+
+<!-- ===== 섹션 6: 행사일정 달력 (매호 유지 · 데이터는 events.json) ===== -->
+<div id="event-calendar" style="margin-top: 40px;">
+<div class="section-title orange">📅 하남 행사일정 달력</div>
+<div class="ev-cal">
+  <div class="ev-legend" id="ev-legend"></div>
+  <div class="ev-head">
+    <button type="button" id="ev-prev" aria-label="이전 달">◀</button>
+    <strong id="ev-title">행사 달력</strong>
+    <button type="button" id="ev-next" aria-label="다음 달">▶</button>
+  </div>
+  <div class="ev-dow"><div>일</div><div>월</div><div>화</div><div>수</div><div>목</div><div>금</div><div>토</div></div>
+  <div id="ev-grid"></div>
+  <div class="ev-detail" id="ev-detail"><div class="ev-empty">달력을 불러오는 중입니다…</div></div>
+</div>
+<!-- EVENTS-DATA:START -->
+<script type="application/json" id="hanam-events">{"categories":{"행사":"#ffd8a8","공연.전시":"#d0bfff","강의":"#a5d8ff","교육":"#b2f2bb","접수일정":"#dee2e6","기타":"#fcc2d7"},"events":[{"id":"gg-youth-test-fee-signup","category":"접수일정","title":"2026 경기청년 역량강화 기회지원 (어학·자격시험 응시료 최대 30만 원)","label":"청년 응시료 지원","start":"2026-05-11","end":"2026-12-04","time":"12.4(금) 18:00 마감 · 예산 소진 시 조기 마감","place":"잡아바 어플라이 (apply.jobaba.net) 온라인","link":"https://apply.jobaba.net/special/GGtestfees/main.do","issue":"하남시 홈페이지"},{"id":"mobile-library-wirye-apt-signup","category":"접수일정","title":"하남시 이동도서관 운영지역 신규 모집 (위례동 아파트 단지 2곳, 2027년 1월부터 격주 목요일 운영)","label":"이동도서관 모집","start":"2026-09-01","end":"2026-11-30","time":"11.30(월) 마감 · 관리사무소를 통해 신청서 제출","place":"위례동 아파트 단지 대상 · 문의 나룰도서관 이동도서관 담당 031-790-5461","link":"https://www.hanamlib.go.kr/wilib/selectBbsNttView.do?key=883&bbsNo=131&nttNo=89974","issue":"위례도서관"},{"id":"gugak-contest-signup","category":"접수일정","title":"제20회 전국 하남시 국악경연대회 참가 신청 (11.14 대회)","label":"국악경연 신청","start":"2026-09-24","end":"2026-11-13","time":"11.13(금) 18:00 마감 · 이메일 hanamsori@naver.com","place":"(사)한국국악협회 하남지부 (031-792-0909)","link":"https://www.hanam.go.kr/www/selectClturEventWebView.do?pageUnit=6&pageIndex=1&searchCnd=all&key=12376&clturEventNo=146","issue":"68호"},{"id":"period-products-2nd-signup","category":"접수일정","title":"여성청소년(11~18세) 생리용품 보편지원 2차 방문 신청","label":"생리용품 신청","start":"2026-10-21","end":"2026-11-13","time":"방문 신청 11.13(금)까지 · 예산 소진 시 조기 마감","place":"관할 행정복지센터 방문","link":"https://blog.naver.com/hanam_story/224455434242","issue":"69호"},{"id":"lumina-festa","category":"행사","title":"제6회 루미나페스타 '가을페스타' (단풍 조명 사진 이벤트)","label":"루미나페스타","start":"2026-10-22","end":"2026-11-30","time":"18:00~22:00","place":"하남시청소년수련관 앞","link":"https://www.hnyouth.kr/sub/community/notice?category=4&postNo=238","issue":"67호"},{"id":"kids-choir","category":"공연.전시","title":"하남시소년소녀합창단 제20회 정기음악회","label":"소년소녀합창단","start":"2026-11-01","end":"2026-11-01","time":"18:30","place":"하남문화예술회관 검단홀 · 전석 무료","link":"https://www.shinailbo.co.kr/news/articleView.html?idxno=5072299","issue":"64호"},{"id":"youth-policy-committee-signup","category":"접수일정","title":"하남시 청년정책위원회 청년 위원 공개 모집 (만 19~39세, 3명)","label":"청년위원 모집","start":"2026-11-02","end":"2026-11-20","time":"","place":"하남시 청년일자리과 청년지원팀 (031-790-6366)","link":"https://www.hanam.go.kr/www/selectBbsNttView.do?key=170&bbsNo=30&nttNo=503844","issue":"하남시 홈페이지"},{"id":"youth-basic-income-q4-signup","category":"접수일정","title":"2026년 4분기 경기도 청년기본소득 신청 (24세 경기도 청년)","label":"청년기본소득","start":"2026-11-02","end":"2026-12-01","time":"11.2(월) 09:00 ~ 12.1(화) 18:00","place":"잡아바 어플라이 (apply.jobaba.net) 온라인","link":"https://apply.jobaba.net/special/gibon/main.do","issue":"하남시 홈페이지"},{"id":"wirye-ai-assistant","category":"강의","title":"위례도서관 'AI 시대, 든든한 내 업무 비서 만들기' 마지막 강의","label":"AI 업무비서 강의","start":"2026-11-04","end":"2026-11-04","time":"13:00~15:00","place":"위례도서관 3층 위례홀","link":"https://www.hanamlib.go.kr/wilib/selectWebEdcLctreView.do?key=875&edcLctreNo=5074","issue":"72호"},{"id":"puppet-hungry","category":"공연.전시","title":"찾아가는 수레극장 인형극 '배고파'","label":"인형극 배고파","start":"2026-11-04","end":"2026-11-06","time":"10:10 · 11:30","place":"하남문화예술회관 소극장","link":"https://blog.naver.com/hanam_story/224457716510","issue":"69호"},{"id":"jisik-school-2nd-signup","category":"접수일정","title":"지식나눔학교 하반기 2차 정규강좌 수강 신청 (AI 미술·그림책·꽃꽂이·예술가)","label":"지식나눔 접수","start":"2026-11-04","end":"2026-11-11","time":"선착순 · 수강료 무료","place":"하남시 평생학습포털 온라인","link":"https://hanam.gseek.kr/user/homepage/notice/view?seq=1845","issue":"71호"},{"id":"misa-lib-storytelling-nov","category":"교육","title":"미사도서관 체험형 동화구연 '그림책 속으로 GO!' — 11월 동화 '장화 신은 고양이' (2020~2022년생)","label":"동화구연 체험","start":"2026-11-04","end":"2026-11-25","dates":["2026-11-04","2026-11-07","2026-11-11","2026-11-14","2026-11-18","2026-11-25"],"time":"수 15:40·16:20 / 토 10:00·10:40 (각 30분)","place":"미사도서관 1층 체험형 동화구연실 · 회차별 5명 · 031-790-6864","link":"https://www.hanamlib.go.kr/mslib/selectBbsNttView.do?key=695&bbsNo=106&nttNo=90008","issue":"미사도서관","signup":"10.27부터 선착순 · 도서관 홈페이지 (회차별 5명)"},{"id":"escape-hanam-signup","category":"접수일정","title":"'비밀의 수련관, 탈출하남!' 참가 신청 (11.14 행사, 청소년 100명)","label":"탈출하남 신청","start":"2026-11-05","end":"2026-11-12","time":"11.5(목) 11:00부터 선착순","place":"온라인 신청폼","link":"https://www.hnyouth.kr/sub/community/notice?category=4&postNo=243","issue":"73호"},{"id":"picturebook-lecture-signup","category":"접수일정","title":"꿈틀캠퍼스 3기 '그림책 특강' 수강 신청 (11.14 강의)","label":"그림책특강 접수","start":"2026-11-05","end":"2026-11-13","time":"11.13(금) 23:30 마감 · 선착순 · 무료","place":"하남시 평생학습포털 온라인","link":"https://hanam.gseek.kr/user/homepage/notice/view?seq=1850","issue":"73·75호"},{"id":"misa-senior-noin-retirement-prep","category":"교육","title":"하남시미사노인복지관 미노아카데미 '노후준비' 참여자 추가 모집 (기초연금·노후 경제 상식, 6회)","label":"노후준비 교실","start":"2026-11-05","end":"2026-12-10","weekdays":["목"],"time":"매주 목 13:00~15:00 · 28명 · 이용 회원 대상","place":"하남시미사노인복지관 2층 강의실1 (미사강변대로 100) · 신청 2층 제2사무실 선착순 · 031-794-9368","link":"https://misanoin.co.kr/contents.html?pageId=HWNWWCQ8591VBVE9K1DL&type=3&wr_id=519&page=1","issue":"미사노인복지관","signup":"추가 모집 · 복지관 2층 제2사무실 선착순"},{"id":"kpop-final","category":"행사","title":"2026 글로벌 K-POP 댄스 챌린지 in 하남 — 글로벌 댄스 경연대회","label":"K-POP 댄스 경연","start":"2026-11-07","end":"2026-11-07","time":"11:00 체험 · 12:00 경연","place":"미사호수공원 잔디광장","link":"https://blog.naver.com/hanam_story/224450233802","issue":"64호"},{"id":"momcafe-partner-signup","category":"접수일정","title":"하남시 시정소식 홍보파트너 맘카페 모집 (회원 1,000명 이상 지역 맘카페)","label":"홍보파트너 맘카페","start":"2026-11-09","end":"2026-11-13","time":"네이버 폼 신청","place":"하남시 자치행정과 031-5182-1662 · 공보담당관 031-790-5080","link":"https://blog.naver.com/hanam_story/224466258585","issue":"하남스토리"},{"id":"disabled-sports-voucher-2027-signup","category":"접수일정","title":"2027년 장애인스포츠강좌이용권 신청 (5~69세 등록장애인, 월 11만 원)","label":"장애인 이용권","start":"2026-11-09","end":"2026-11-27","time":"","place":"dvoucher.kspo.or.kr 온라인 · 주민센터 방문","link":"https://www.hanam.go.kr/www/selectBbsNttView.do?key=170&bbsNo=30&nttNo=503858","issue":"74호"},{"id":"youth-sports-voucher-2027-signup","category":"접수일정","title":"2027년 스포츠강좌이용권 신청 (5~18세 유·청소년, 월 10만 5천 원)","label":"스포츠 이용권","start":"2026-11-09","end":"2026-11-27","time":"","place":"스포츠강좌이용권 누리집 · 주민센터","link":"https://www.hanam.go.kr/www/selectBbsNttView.do?key=170&bbsNo=30&nttNo=503857","issue":"72호"},{"id":"kwonyeok-school-1","category":"교육","title":"2026 권역 평생학교 [신장덕풍권역] 5060 은퇴 후 월급 만들기 (4회, 강사 김현웅)","label":"은퇴후 월급 만들기","start":"2026-11-09","end":"2026-11-30","dates":["2026-11-09","2026-11-16","2026-11-23","2026-11-30"],"time":"월 10:00~12:00","place":"신장도서관 3층 문화교실 · 무료(1인 1강좌) · 하남시민 · 하남시 평생학습포털 선착순 신청 · 문의 031-790-6622","link":"https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&bbsNo=16&nttNo=89995&integrDeptCode=silib","issue":"신장도서관","signup":"10.21부터 선착순 · 하남시 평생학습포털"},{"id":"breastfeeding-clinic-1118-signup","category":"접수일정","title":"11월 모유수유 클리닉 참가 신청 (11.10 취약계층 우선 · 11.11 일반)","label":"모유수유 신청","start":"2026-11-10","end":"2026-11-11","time":"11.10(화) 10:00~18:00 우선접수 · 11.11(수) 10:00~ 일반접수(선착순 마감 시)","place":"네이버 폼 신청","link":"https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&bbsNo=109&nttNo=504070","issue":"하남시보건소"},{"id":"kwonyeok-school-4","category":"교육","title":"2026 권역 평생학교 [감일권역] 우리 아이 공부·진로 설계법 (4회, 강사 이수경)","label":"진로설계(감일)","start":"2026-11-10","end":"2026-12-01","dates":["2026-11-10","2026-11-17","2026-11-24","2026-12-01"],"time":"화 10:00~12:00","place":"감일도서관 3층 문화교실 · 무료(1인 1강좌) · 하남시민 · 하남시 평생학습포털 선착순 신청 · 문의 031-790-6622","link":"https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&bbsNo=16&nttNo=89995&integrDeptCode=silib","issue":"신장도서관","signup":"10.21부터 선착순 · 하남시 평생학습포털"},{"id":"kwonyeok-school-5","category":"교육","title":"2026 권역 평생학교 [감일권역] 디지털 부업 & 기록 재테크 (4회, 강사 안선우)","label":"디지털 부업","start":"2026-11-10","end":"2026-12-01","dates":["2026-11-10","2026-11-17","2026-11-24","2026-12-01"],"time":"화 14:00~16:00","place":"감일동주민자치센터 강의실3 · 무료(1인 1강좌) · 하남시민 · 하남시 평생학습포털 선착순 신청 · 문의 031-790-6622","link":"https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&bbsNo=16&nttNo=89995&integrDeptCode=silib","issue":"신장도서관","signup":"10.21부터 선착순 · 하남시 평생학습포털"},{"id":"cake-deco-signup","category":"접수일정","title":"하남시가족센터 '우리의 케꾸 만들기' 참여 신청 마감 (11.23 프로그램)","label":"케꾸 신청 마감","start":"2026-11-11","end":"2026-11-11","time":"11.11(수) 20:00 마감 · 네이버 폼","place":"하남시가족센터 (031-793-2993)","link":"https://hanam.familynet.or.kr/center/lay1/program/S295T322C449/receipt/view.do?seq=196947","issue":"72호"},{"id":"kwonyeok-school-2","category":"교육","title":"2026 권역 평생학교 [미사권역] 우리 아이 공부·진로 설계법 (4회, 강사 이수경)","label":"진로설계(미사)","start":"2026-11-11","end":"2026-12-02","dates":["2026-11-11","2026-11-18","2026-11-25","2026-12-02"],"time":"수 10:00~12:00","place":"미사도서관 4층 문화교실 · 무료(1인 1강좌) · 하남시민 · 하남시 평생학습포털 선착순 신청 · 문의 031-790-6622","link":"https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&bbsNo=16&nttNo=89995&integrDeptCode=silib","issue":"신장도서관","signup":"10.21부터 선착순 · 하남시 평생학습포털"},{"id":"kwonyeok-school-3","category":"교육","title":"2026 권역 평생학교 [위례권역] 아는 만큼 지키는 우리집 세금 절약 노하우 (4회, 강사 전진목)","label":"우리집 세금 절약","start":"2026-11-11","end":"2026-12-02","dates":["2026-11-11","2026-11-18","2026-11-25","2026-12-02"],"time":"수 10:00~12:00","place":"위례도서관 3층 문화교실 · 무료(1인 1강좌) · 하남시민 · 하남시 평생학습포털 선착순 신청 · 문의 031-790-6622","link":"https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&bbsNo=16&nttNo=89995&integrDeptCode=silib","issue":"신장도서관","signup":"10.21부터 선착순 · 하남시 평생학습포털"},{"id":"museum-classic","category":"공연.전시","title":"미술관으로 간 클래식","label":"미술관 클래식","start":"2026-11-12","end":"2026-11-12","time":"11:00","place":"하남문화예술회관 소극장","link":"https://blog.naver.com/hanam_story/224457716510","issue":"69호"},{"id":"unavoce-concert-1112","category":"공연.전시","title":"우나보체의 찾아가는 음악회 '늦은 가을의 추억'","label":"우나보체 음악회","start":"2026-11-12","end":"2026-11-12","time":"14:00","place":"하남시미사강변종합사회복지관 강당","link":"","issue":""},{"id":"hanam-culture-history-lecture-1112","category":"강의","title":"2026 하남문화원 문화대학 역사특강 — 하남의 문화유적: 미사리 유적과 세계 문화유산적 가치 (최정필 세종대 명예교수)","label":"역사특강 미사리","start":"2026-11-12","end":"2026-11-12","time":"14:00 · 무료 · 선착순 50명","place":"하남문화원 2층 문화관람실 (덕풍동로 12) · 문의 031-795-1020","link":"https://www.xn--q20b93roljctocfb.kr/","issue":"하남문화원"},{"id":"kwonyeok-school-6","category":"교육","title":"2026 권역 평생학교 [감일권역] 내 아이를 위한 감정코칭 & 엄마의 인문학독서 (4회, 강사 이정아)","label":"감정코칭 독서","start":"2026-11-12","end":"2026-12-03","dates":["2026-11-12","2026-11-19","2026-11-26","2026-12-03"],"time":"목 10:00~12:00","place":"감일도서관 3층 문화교실 · 무료(1인 1강좌) · 하남시민 · 하남시 평생학습포털 선착순 신청 · 문의 031-790-6622","link":"https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&bbsNo=16&nttNo=89995&integrDeptCode=silib","issue":"신장도서관","signup":"10.21부터 선착순 · 하남시 평생학습포털"},{"id":"kwonyeok-school-7","category":"교육","title":"2026 권역 평생학교 [감일권역] 우리아이 성장기록 스마트폰 사진·영상 클래스 (4회, 강사 양은주)","label":"스마트폰 성장기록","start":"2026-11-12","end":"2026-12-03","dates":["2026-11-12","2026-11-19","2026-11-26","2026-12-03"],"time":"목 10:00~12:00","place":"감일동주민자치센터 강의실3 · 무료(1인 1강좌) · 하남시민 · 하남시 평생학습포털 선착순 신청 · 문의 031-790-6622","link":"https://www.hanamlib.go.kr/silib/selectBbsNttView.do?key=167&bbsNo=16&nttNo=89995&integrDeptCode=silib","issue":"신장도서관","signup":"10.21부터 선착순 · 하남시 평생학습포털"},{"id":"musical-laundry","category":"공연.전시","title":"뮤지컬 '빨래'","label":"뮤지컬 빨래","start":"2026-11-13","end":"2026-11-15","time":"","place":"하남문화예술회관 대극장(검단홀)","link":"https://blog.naver.com/hanam_story/224457716510","issue":"69호"},{"id":"jisik-ai-art","category":"교육","title":"지식나눔학교 'AI 미술교실(그림 스케치)' (매주 금, 5회)","label":"AI 미술교실","start":"2026-11-13","end":"2026-12-11","time":"매주 금 14:00~16:00","place":"하남시평생학습관 3층 303호","link":"https://hanam.gseek.kr/user/homepage/notice/view?seq=1845","issue":"71호","weekdays":["금"],"signup":"11.11(수)까지 선착순 · 하남시 평생학습포털","signup_end":"2026-11-11"},{"id":"escape-hanam","category":"행사","title":"청소년기획단 이벤트 '비밀의 수련관, 탈출하남!'","label":"탈출하남","start":"2026-11-14","end":"2026-11-14","time":"13:00~17:00 (회차별 40분)","place":"하남시청소년수련관 1층 YES카페","link":"https://www.hnyouth.kr/sub/community/notice?category=4&postNo=243","issue":"73호"},{"id":"gugak-contest","category":"공연.전시","title":"제20회 전국 하남시 국악경연대회","label":"국악경연대회","start":"2026-11-14","end":"2026-11-14","time":"10:00 (오전 기악 · 오후 민요)","place":"하남시청 별관 2층 대강당","link":"https://www.hanam.go.kr/www/selectClturEventWebView.do?pageUnit=6&pageIndex=1&searchCnd=all&key=12376&clturEventNo=146","issue":"68호"},{"id":"picturebook-lecture","category":"강의","title":"꿈틀캠퍼스 3기 '초등 현직교사가 알려주는 그림책 특강' 2종","label":"그림책 특강","start":"2026-11-14","end":"2026-11-14","time":"10:00~13:00 문해력 / 14:00~17:00 창작","place":"하남시평생학습관 2층 대강당","link":"https://hanam.gseek.kr/user/homepage/notice/view?seq=1850","issue":"73·75호"},{"id":"youth-orchestra","category":"공연.전시","title":"제24회 하남시 청소년오케스트라 정기연주회","label":"청소년오케스트라","start":"2026-11-15","end":"2026-11-15","time":"18:00~20:00","place":"하남문화예술회관 소극장(아랑홀) · 하남시민 무료","link":"https://www.hanam.go.kr/www/selectClturEventWebView.do?pageUnit=6&pageIndex=1&searchCnd=all&key=12376&clturEventNo=148","issue":"68호"},{"id":"misa-welfare-program-signup","category":"접수일정","title":"하남시미사강변종합사회복지관 프로그램 접수","label":"미사복지관 프로그램 접수","start":"2026-11-16","end":"2026-11-27","time":"","place":"하남시미사강변종합사회복지관","link":"","issue":""},{"id":"myeongsa-lecture-1117","category":"강의","title":"2026 하남명사특강 — 이진우 '손에 잡히는 경제, 하남시민만을 위한 금융상식'","label":"명사특강 이진우","start":"2026-11-17","end":"2026-11-17","time":"14:00","place":"하남문화예술회관 검단홀 · 무료 (하남시평생학습포털 선착순 신청)","link":"https://hanam.gseek.kr/user/course/offline/list","issue":"하남시 홈페이지"},{"id":"jisik-ai-book","category":"교육","title":"지식나눔학교 '내 이야기가 그림책이 되다 With AI' (화·목, 6회)","label":"AI 그림책 만들기","start":"2026-11-17","end":"2026-12-03","time":"화·목 10:00~12:00","place":"하남시평생학습관 1층 열린공간","link":"https://hanam.gseek.kr/user/homepage/notice/view?seq=1845","issue":"71호","weekdays":["화","목"],"signup":"11.11(수)까지 선착순 · 하남시 평생학습포털","signup_end":"2026-11-11"},{"id":"digital-lib-film-history-2","category":"교육","title":"디지털도서관 '영화예술의 역사탐방 Ⅱ — 현대영화 편' (5회, 성인 15명)","label":"영화예술 강좌","start":"2026-11-17","end":"2026-12-15","weekdays":["화"],"time":"매주 화 10:00~12:00","place":"하남시디지털도서관 2층 스마트교육실 · 031-790-5249","link":"https://www.hanamlib.go.kr/mslib/selectBbsNttView.do?key=695&bbsNo=106&nttNo=90001","issue":"미사도서관","signup":"10.21부터 선착순 15명 · 도서관 홈페이지"},{"id":"health-lecture","category":"강의","title":"2026 시민건강 특별강좌 (고혈압·당뇨병)","label":"시민건강 특강","start":"2026-11-18","end":"2026-11-18","time":"10:00~11:30","place":"하남시청 별관 2층 대강당","link":"https://blog.naver.com/hanam_story/224458943318","issue":"71호"},{"id":"breastfeeding-clinic-1118","category":"교육","title":"11월 하남시보건소 모유수유 클리닉 (1:1 코칭, 선착순 6명)","label":"모유수유 클리닉","start":"2026-11-18","end":"2026-11-18","time":"14:00~17:00 (개인별 25분)","place":"미사보건센터 2층 영유아휴게실 (미사강변대로 200) · 031-790-6552","link":"https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&bbsNo=109&nttNo=504070","issue":"하남시보건소","signup":"11.10 우선접수 · 11.11(수) 일반접수 (선착순 6명)","signup_end":"2026-11-11"},{"id":"jisik-flower","category":"교육","title":"지식나눔학교 '크리스마스 준비 겨울 꽃꽂이' (수·금, 6회)","label":"겨울 꽃꽂이","start":"2026-11-18","end":"2026-12-04","time":"수·금 19:00~21:00","place":"미사역 시나브로 플라워","link":"https://hanam.gseek.kr/user/homepage/notice/view?seq=1845","issue":"71호","weekdays":["수","금"],"signup":"11.11(수)까지 선착순 · 하남시 평생학습포털","signup_end":"2026-11-11"},{"id":"jisik-ai-artist","category":"교육","title":"지식나눔학교 'AI와 함께 예술가 되어보기' (수·금, 6회)","label":"AI 예술가 되기","start":"2026-11-18","end":"2026-12-04","time":"수·금 15:00~18:00","place":"하남시평생학습관 4층 401호","link":"https://hanam.gseek.kr/user/homepage/notice/view?seq=1845","issue":"71호","weekdays":["수","금"],"signup":"11.11(수)까지 선착순 · 하남시 평생학습포털","signup_end":"2026-11-11"},{"id":"misa-senior-travel-chinese","category":"교육","title":"하남시미사노인복지관 미노 배움 한마당 '여행 왕초보 중국어' (6회, 수강료 무료)","label":"여행 중국어","start":"2026-11-18","end":"2026-12-23","weekdays":["수"],"time":"매주 수 13:00~14:00 · 20명 · 리펑 강사","place":"SSDA 경기 상설체험센터 교육존 2층 디지털실 · 신청 미사노인복지관 2층 제2사무실 선착순 · 031-794-9368","link":"https://misanoin.co.kr/contents.html?pageId=HWNWWCQ8591VBVE9K1DL&type=3&wr_id=518&page=1","issue":"미사노인복지관","signup":"복지관 2층 제2사무실 선착순"},{"id":"family-festival","category":"행사","title":"2026 하남시가족센터 가족축제 'My Way, My Family'","label":"가족축제","start":"2026-11-20","end":"2026-11-20","time":"09:30~13:00","place":"하남시가족센터 주관 (장소는 신청폼 확인)","link":"https://form.naver.com/response/vokTvVUjDg","issue":"74·75호"},{"id":"city-choir","category":"공연.전시","title":"하남시립합창단 기획연주회 「합창, 그 풍요함」","label":"시립합창단","start":"2026-11-21","end":"2026-11-21","time":"17:00","place":"하남문화예술회관 대극장(검단홀)","link":"https://www.hnart.or.kr/artcenter/showView.do?key=182&programId=artcenter&shNo=3489&searchCnd=all&searchKrwd=&pageIndex=1","issue":"65호"},{"id":"parent-edu-1123","category":"교육","title":"상설부모교육(기본) — 청소년 자녀 마음 이해·가족 소통법","label":"상설부모교육","start":"2026-11-23","end":"2026-11-23","time":"18:30~20:30","place":"하남시청소년상담복지센터 (전화 신청 031-790-6680)","link":"https://www.hanam.go.kr/youth/news/eduDetail/8","issue":"75호","signup":"매월 선착순 · 전화 신청 031-790-6680"},{"id":"cake-deco","category":"교육","title":"하남시가족센터 '우리의 케꾸(케이크 꾸미기) 만들기'","label":"케꾸 만들기","start":"2026-11-23","end":"2026-11-23","time":"10:30~11:30 / 14:30~15:30","place":"하남시가족센터 1층 (신장동로 15)","link":"https://hanam.familynet.or.kr/center/lay1/program/S295T322C449/receipt/view.do?seq=196947","issue":"72호","signup":"11.11(수) 20:00까지 · 네이버 폼","signup_end":"2026-11-11"},{"id":"youth-job-lectures","category":"강의","title":"하남시 청년지원센터 '11월 맞춤형 취업지원 프로그램' (11.23·24·30, 6개 강의)","label":"청년 취업 강의","start":"2026-11-23","end":"2026-11-30","time":"11.23(월)·11.24(화)·11.30(월) 강의별 시간 상이","place":"하남시 청년지원센터 · 일부 ZOOM","link":"https://www.hanam.go.kr/www/selectBbsNttView.do?key=170&bbsNo=30&nttNo=503594","issue":"65호","dates":["2026-11-23","2026-11-24","2026-11-30"]},{"id":"misa-majuchim-gallery-oneday","category":"교육","title":"생활문화센터 미사 마주침갤러리 전시 연계 원데이클래스 '재봉틀과 규방공예로 만드는 북커버와 실크책갈피'","label":"북커버 원데이","start":"2026-11-24","end":"2026-12-01","dates":["2026-11-24","2026-12-01"],"time":"10:00~12:00 · 회차별 성인 12명 · 무료 · 선착순","place":"생활문화센터 미사 ROOM1 · 031-790-7969","link":"https://www.hnart.or.kr/space/selectBbsNttView.do?key=422&bbsNo=68&nttNo=7126","issue":"하남문화재단","signup":"10.28부터 선착순 · 온라인 신청 (https://zrr.kr/AB7Ar7)"},{"id":"kim-sawol","category":"공연.전시","title":"가수 김사월 '미드위크 아츠 나이트'","label":"김사월 콘서트","start":"2026-11-25","end":"2026-11-25","time":"20:00","place":"하남문화예술회관 대극장","link":"https://blog.naver.com/hanam_story/224457716510","issue":"69호"},{"id":"dream-orchestra-9th","category":"공연.전시","title":"2026 꿈의 오케스트라 하남 「제9회 정기연주회」 — 슈베르트부터 AI음악까지","label":"꿈의 오케스트라","start":"2026-11-28","end":"2026-11-28","time":"16:00","place":"하남문화예술회관 대극장 · 전석 무료(선착순)","link":"https://www.hnart.or.kr/artcenter/showView.do?key=183&programId=artcenter&shNo=3492&cal=1","issue":"하남시 홈페이지"},{"id":"son-yeoleum","category":"공연.전시","title":"손열음 고잉홈프로젝트 송년음악회","label":"손열음 송년음악회","start":"2026-12-01","end":"2026-12-01","time":"20:30","place":"하남문화예술회관 대극장","link":"https://blog.naver.com/hanam_story/224457716510","issue":"69호"},{"id":"smart-gym-2027-signup","category":"접수일정","title":"2027년 어르신 전용 스마트 헬스장 1기 신청 (60세 이상, 추첨)","label":"스마트헬스장 신청","start":"2026-12-01","end":"2026-12-10","time":"12.1(화) 09:00 ~ 12.10(목) 18:00 · 신분증 지참","place":"시니어 헬스센터 방문 (역말로 71, 2층)","link":"https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&bbsNo=109&nttNo=503898","issue":"74호"},{"id":"parent-edu-1207","category":"교육","title":"상설부모교육(기본) — 청소년 자녀 마음 이해·가족 소통법","label":"상설부모교육","start":"2026-12-07","end":"2026-12-07","time":"18:30~20:30","place":"하남시청소년상담복지센터 (전화 신청 031-790-6680)","link":"https://www.hanam.go.kr/youth/news/eduDetail/8","issue":"75호","signup":"매월 선착순 · 전화 신청 031-790-6680"},{"id":"chemi-concert-kwill-1212","category":"공연.전시","title":"시즌11 〈케미콘서트〉 케이윌X나윤권","label":"케미콘서트","start":"2026-12-12","end":"2026-12-12","time":"17:00 (85분)","place":"하남문화예술회관 대극장(검단홀) · 초등학생 이상","link":"https://www.hnart.or.kr/artcenter/showView.do?key=183&programId=artcenter&shNo=3490","issue":"하남문화재단"},{"id":"parent-edu-1214","category":"교육","title":"상설부모교육(기본) — 청소년 자녀 마음 이해·가족 소통법","label":"상설부모교육","start":"2026-12-14","end":"2026-12-14","time":"18:30~20:30","place":"하남시청소년상담복지센터 (전화 신청 031-790-6680)","link":"https://www.hanam.go.kr/youth/news/eduDetail/8","issue":"75호","signup":"매월 선착순 · 전화 신청 031-790-6680"},{"id":"myeongsa-lecture-1217","category":"강의","title":"2026 하남명사특강 — 김상욱 'AI시대 하남人, 무엇을 준비해야할까?'","label":"명사특강 김상욱","start":"2026-12-17","end":"2026-12-17","time":"14:00","place":"하남문화예술회관 검단홀 · 무료 (하남시평생학습포털 선착순 신청)","link":"https://hanam.gseek.kr/user/course/offline/list","issue":"하남시 홈페이지"},{"id":"yearend-concert","category":"공연.전시","title":"2026 송년음악회 Ⅱ '가장 완벽한 엔딩'","label":"송년음악회","start":"2026-12-26","end":"2026-12-26","time":"17:00","place":"하남문화예술회관 대극장(검단홀)","link":"https://www.hnart.or.kr/artcenter/showView.do?key=183&programId=artcenter&shNo=3491&cal=1","issue":"74·75호"}]}</script>
+<!-- EVENTS-DATA:END -->
+</div>
 
 <div class="bottom-nav" style="display: flex; flex-direction: column; align-items: center; gap: 8px; border-top: 1px solid #e2e8f0; padding-top: 25px; margin-top: 40px; margin-bottom: 20px;">
   <span style="font-size: 0.6rem; color: #a0aec0;">© 2026 우리동네 진짜일꾼 이광재</span>
@@ -1087,9 +1139,9 @@ function openImageModal(src) {
 }
 function playNewsletterVideo() {
     // 오늘 영상은 유튜브 임베드(iframe)라 제목을 누르면 영상 위치로 이동
-    var c = document.getElementById('yt-container-LSasUB3T86A');
+    var c = document.getElementById('yt-container-lLyXlXs7BdE');
     if (c) c.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    var v = document.getElementById('video-LSasUB3T86A');
+    var v = document.getElementById('video-lLyXlXs7BdE');
     if (v && v.tagName === 'VIDEO') {
         if (v.paused) {
             var promise = v.play();
@@ -1108,6 +1160,177 @@ function playNewsletterVideo() {
 function playYoutubeInline(videoId, element) {
     playNewsletterVideo();
 }
+</script>
+<script>
+// 행사일정 달력: #hanam-events(JSON) → 월 달력 + 기간 가로막대
+(function() {
+    var dataEl = document.getElementById('hanam-events');
+    var grid = document.getElementById('ev-grid');
+    if (!dataEl || !grid) return;
+    var data;
+    try { data = JSON.parse(dataEl.textContent); } catch (e) { return; }
+    var COLORS = data.categories || {};
+    var DOW = ['일','월','화','수','목','금','토'];
+    function d(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+    function key(dt) { return dt.getFullYear() + '-' + ('0' + (dt.getMonth() + 1)).slice(-2) + '-' + ('0' + dt.getDate()).slice(-2); }
+    function addDays(dt, n) { var x = new Date(dt); x.setDate(x.getDate() + n); return x; }
+    function md(dt) { return (dt.getMonth() + 1) + '.' + dt.getDate() + '(' + DOW[dt.getDay()] + ')'; }
+    // weekdays(예: ["금"]) 또는 dates(날짜 목록)가 있으면 그 날에만 색 표시
+    var events = (data.events || []).map(function(e) {
+        var x = { e: e, s: d(e.start), t: d(e.end || e.start) };
+        var wd = (e.weekdays || []).map(function(w) { return DOW.indexOf(w); });
+        var ds = (e.dates || []).slice();
+        x.on = function(day) {
+            if (day < x.s || day > x.t) return false;
+            // 접수는 기간 막대 대신 시작일·마감일에만 표시
+            if (e.category === '접수일정') return +day === +x.s || +day === +x.t;
+            if (ds.length) return ds.indexOf(key(day)) >= 0;
+            if (wd.length) return wd.indexOf(day.getDay()) >= 0;
+            return true;
+        };
+        return x;
+    }).sort(function(a, b) {
+        // 접수 막대는 행사 아래쪽 줄에 놓는다
+        var ja = a.e.category === '접수일정' ? 1 : 0, jb = b.e.category === '접수일정' ? 1 : 0;
+        return ja - jb || a.s - b.s || (b.t - b.s) - (a.t - a.s);
+    });
+
+    var now = new Date(); var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var minM = new Date(today.getFullYear(), today.getMonth(), 1);
+    var maxM = minM;
+    events.forEach(function(x) { var m = new Date(x.t.getFullYear(), x.t.getMonth(), 1); if (m > maxM) maxM = m; });
+    var cur = new Date(minM);
+    var selDay = null, selId = null;
+
+    var legend = document.getElementById('ev-legend');
+    Object.keys(COLORS).forEach(function(c) {
+        var s = document.createElement('span'); var i = document.createElement('i');
+        i.style.background = COLORS[c]; s.appendChild(i); s.appendChild(document.createTextNode(c)); legend.appendChild(s);
+    });
+
+    function render() {
+        document.getElementById('ev-title').textContent = cur.getFullYear() + '년 ' + (cur.getMonth() + 1) + '월';
+        document.getElementById('ev-prev').disabled = cur <= minM;
+        document.getElementById('ev-next').disabled = cur >= maxM;
+        grid.innerHTML = '';
+        var first = new Date(cur.getFullYear(), cur.getMonth(), 1);
+        var last = new Date(cur.getFullYear(), cur.getMonth() + 1, 0);
+        var ws = addDays(first, -first.getDay());
+        while (ws <= last) {
+            var we = addDays(ws, 6);
+            // 한 주 안에서 행사가 열리는 날끼리 이어 붙여 막대 조각을 만든다
+            var segs = [], groups = [];
+            events.forEach(function(x) {
+                if (x.s > we || x.t < ws) return;
+                var g = [], run = null;
+                for (var c = 0; c < 7; c++) {
+                    var day = addDays(ws, c);
+                    if (x.on(day)) {
+                        if (run && x.e.category !== '접수일정') run.c1 = c;
+                        else { run = { x: x, c0: c, c1: c }; g.push(run); }
+                    } else run = null;
+                }
+                g.forEach(function(sg) {
+                    sg.l = sg.c0 === 0 && x.on(addDays(ws, -1));
+                    sg.r = sg.c1 === 6 && x.on(addDays(we, 1));
+                });
+                if (g.length) { groups.push(g); segs = segs.concat(g); }
+            });
+            // 같은 행사의 조각들은 같은 줄에 놓는다
+            var lanes = [];
+            var evLanes = null;
+            groups.forEach(function(g) {
+                var isSign = g[0].x.e.category === '접수일정';
+                if (isSign && evLanes === null) evLanes = lanes.length;  // 접수는 행사 줄 아래부터
+                for (var li = isSign ? evLanes : 0; ; li++) {
+                    if (!lanes[li]) lanes[li] = [];
+                    var free = g.every(function(sg) { return lanes[li].every(function(o) { return sg.c1 < o.c0 || sg.c0 > o.c1; }); });
+                    if (free) { g.forEach(function(sg) { lanes[li].push(sg); sg.lane = li; }); break; }
+                }
+            });
+            var week = document.createElement('div'); week.className = 'ev-week';
+            var rows = lanes.length + 1;
+            week.style.gridTemplateRows = 'auto' + (lanes.length ? ' repeat(' + lanes.length + ', auto)' : '');
+            for (var i = 0; i < 7; i++) {
+                var day = addDays(ws, i); var inM = day.getMonth() === cur.getMonth();
+                var cell = document.createElement('div');
+                cell.className = 'ev-cell' + (inM ? '' : ' other') + (+day === +today ? ' today' : '') + (selDay && +day === +selDay ? ' sel' : '');
+                cell.style.gridColumn = (i + 1); cell.style.gridRow = '1 / span ' + rows;
+                (function(dd) { cell.onclick = function() { selDay = dd; selId = null; render(); }; })(day);
+                week.appendChild(cell);
+                var num = document.createElement('div');
+                num.className = 'ev-num' + (i === 0 ? ' sun' : i === 6 ? ' sat' : '') + (inM ? '' : ' other') + (+day === +today ? ' today' : '');
+                num.style.gridColumn = (i + 1);
+                var sp = document.createElement('span'); sp.textContent = day.getDate(); num.appendChild(sp);
+                week.appendChild(num);
+            }
+            segs.forEach(function(sg) {
+                var bar = document.createElement('div');
+                bar.className = 'ev-bar' + (sg.l ? ' cont-l' : '') + (sg.r ? ' cont-r' : '') + (selId === sg.x.e.id ? ' pick' : '');
+                bar.style.background = COLORS[sg.x.e.category] || '#718096';
+                bar.style.gridColumn = (sg.c0 + 1) + ' / ' + (sg.c1 + 2);
+                bar.style.gridRow = (sg.lane + 2);
+                var txt = sg.x.e.label || sg.x.e.title;
+                if (sg.x.e.category === '접수일정') {
+                    var bd = addDays(ws, sg.c0);
+                    var tag = +bd === +sg.x.t ? '마감' : '시작';
+                    if (!/(시작|마감)$/.test(txt)) txt += ' ' + tag;
+                    bar.className += ' sign-' + (tag === '마감' ? 'end' : 'start');
+                }
+                bar.textContent = txt;
+                bar.title = sg.x.e.title;
+                bar.onclick = function(ev) { ev.stopPropagation(); selId = sg.x.e.id; selDay = null; render(); };
+                week.appendChild(bar);
+            });
+            grid.appendChild(week);
+            ws = addDays(ws, 7);
+        }
+        detail();
+    }
+
+    function item(x) {
+        var e = x.e, box = document.createElement('div'); box.className = 'ev-item';
+        var tag = document.createElement('span'); tag.className = 'ev-tag'; tag.textContent = e.category;
+        tag.style.background = COLORS[e.category] || '#718096'; box.appendChild(tag);
+        var b = document.createElement('b'); b.textContent = e.title; box.appendChild(b);
+        var when = (+x.s === +x.t) ? md(x.s) : md(x.s) + ' ~ ' + md(x.t);
+        var info = '🗓 ' + when + (e.time ? ' · ' + e.time : '') + (e.place ? '\n📍 ' + e.place : '') + (e.signup ? '\n✍️ 신청: ' + e.signup : '');
+        info.split('\n').forEach(function(line) { box.appendChild(document.createElement('br')); box.appendChild(document.createTextNode(line)); });
+        if (e.link) {
+            box.appendChild(document.createElement('br'));
+            var a = document.createElement('a'); a.href = e.link; a.target = '_blank'; a.rel = 'noopener';
+            a.textContent = '공고원문클릭 →'; box.appendChild(a);
+        }
+        return box;
+    }
+
+    function detail() {
+        var box = document.getElementById('ev-detail'); box.innerHTML = '';
+        var h = document.createElement('h4'); var list;
+        if (selId) {
+            list = events.filter(function(x) { return x.e.id === selId; });
+            h.textContent = '📌 선택한 행사';
+        } else {
+            var day = selDay || (today.getMonth() === cur.getMonth() && today.getFullYear() === cur.getFullYear() ? today : null);
+            if (day) {
+                list = events.filter(function(x) { return x.on(day); });
+                h.textContent = (+day === +today ? '📌 오늘(' : '📌 ') + (day.getMonth() + 1) + '월 ' + day.getDate() + '일' + (+day === +today ? ')' : '') + ' 행사';
+            } else {
+                list = events.filter(function(x) { return x.s.getMonth() === cur.getMonth() && x.s.getFullYear() === cur.getFullYear(); });
+                h.textContent = '📌 ' + (cur.getMonth() + 1) + '월 행사 (' + list.length + '건)';
+            }
+        }
+        box.appendChild(h);
+        if (!list.length) {
+            var em = document.createElement('div'); em.className = 'ev-empty'; em.textContent = '이 날은 예정된 행사가 없습니다. 다른 날짜나 막대를 눌러 보세요.'; box.appendChild(em);
+        }
+        list.forEach(function(x) { box.appendChild(item(x)); });
+    }
+
+    document.getElementById('ev-prev').onclick = function() { cur = new Date(cur.getFullYear(), cur.getMonth() - 1, 1); selDay = null; selId = null; render(); };
+    document.getElementById('ev-next').onclick = function() { cur = new Date(cur.getFullYear(), cur.getMonth() + 1, 1); selDay = null; selId = null; render(); };
+    render();
+})();
 </script>
 <!-- 방문 통계 (GoatCounter, 화면 표시 없음) -->
 <script data-goatcounter="https://hanamnews.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
