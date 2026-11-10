@@ -1,6 +1,6 @@
 # 🎨 하남 뉴스레터 디자인 시스템 & 표준 가이드라인 (Newsletter Design System Guide)
 
-본 가이드라인은 **매일전하는 이광재의원의 우리동네 하남소식** 뉴스레터의 (전체 작업 순서는 `../NEWSLETTER_GUIDE.md`) 레이아웃, 헤더 배너, 섹션 6대 구조, 카드 디자인, 폰트 및 OpenGraph 메타태그 규격을 정의합니다. 향후 모든 뉴스레터 생성 및 수정 시 본 스타일과 구조를 그대로 유지해야 합니다.
+본 가이드라인은 **매일전하는 이광재의원의 우리동네 하남소식** 뉴스레터의 (전체 작업 순서는 `../NEWSLETTER_GUIDE.md`) 레이아웃, 헤더 배너, 섹션 5대 구조, 카드 디자인, 폰트 및 OpenGraph 메타태그 규격을 정의합니다. 향후 모든 뉴스레터 생성 및 수정 시 본 스타일과 구조를 그대로 유지해야 합니다.
 
 ---
 
@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://lee-kwang-jae.github.io/news_letter/"/>
   <meta property="og:site_name" content="매일전하는 이광재의원의 우리동네 하남소식"/>
   <meta property="og:title" content="매일전하는 이광재의원의 우리동네 하남소식"/>
-  <meta property="og:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, 공공기관 소식지 &amp; 오늘의 하남일정"/>
+  <meta property="og:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, 공공기관 소식지 &amp; 하남 행사일정 달력"/>
   <meta property="og:image" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-MMDD.jpg?v=YYYYMMDD01"/>
   <meta property="og:image:url" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-MMDD.jpg?v=YYYYMMDD01"/>
   <meta property="og:image:secure_url" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-MMDD.jpg?v=YYYYMMDD01"/>
@@ -25,7 +25,7 @@
   <meta property="og:image:alt" content="매일전하는 이광재의원의 우리동네 하남소식"/>
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="매일전하는 이광재의원의 우리동네 하남소식"/>
-  <meta name="twitter:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, 공공기관 소식지 &amp; 오늘의 하남일정"/>
+  <meta name="twitter:description" content="이광재 국회의원 의정활동, 하남 지역 주요 뉴스, 하남 맘카페 HOT 이슈, 공공기관 소식지 &amp; 하남 행사일정 달력"/>
   <meta name="twitter:image" content="https://lee-kwang-jae.github.io/news_letter/images/thumbnail-MMDD.jpg?v=YYYYMMDD01"/>
   <meta name="twitter:image:width" content="1200"/>
   <meta name="twitter:image:height" content="630"/>
@@ -49,10 +49,10 @@
 
 ---
 
-## 3. 📚 뉴스레터 6대 핵심 섹션 구조 [고정/LOCKED]
+## 3. 📚 뉴스레터 5대 핵심 섹션 구조 [고정/LOCKED]
 
-뉴스레터 본문은 반드시 다음 6개 섹션 순서를 준수합니다:
-(목차 `.toc`에는 이 6개 이름을 링크 없이 글자로만 나열합니다.)
+뉴스레터 본문은 반드시 다음 5개 섹션 순서를 준수합니다:
+(목차 `.toc`에는 이 5개 이름을 링크 없이 글자로만 나열합니다.)
 
 1. **`우리동네 국회의원 이광재` (`#lawmaker`)**
    - 프로필 아이콘: `<img src="./images/kjicon.png" style="width:48px; height:48px; border-radius:50%;">`
@@ -64,14 +64,10 @@
    - 카드 스타일: `<div class="mom-issue-card">` (현황, 주민 포인트, 주민 반응 💬)
 4. **`🏛️ 공공기관 소식지` (`#public-news`)**
    - 제목 스타일: `<div class="section-title purple">🏛️ 공공기관 소식지</div>`
-5. **`🗓️ 오늘의 하남일정` (`#today-schedule`)** — 2026-11-10 ALL IN 하남라이프를 대체
-   - 제목 스타일: `<div class="section-title teal">🗓️ 오늘의 하남일정</div>`
-   - 카드 스타일: `.today-card` (왼쪽 테두리만 달력 6분류 파스텔색, **카드 안에는 제목 + `공고원문클릭 →`만**, 제목은 굵게 하지 않음 `font-weight:400`) — `build_calendar.py`가 발행일 기준으로 자동 생성, 링크 문구 `공고원문클릭 →`
-   - **소제목 없음** (2026-11-10): 카드만 순서대로 — 그날 일정 → 기간 중 일정 → 오늘 시작·마감 접수. 그날 일정이 하나도 없을 때만 '🔜 다가오는 일정' 3개
-6. **`📅 하남 행사일정 달력` (`#event-calendar`)** — 2026-11-09 추가, 맨 마지막 고정
+5. **`📅 하남 행사일정 달력` (`#event-calendar`)** — 2026-11-09 추가, 맨 마지막 고정
    - 제목 스타일: `<div class="section-title orange">📅 하남 행사일정 달력</div>`
    - 공공기관 소식지·사용자 제공 행사·자동 수집 8곳의 일정을 월 달력에 표시 (기간 가로막대, 요일 지정은 그 요일만, 접수일정는 시작·마감일 칩만, 교육은 신청이 열려 있는 것만 · 행사·공연.전시·강의·교육·접수일정·기타 순서의 파스텔 고정색)
-   - 데이터·운영 규칙은 `AGENTS.md` 8·9번, 전체 기준서 `NEWSLETTER_GUIDE.md`
+   - 데이터·운영 규칙은 `AGENTS.md` 8번 (오늘의 하남일정 섹션은 2026-11-11 삭제), 전체 기준서 `NEWSLETTER_GUIDE.md`
 
 ---
 

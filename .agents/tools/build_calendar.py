@@ -1,8 +1,8 @@
 """행사일정 달력 데이터 반영 스크립트 (우리동네 하남소식)
 
 events.json 을 검사하고, index.html 의 <!-- EVENTS-DATA:START --> ~ <!-- EVENTS-DATA:END -->
-사이에 달력 데이터(JSON)를 넣는다. 또 <!-- TODAY-SCHEDULE:START --> ~ END 사이에
-기준일(발행일)의 '오늘의 하남일정' 카드를 만들어 넣는다.
+사이에 달력 데이터(JSON)를 넣는다.
+('오늘의 하남일정' 섹션은 2026-11-11 사용자 요청으로 없앴다. 오늘 일정은 달력에서 날짜를 눌러 본다.)
 
   python -I .agents/tools/build_calendar.py            # 오늘 날짜 기준
   python -I .agents/tools/build_calendar.py 2026-12-01 # 날짜 지정 (발행일)
@@ -91,11 +91,6 @@ def main():
         sys.exit("index.html 에 EVENTS-DATA 표시가 없습니다 (행사일정 달력 섹션이 빠졌는지 확인).")
     html = html[:i] + block + html[j + len(END):]
 
-    today_events, today_html = build_today(keep, data["categories"], base)
-    i, j = html.find(T_START), html.find(T_END)
-    if i < 0 or j < 0:
-        sys.exit("index.html 에 TODAY-SCHEDULE 표시가 없습니다 (오늘의 하남일정 섹션이 빠졌는지 확인).")
-    html = html[:i] + T_START + "\n" + today_html + T_END + html[j + len(T_END):]
     if not check_only:
         with open(INDEX, "w", encoding="utf-8", newline="") as f:
             f.write(html)
@@ -107,75 +102,6 @@ def main():
         print("  - 신청 마감으로 제외:", e["title"])
     for c in CATS:
         print(f"  {c}: {sum(1 for e in keep if e['category'] == c)}건")
-    print("  오늘의 하남일정:", ", ".join(e["title"] for e in today_events) if today_events else "없음 (다가오는 일정 표시)")
-
-
-DOW = "월화수목금토일"
-ICON = {"행사": "🎉", "공연.전시": "🎵", "강의": "🎤", "교육": "📚", "접수일정": "✍️", "기타": "📌"}
-T_START, T_END = "<!-- TODAY-SCHEDULE:START -->", "<!-- TODAY-SCHEDULE:END -->"
-
-
-def on(e, day):
-    """그 날 실제로 열리는지 (weekdays·dates 지정 반영)"""
-    if not e["start"] <= day.isoformat() <= e["end"]:
-        return False
-    if e.get("dates"):
-        return day.isoformat() in e["dates"]
-    if e.get("weekdays"):
-        return DOW[day.weekday()] in e["weekdays"]
-    return True
-
-
-def md(d):
-    return f"{d.month}.{d.day}({DOW[d.weekday()]})"
-
-
-def card(e, colors):
-    """오늘의 하남일정 카드: 제목과 공고원문 링크만 (2026-11-10 사용자 요청)"""
-    esc = html_mod.escape
-    color = colors.get(e["category"], "#cbd5e0")
-    link = ""
-    if e.get("link"):
-        link = f'\n<div class="today-link"><a href="{esc(e["link"])}" target="_blank" rel="noopener noreferrer">공고원문클릭 →</a></div>'
-    return (f'<div class="today-card" style="border-left-color: {color};">\n'
-            f'<h3>{esc(e["title"])}</h3>{link}\n</div>\n')
-
-
-def build_today(events, colors, base):
-    """오늘의 하남일정: 달력에서 기준일에 열리는 일정을 카드로 만든다"""
-    # 접수 일정은 접수 기간 내내 넣지 않고, 접수가 시작하는 날과 마감하는 날에만 보여 준다
-    signups = [e for e in events if e["category"] == "접수일정"]
-    events = [e for e in events if e["category"] != "접수일정"]
-    day = base.isoformat()
-    sign_today = sorted([e for e in signups if day in (e["start"], e["end"])], key=lambda e: (e["end"] != day, e["title"]))
-    todays = [e for e in events if on(e, base)]
-    # 오늘 하루 열리는 일정(단일일·요일·회차 지정·오늘 시작)을 먼저, 며칠째 이어지는 기간 행사는 '진행 중'으로
-    def is_ongoing(e):
-        return e["start"] != e["end"] and not e.get("weekdays") and not e.get("dates") and e["start"] != day
-    main = sorted([e for e in todays if not is_ongoing(e)], key=lambda e: (e.get("time") or "99", e["title"]))
-    ongoing = sorted([e for e in todays if is_ongoing(e)], key=lambda e: e["end"])
-    out = [f'<p class="today-intro">{base.month}월 {base.day}일({DOW[base.weekday()]}) 하남 일정입니다. <span style="color:#a0aec0;">(하남 행사일정 달력 기준)</span></p>\n']
-    if main:
-        out += [card(e, colors) for e in main]
-    if ongoing:
-        out += [card(e, colors) for e in ongoing]
-    if sign_today:
-        out += [card(e, colors) for e in sign_today]
-    todays = todays + sign_today
-    if not todays:
-        upcoming = []
-        for e in events:
-            d = max(base + datetime.timedelta(1), datetime.date.fromisoformat(e["start"]))
-            end = datetime.date.fromisoformat(e["end"])
-            while d <= end and not on(e, d):
-                d += datetime.timedelta(1)
-            if d <= end:
-                upcoming.append((d, e))
-        upcoming.sort(key=lambda x: (x[0], x[1]["title"]))
-        if upcoming:
-            out.append('<div class="today-sub">🔜 다가오는 일정</div>\n')
-            out += [card(e, colors) for d, e in upcoming[:3]]
-    return todays, "".join(out)
 
 
 if __name__ == "__main__":
