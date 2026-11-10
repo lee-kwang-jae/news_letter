@@ -370,6 +370,18 @@
       "signup": "10.21부터 선착순 · 하남시 평생학습포털"
     },
     {
+      "id": "hanam-culture-history-lecture-1112",
+      "category": "강의",
+      "title": "2026 하남문화원 문화대학 역사특강 — 하남의 문화유적: 미사리 유적과 세계 문화유산적 가치 (최정필 세종대 명예교수)",
+      "label": "역사특강 미사리",
+      "start": "2026-11-12",
+      "end": "2026-11-12",
+      "time": "14:00 · 무료 · 선착순 50명",
+      "place": "하남문화원 2층 문화관람실 (덕풍동로 12) · 문의 031-795-1020",
+      "link": "https://www.xn--q20b93roljctocfb.kr/",
+      "issue": "하남문화원"
+    },
+    {
       "id": "museum-classic",
       "category": "공연.전시",
       "title": "미술관으로 간 클래식",
@@ -392,18 +404,6 @@
       "place": "하남시미사강변종합사회복지관 강당",
       "link": "",
       "issue": ""
-    },
-    {
-      "id": "hanam-culture-history-lecture-1112",
-      "category": "강의",
-      "title": "2026 하남문화원 문화대학 역사특강 — 하남의 문화유적: 미사리 유적과 세계 문화유산적 가치 (최정필 세종대 명예교수)",
-      "label": "역사특강 미사리",
-      "start": "2026-11-12",
-      "end": "2026-11-12",
-      "time": "14:00 · 무료 · 선착순 50명",
-      "place": "하남문화원 2층 문화관람실 (덕풍동로 12) · 문의 031-795-1020",
-      "link": "https://www.xn--q20b93roljctocfb.kr/",
-      "issue": "하남문화원"
     },
     {
       "id": "kwonyeok-school-6",
@@ -540,9 +540,9 @@
       "start": "2026-11-17",
       "end": "2026-11-17",
       "time": "14:00",
-      "place": "하남문화예술회관 검단홀 · 무료 (하남시평생학습포털 선착순 신청)",
-      "link": "https://hanam.gseek.kr/user/course/offline/list",
-      "issue": "하남시 홈페이지"
+      "place": "하남문화예술회관 검단홀 · 무료 · 하남시민·관내 직장인 (하남시평생학습포털 선착순 신청, 문의 031-790-6118)",
+      "link": "https://blog.naver.com/hanam_story/224470206138",
+      "issue": "하남시 홈페이지·하남스토리"
     },
     {
       "id": "jisik-ai-book",
@@ -579,18 +579,6 @@
       "signup": "10.21부터 선착순 15명 · 도서관 홈페이지"
     },
     {
-      "id": "health-lecture",
-      "category": "강의",
-      "title": "2026 시민건강 특별강좌 (고혈압·당뇨병)",
-      "label": "시민건강 특강",
-      "start": "2026-11-18",
-      "end": "2026-11-18",
-      "time": "10:00~11:30",
-      "place": "하남시청 별관 2층 대강당",
-      "link": "https://blog.naver.com/hanam_story/224458943318",
-      "issue": "71호"
-    },
-    {
       "id": "breastfeeding-clinic-1118",
       "category": "교육",
       "title": "11월 하남시보건소 모유수유 클리닉 (1:1 코칭, 선착순 6명)",
@@ -605,22 +593,28 @@
       "signup_end": "2026-11-11"
     },
     {
-      "id": "jisik-flower",
-      "category": "교육",
-      "title": "지식나눔학교 '크리스마스 준비 겨울 꽃꽂이' (수·금, 6회)",
-      "label": "겨울 꽃꽂이",
+      "id": "health-lecture",
+      "category": "강의",
+      "title": "2026 시민건강 특별강좌 (고혈압·당뇨병)",
+      "label": "시민건강 특강",
       "start": "2026-11-18",
-      "end": "2026-12-04",
-      "time": "수·금 19:00~21:00",
-      "place": "미사역 시나브로 플라워",
-      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1845",
-      "issue": "71호",
-      "weekdays": [
-        "수",
-        "금"
-      ],
-      "signup": "11.11(수)까지 선착순 · 하남시 평생학습포털",
-      "signup_end": "2026-11-11"
+      "end": "2026-11-18",
+      "time": "10:00~11:30",
+      "place": "하남시청 별관 2층 대강당",
+      "link": "https://blog.naver.com/hanam_story/224458943318",
+      "issue": "71호"
+    },
+    {
+      "id": "suneung-2027-presummon",
+      "category": "기타",
+      "title": "2027학년도 수능 수험생 예비소집 (교육지원청 접수자 · 하남 주소지 덕풍중 체육관)",
+      "label": "수능 예비소집",
+      "start": "2026-11-18",
+      "end": "2026-11-18",
+      "time": "10:00~12:00 (접수증·신분증 지참)",
+      "place": "하남 주소지: 덕풍중학교 체육관(2층) · 학교 접수자는 접수한 고등학교 · 문의 031-280-7219",
+      "link": "https://www.goegh.kr/goegh/na/ntt/selectNttInfo.do?mi=8684&bbsId=5040&nttSn=1230749",
+      "issue": "77호"
     },
     {
       "id": "jisik-ai-artist",
@@ -631,6 +625,24 @@
       "end": "2026-12-04",
       "time": "수·금 15:00~18:00",
       "place": "하남시평생학습관 4층 401호",
+      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1845",
+      "issue": "71호",
+      "weekdays": [
+        "수",
+        "금"
+      ],
+      "signup": "11.11(수)까지 선착순 · 하남시 평생학습포털",
+      "signup_end": "2026-11-11"
+    },
+    {
+      "id": "jisik-flower",
+      "category": "교육",
+      "title": "지식나눔학교 '크리스마스 준비 겨울 꽃꽂이' (수·금, 6회)",
+      "label": "겨울 꽃꽂이",
+      "start": "2026-11-18",
+      "end": "2026-12-04",
+      "time": "수·금 19:00~21:00",
+      "place": "미사역 시나브로 플라워",
       "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1845",
       "issue": "71호",
       "weekdays": [
@@ -657,6 +669,18 @@
       "signup": "복지관 2층 제2사무실 선착순"
     },
     {
+      "id": "suneung-2027",
+      "category": "기타",
+      "title": "2027학년도 대학수학능력시험 (08:10까지 입실)",
+      "label": "수능",
+      "start": "2026-11-19",
+      "end": "2026-11-19",
+      "time": "08:10까지 입실 완료",
+      "place": "각 시험장 (제43시험지구 광주·하남·양평)",
+      "link": "https://www.goegh.kr/goegh/na/ntt/selectNttInfo.do?mi=8684&bbsId=5040&nttSn=1230749",
+      "issue": "77호"
+    },
+    {
       "id": "family-festival",
       "category": "행사",
       "title": "2026 하남시가족센터 가족축제 'My Way, My Family'",
@@ -681,19 +705,6 @@
       "issue": "65호"
     },
     {
-      "id": "parent-edu-1123",
-      "category": "교육",
-      "title": "상설부모교육(기본) — 청소년 자녀 마음 이해·가족 소통법",
-      "label": "상설부모교육",
-      "start": "2026-11-23",
-      "end": "2026-11-23",
-      "time": "18:30~20:30",
-      "place": "하남시청소년상담복지센터 (전화 신청 031-790-6680)",
-      "link": "https://www.hanam.go.kr/youth/news/eduDetail/8",
-      "issue": "75호",
-      "signup": "매월 선착순 · 전화 신청 031-790-6680"
-    },
-    {
       "id": "cake-deco",
       "category": "교육",
       "title": "하남시가족센터 '우리의 케꾸(케이크 꾸미기) 만들기'",
@@ -706,6 +717,19 @@
       "issue": "72호",
       "signup": "11.11(수) 20:00까지 · 네이버 폼",
       "signup_end": "2026-11-11"
+    },
+    {
+      "id": "parent-edu-1123",
+      "category": "교육",
+      "title": "상설부모교육(기본) — 청소년 자녀 마음 이해·가족 소통법",
+      "label": "상설부모교육",
+      "start": "2026-11-23",
+      "end": "2026-11-23",
+      "time": "18:30~20:30",
+      "place": "하남시청소년상담복지센터 (전화 신청 031-790-6680)",
+      "link": "https://www.hanam.go.kr/youth/news/eduDetail/8",
+      "issue": "75호",
+      "signup": "매월 선착순 · 전화 신청 031-790-6680"
     },
     {
       "id": "youth-job-lectures",
@@ -835,9 +859,9 @@
       "start": "2026-12-17",
       "end": "2026-12-17",
       "time": "14:00",
-      "place": "하남문화예술회관 검단홀 · 무료 (하남시평생학습포털 선착순 신청)",
-      "link": "https://hanam.gseek.kr/user/course/offline/list",
-      "issue": "하남시 홈페이지"
+      "place": "하남문화예술회관 검단홀 · 무료 · 하남시민·관내 직장인 (하남시평생학습포털 선착순 신청, 문의 031-790-6118)",
+      "link": "https://blog.naver.com/hanam_story/224470206138",
+      "issue": "하남시 홈페이지·하남스토리"
     },
     {
       "id": "yearend-concert",
