@@ -94,6 +94,18 @@
       "issue": "하남시 홈페이지"
     },
     {
+      "id": "deokpung3-resident-council-signup",
+      "category": "접수일정",
+      "title": "덕풍3동 4기 주민자치위원 공개모집 (35명)",
+      "label": "덕풍3동 주민자치위원",
+      "start": "2026-11-02",
+      "end": "2026-11-20",
+      "time": "11.20(금) 마감 · 방문(평일 09~18시) 또는 전자우편(18:00까지)",
+      "place": "덕풍3동 행정복지센터 (031-790-6650)",
+      "link": "https://www.hanam.go.kr/jumin/selectBbsNttView.do?key=11298&bbsNo=764&nttNo=504069",
+      "issue": "78호"
+    },
+    {
       "id": "youth-basic-income-q4-signup",
       "category": "접수일정",
       "title": "2026년 4분기 경기도 청년기본소득 신청 (24세 경기도 청년)",
@@ -332,6 +344,18 @@
       "issue": "72호"
     },
     {
+      "id": "gamil-health-center-hire-2027",
+      "category": "접수일정",
+      "title": "2027년 상반기 감일건강생활지원센터 기간제 근로자(신체활동전문가) 1명 채용",
+      "label": "감일건강센터 채용",
+      "start": "2026-11-11",
+      "end": "2026-11-25",
+      "time": "11.25(수) 18:00 도착분까지 · 이메일·방문·등기우편",
+      "place": "하남시보건소 건강증진과 · 근무 2027.1.4~6.30 (주5일 09:00~18:00)",
+      "link": "https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&bbsNo=109&nttNo=504111",
+      "issue": "77호"
+    },
+    {
       "id": "kwonyeok-school-2",
       "category": "교육",
       "title": "2026 권역 평생학교 [미사권역] 우리 아이 공부·진로 설계법 (4회, 강사 이수경)",
@@ -384,14 +408,14 @@
     {
       "id": "museum-classic",
       "category": "공연.전시",
-      "title": "미술관으로 간 클래식",
+      "title": "마티네 콘서트 <미술관으로 간 클래식> #4. 네덜란드",
       "label": "미술관 클래식",
       "start": "2026-11-12",
       "end": "2026-11-12",
-      "time": "11:00",
-      "place": "하남문화예술회관 소극장",
-      "link": "https://blog.naver.com/hanam_story/224457716510",
-      "issue": "69호"
+      "time": "11:00 (70분, 인터미션 없음)",
+      "place": "하남문화예술회관 소극장(아랑홀) · 전석 15,000원 · 초등학생 이상 · 문의 031-790-7979",
+      "link": "https://www.hnart.or.kr/artcenter/showView.do?key=183&programId=artcenter&shNo=3466&cal=1",
+      "issue": "하남문화재단"
     },
     {
       "id": "unavoce-concert-1112",
@@ -456,23 +480,6 @@
       "issue": "69호"
     },
     {
-      "id": "jisik-ai-art",
-      "category": "교육",
-      "title": "지식나눔학교 'AI 미술교실(그림 스케치)' (매주 금, 5회)",
-      "label": "AI 미술교실",
-      "start": "2026-11-13",
-      "end": "2026-12-11",
-      "time": "매주 금 14:00~16:00",
-      "place": "하남시평생학습관 3층 303호",
-      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1845",
-      "issue": "71호",
-      "weekdays": [
-        "금"
-      ],
-      "signup": "11.11(수)까지 선착순 · 하남시 평생학습포털",
-      "signup_end": "2026-11-11"
-    },
-    {
       "id": "escape-hanam",
       "category": "행사",
       "title": "청소년기획단 이벤트 '비밀의 수련관, 탈출하남!'",
@@ -523,13 +530,13 @@
     {
       "id": "misa-welfare-program-signup",
       "category": "접수일정",
-      "title": "하남시미사강변종합사회복지관 프로그램 접수",
-      "label": "미사복지관 프로그램 접수",
+      "title": "미사강변종합사회복지관 교육문화프로그램신청기간",
+      "label": "미사복지관 프로그램 신청",
       "start": "2026-11-16",
       "end": "2026-11-27",
       "time": "",
-      "place": "하남시미사강변종합사회복지관",
-      "link": "",
+      "place": "",
+      "link": "https://www.hmgcwc.or.kr/webis/channel/education/hmgprogram/?view=board&page=2",
       "issue": ""
     },
     {
@@ -543,24 +550,6 @@
       "place": "하남문화예술회관 검단홀 · 무료 · 하남시민·관내 직장인 (하남시평생학습포털 선착순 신청, 문의 031-790-6118)",
       "link": "https://blog.naver.com/hanam_story/224470206138",
       "issue": "하남시 홈페이지·하남스토리"
-    },
-    {
-      "id": "jisik-ai-book",
-      "category": "교육",
-      "title": "지식나눔학교 '내 이야기가 그림책이 되다 With AI' (화·목, 6회)",
-      "label": "AI 그림책 만들기",
-      "start": "2026-11-17",
-      "end": "2026-12-03",
-      "time": "화·목 10:00~12:00",
-      "place": "하남시평생학습관 1층 열린공간",
-      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1845",
-      "issue": "71호",
-      "weekdays": [
-        "화",
-        "목"
-      ],
-      "signup": "11.11(수)까지 선착순 · 하남시 평생학습포털",
-      "signup_end": "2026-11-11"
     },
     {
       "id": "digital-lib-film-history-2",
@@ -577,20 +566,6 @@
       "link": "https://www.hanamlib.go.kr/mslib/selectBbsNttView.do?key=695&bbsNo=106&nttNo=90001",
       "issue": "미사도서관",
       "signup": "10.21부터 선착순 15명 · 도서관 홈페이지"
-    },
-    {
-      "id": "breastfeeding-clinic-1118",
-      "category": "교육",
-      "title": "11월 하남시보건소 모유수유 클리닉 (1:1 코칭, 선착순 6명)",
-      "label": "모유수유 클리닉",
-      "start": "2026-11-18",
-      "end": "2026-11-18",
-      "time": "14:00~17:00 (개인별 25분)",
-      "place": "미사보건센터 2층 영유아휴게실 (미사강변대로 200) · 031-790-6552",
-      "link": "https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&bbsNo=109&nttNo=504070",
-      "issue": "하남시보건소",
-      "signup": "11.10 우선접수 · 11.11(수) 일반접수 (선착순 6명)",
-      "signup_end": "2026-11-11"
     },
     {
       "id": "health-lecture",
@@ -615,42 +590,6 @@
       "place": "하남 주소지: 덕풍중학교 체육관(2층) · 학교 접수자는 접수한 고등학교 · 문의 031-280-7219",
       "link": "https://www.goegh.kr/goegh/na/ntt/selectNttInfo.do?mi=8684&bbsId=5040&nttSn=1230749",
       "issue": "77호"
-    },
-    {
-      "id": "jisik-ai-artist",
-      "category": "교육",
-      "title": "지식나눔학교 'AI와 함께 예술가 되어보기' (수·금, 6회)",
-      "label": "AI 예술가 되기",
-      "start": "2026-11-18",
-      "end": "2026-12-04",
-      "time": "수·금 15:00~18:00",
-      "place": "하남시평생학습관 4층 401호",
-      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1845",
-      "issue": "71호",
-      "weekdays": [
-        "수",
-        "금"
-      ],
-      "signup": "11.11(수)까지 선착순 · 하남시 평생학습포털",
-      "signup_end": "2026-11-11"
-    },
-    {
-      "id": "jisik-flower",
-      "category": "교육",
-      "title": "지식나눔학교 '크리스마스 준비 겨울 꽃꽂이' (수·금, 6회)",
-      "label": "겨울 꽃꽂이",
-      "start": "2026-11-18",
-      "end": "2026-12-04",
-      "time": "수·금 19:00~21:00",
-      "place": "미사역 시나브로 플라워",
-      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1845",
-      "issue": "71호",
-      "weekdays": [
-        "수",
-        "금"
-      ],
-      "signup": "11.11(수)까지 선착순 · 하남시 평생학습포털",
-      "signup_end": "2026-11-11"
     },
     {
       "id": "misa-senior-travel-chinese",
@@ -703,20 +642,6 @@
       "place": "하남문화예술회관 대극장(검단홀)",
       "link": "https://www.hnart.or.kr/artcenter/showView.do?key=182&programId=artcenter&shNo=3489&searchCnd=all&searchKrwd=&pageIndex=1",
       "issue": "65호"
-    },
-    {
-      "id": "cake-deco",
-      "category": "교육",
-      "title": "하남시가족센터 '우리의 케꾸(케이크 꾸미기) 만들기'",
-      "label": "케꾸 만들기",
-      "start": "2026-11-23",
-      "end": "2026-11-23",
-      "time": "10:30~11:30 / 14:30~15:30",
-      "place": "하남시가족센터 1층 (신장동로 15)",
-      "link": "https://hanam.familynet.or.kr/center/lay1/program/S295T322C449/receipt/view.do?seq=196947",
-      "issue": "72호",
-      "signup": "11.11(수) 20:00까지 · 네이버 폼",
-      "signup_end": "2026-11-11"
     },
     {
       "id": "parent-edu-1123",
@@ -812,6 +737,20 @@
       "place": "시니어 헬스센터 방문 (역말로 71, 2층)",
       "link": "https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&bbsNo=109&nttNo=503898",
       "issue": "74호"
+    },
+    {
+      "id": "misa-welfare-program-edu",
+      "category": "교육",
+      "title": "미사강변종합사회복지관 교육문화프로그램 교육기간",
+      "label": "미사복지관 교육",
+      "start": "2026-12-01",
+      "end": "2027-02-26",
+      "time": "",
+      "place": "",
+      "link": "https://www.hmgcwc.or.kr/webis/channel/education/hmgprogram/?view=board&page=2",
+      "issue": "",
+      "signup": "신청기간 2026년 11월16일~11월27일",
+      "signup_end": "2026-11-27"
     },
     {
       "id": "parent-edu-1207",
