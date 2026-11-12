@@ -64,8 +64,8 @@
    - 카드 스타일: `<div class="mom-issue-card">` (현황, 주민 포인트, 주민 반응 💬)
 4. **`🏛️ 공공기관 소식지` (`#public-news`)**
    - 제목 스타일: `<div class="section-title purple">🏛️ 공공기관 소식지</div>`
-5. **`📅 하남 행사일정 달력` (`#event-calendar`)** — 2026-11-09 추가, 맨 마지막 고정
-   - 제목 스타일: `<div class="section-title orange">📅 하남 행사일정 달력</div>`
+5. **`📅 하남 행사일정 '우하소' 달력` (`#event-calendar`)** — 2026-11-09 추가, 맨 마지막 고정
+   - 제목 스타일: `<div class="section-title orange">📅 하남 행사일정 '<span class="brand-script">우하소</span>' 달력</div>` — '우하소'는 필기체(Nanum Pen Script, CSS `.section-title .brand-script`, 2026-11-13)
    - 공공기관 소식지·사용자 제공 행사·자동 수집 8곳의 일정을 월 달력에 표시 (기간 가로막대, 요일 지정은 그 요일만, 접수일정는 시작·마감일 칩만, 교육은 신청이 열려 있는 것만 · 행사·공연.전시·강의·교육·접수일정·기타 순서의 파스텔 고정색)
    - 데이터·운영 규칙은 `AGENTS.md` 8번 (오늘의 하남일정 섹션은 2026-11-11 삭제), 전체 기준서 `NEWSLETTER_GUIDE.md`
 
