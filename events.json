@@ -352,6 +352,17 @@
       "signup": "10.21부터 선착순 · 하남시 평생학습포털"
     },
     {
+      "id": "edu-talk-dream-signup",
+      "category": "접수일정",
+      "title": "하남교육재단 교육공감 톡톡 '꿈을 현실로 만드는 힘' (이지영 강사) 신청 (12.10 강연, 800명 선착순)",
+      "label": "교육공감 톡톡",
+      "start": "2026-11-10",
+      "end": "2026-12-04",
+      "place": "하남교육재단 하이런 홈페이지(www.hlearn.or.kr) 신청 · 문의 031-792-1661",
+      "link": "https://www.hdream.or.kr/experience-program/program/82",
+      "issue": "하남시 홈페이지"
+    },
+    {
       "id": "cake-deco-signup",
       "category": "접수일정",
       "title": "하남시가족센터 '우리의 케꾸 만들기' 참여 신청 마감 (11.23 프로그램)",
@@ -448,6 +459,18 @@
       "place": "하남시미사강변종합사회복지관 강당",
       "link": "",
       "issue": ""
+    },
+    {
+      "id": "smallbiz-env-improve-signup",
+      "category": "접수일정",
+      "title": "2026년 하남시 소상공인 경영환경개선 지원사업 추가 모집 (3개사, 최대 180만 원)",
+      "label": "소상공인 지원",
+      "start": "2026-11-12",
+      "end": "2026-11-19",
+      "time": "마감 18:00",
+      "place": "경기테크노파크 온라인·방문·우편·이메일 신청 (문의 031-500-3038)",
+      "link": "https://pms.gtp.or.kr/",
+      "issue": "하남시 홈페이지"
     },
     {
       "id": "kwonyeok-school-6",
@@ -548,6 +571,30 @@
       "issue": "68호"
     },
     {
+      "id": "gseek-class-designer-signup",
+      "category": "접수일정",
+      "title": "[대학연계] 「수업 디자이너」 워크숍 수강 신청 (11.25~12.2 강좌, 15명)",
+      "label": "수업디자이너 접수",
+      "start": "2026-11-16",
+      "end": "2026-11-24",
+      "time": "11.16(월) 12:00부터 온라인 선착순 · 무료",
+      "place": "하남시 평생학습포털 온라인",
+      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1872",
+      "issue": "평생학습포털"
+    },
+    {
+      "id": "class-designer-workshop-signup",
+      "category": "접수일정",
+      "title": "대학연계 특강 가톨릭관동대 교육대학원 「수업 디자이너」 워크숍 수강 신청 (15명 선착순)",
+      "label": "수업 디자이너",
+      "start": "2026-11-16",
+      "end": "2026-11-24",
+      "time": "11.16 12:00부터",
+      "place": "하남시 평생학습포털 온라인 신청",
+      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1872",
+      "issue": "평생학습포털"
+    },
+    {
       "id": "misa-welfare-program-signup",
       "category": "접수일정",
       "title": "미사강변종합사회복지관 교육문화프로그램신청기간",
@@ -570,6 +617,18 @@
       "place": "하남문화예술회관 검단홀 · 무료 · 하남시민·관내 직장인 (하남시평생학습포털 선착순 신청, 문의 031-790-6118)",
       "link": "https://blog.naver.com/hanam_story/224470206138",
       "issue": "하남시 홈페이지·하남스토리"
+    },
+    {
+      "id": "senior-smart-extra-signup",
+      "category": "접수일정",
+      "title": "2026 시니어스마트 프로그램 학습자 추가 모집 (만 65세 이상, 무료, 4개 강좌)",
+      "label": "시니어스마트",
+      "start": "2026-11-17",
+      "end": "2026-11-19",
+      "time": "09:00~18:00",
+      "place": "평생학습포털 온라인 · 하남시평생학습관 1층 방문 (문의 031-790-5545)",
+      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1870",
+      "issue": "평생학습포털"
     },
     {
       "id": "digital-lib-film-history-2",
@@ -640,6 +699,18 @@
       "issue": "77호"
     },
     {
+      "id": "welcome-to-hacheongsu-1119",
+      "category": "행사",
+      "title": "[웰컴 투 하청수] 일반 참가자 모집 — 하남시청소년수련관 체험 (클라이밍·피클볼·백드롭 페인팅)",
+      "label": "웰컴 투 하청수",
+      "start": "2026-11-19",
+      "end": "2026-11-19",
+      "time": "11.19(목) 하루 · 시간은 신청 뒤 안내문자 · 초등~대학생 · 선착순",
+      "place": "하남시청소년수련관 (조정대로 111)",
+      "link": "https://answer.moaform.com/answers/WyAGqe",
+      "issue": "80호"
+    },
+    {
       "id": "family-festival",
       "category": "행사",
       "title": "2026 하남시가족센터 가족축제 'My Way, My Family'",
@@ -650,6 +721,18 @@
       "place": "하남시가족센터 주관 (장소는 신청폼 확인)",
       "link": "https://form.naver.com/response/vokTvVUjDg",
       "issue": "74·75호"
+    },
+    {
+      "id": "misa-music-film-fest-9",
+      "category": "행사",
+      "title": "제9회 미사음악영화제 (영화제·시상식)",
+      "label": "미사음악영화제",
+      "start": "2026-11-20",
+      "end": "2026-11-20",
+      "time": "16:00~20:00",
+      "place": "하남 미사강변 메가박스",
+      "link": "https://www.hanam.go.kr/www/selectClturEventWebView.do?pageUnit=6&pageIndex=1&searchCnd=all&key=12376&clturEventNo=150",
+      "issue": "하남시 홈페이지"
     },
     {
       "id": "city-choir",
@@ -694,6 +777,43 @@
       ]
     },
     {
+      "id": "senior-smart-ai-photo",
+      "category": "교육",
+      "title": "[시니어스마트] AI를 이용한 스마트폰 사진제작 (만 65세 이상, 무료)",
+      "label": "AI 사진제작",
+      "start": "2026-11-23",
+      "end": "2026-12-01",
+      "weekdays": [
+        "월",
+        "화",
+        "금"
+      ],
+      "time": "13:00~15:00",
+      "place": "하남시평생학습관 (하남대로 732) 4층 401호",
+      "link": "https://hanam.gseek.kr/user/course/offline/view?s_sbjct_sn=65528&s_sbjct_cycl_sn=1",
+      "issue": "평생학습포털",
+      "signup": "11.17(화) 09:00~11.19(목) 18:00 · 평생학습포털 온라인 50% / 평생학습관 1층 방문 50%, 선착순 (만 65세 이상 하남시민, 1인 2강좌)",
+      "signup_end": "2026-11-19"
+    },
+    {
+      "id": "senior-smart-basic",
+      "category": "교육",
+      "title": "[시니어스마트] 기초 스마트폰 (만 65세 이상, 무료)",
+      "label": "기초 스마트폰",
+      "start": "2026-11-23",
+      "end": "2026-12-10",
+      "weekdays": [
+        "월",
+        "목"
+      ],
+      "time": "10:00~12:00",
+      "place": "하남시평생학습관 (하남대로 732) 3층 304호",
+      "link": "https://hanam.gseek.kr/user/course/offline/view?s_sbjct_sn=65530&s_sbjct_cycl_sn=1",
+      "issue": "평생학습포털",
+      "signup": "11.17(화) 09:00~11.19(목) 18:00 · 평생학습포털 온라인 50% / 평생학습관 1층 방문 50%, 선착순 (만 65세 이상 하남시민, 1인 2강좌)",
+      "signup_end": "2026-11-19"
+    },
+    {
       "id": "misa-majuchim-gallery-oneday",
       "category": "교육",
       "title": "생활문화센터 미사 마주침갤러리 전시 연계 원데이클래스 '재봉틀과 규방공예로 만드는 북커버와 실크책갈피'",
@@ -723,6 +843,64 @@
       "issue": "69호"
     },
     {
+      "id": "gseek-class-designer",
+      "category": "교육",
+      "title": "[대학연계] 가톨릭관동대 교육대학원 「수업 디자이너」 워크숍 — 매력적인 강의를 만드는 수업 디자이너로 거듭나기 (4회, 15명)",
+      "label": "수업 디자이너",
+      "start": "2026-11-25",
+      "end": "2026-12-02",
+      "dates": [
+        "2026-11-25",
+        "2026-11-27",
+        "2026-11-30",
+        "2026-12-02"
+      ],
+      "time": "11.25(수)·27(금)·30(월)·12.2(수) 10:00~12:30 · 무료 · 개인 노트북·구글 계정 지참",
+      "place": "하남시평생학습관 (미사강변대로 200, 미사보건센터 2층) · 평생학습 강사·교수자 희망 시민 · 031-790-6009",
+      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1872",
+      "issue": "평생학습포털",
+      "signup": "11.16(월) 12:00~11.24(화) 온라인 선착순 15명 · 하남시 평생학습포털",
+      "signup_end": "2026-11-24"
+    },
+    {
+      "id": "class-designer-workshop",
+      "category": "교육",
+      "title": "대학연계 특강 가톨릭관동대 교육대학원 「수업 디자이너」 워크숍 (4회, 성인·청년·직장인, 무료)",
+      "label": "수업 디자이너",
+      "start": "2026-11-25",
+      "end": "2026-12-02",
+      "dates": [
+        "2026-11-25",
+        "2026-11-27",
+        "2026-11-30",
+        "2026-12-02"
+      ],
+      "time": "10:00~12:30",
+      "place": "미사보건센터 2층 (미사강변대로 200)",
+      "link": "https://hanam.gseek.kr/user/course/offline/view?s_sbjct_sn=65532&s_sbjct_cycl_sn=1",
+      "issue": "평생학습포털",
+      "signup": "11.16(월) 12:00~11.24(화) 평생학습포털 온라인 선착순 (15명)",
+      "signup_end": "2026-11-24"
+    },
+    {
+      "id": "senior-smart-cognitive",
+      "category": "교육",
+      "title": "[시니어스마트] 인지능력 향상 (만 65세 이상, 무료)",
+      "label": "인지능력 향상",
+      "start": "2026-11-25",
+      "end": "2026-12-10",
+      "weekdays": [
+        "수",
+        "목"
+      ],
+      "time": "10:00~12:00",
+      "place": "하남시평생학습관 (하남대로 732) 3층 303호",
+      "link": "https://hanam.gseek.kr/user/course/offline/view?s_sbjct_sn=65527&s_sbjct_cycl_sn=1",
+      "issue": "평생학습포털",
+      "signup": "11.17(화) 09:00~11.19(목) 18:00 · 평생학습포털 온라인 50% / 평생학습관 1층 방문 50%, 선착순 (만 65세 이상 하남시민, 1인 2강좌)",
+      "signup_end": "2026-11-19"
+    },
+    {
       "id": "dream-orchestra-9th",
       "category": "공연.전시",
       "title": "2026 꿈의 오케스트라 하남 「제9회 정기연주회」 — 슈베르트부터 AI음악까지",
@@ -733,6 +911,36 @@
       "place": "하남문화예술회관 대극장 · 전석 무료(선착순)",
       "link": "https://www.hnart.or.kr/artcenter/showView.do?key=183&programId=artcenter&shNo=3492&cal=1",
       "issue": "하남시 홈페이지"
+    },
+    {
+      "id": "dream-dance-4th",
+      "category": "공연.전시",
+      "title": "2026 꿈의 무용단 하남 제4회 정기공연 〈이상한 나라의 셀리스〉",
+      "label": "꿈의 무용단",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "time": "15:00",
+      "place": "하남문화예술회관 소극장(아랑홀) · 모든 연령 (문의 031-790-7957)",
+      "link": "https://www.hnart.or.kr/artcenter/showView.do?key=183&programId=artcenter&shNo=3498",
+      "issue": "하남문화재단"
+    },
+    {
+      "id": "senior-smart-use",
+      "category": "교육",
+      "title": "[시니어스마트] 스마트폰 활용 (만 65세 이상, 무료)",
+      "label": "스마트폰 활용",
+      "start": "2026-11-30",
+      "end": "2026-12-09",
+      "weekdays": [
+        "월",
+        "수"
+      ],
+      "time": "13:00~15:00",
+      "place": "하남시평생학습관 (하남대로 732) 1층 열린공간",
+      "link": "https://hanam.gseek.kr/user/course/offline/view?s_sbjct_sn=65529&s_sbjct_cycl_sn=1",
+      "issue": "평생학습포털",
+      "signup": "11.17(화) 09:00~11.19(목) 18:00 · 평생학습포털 온라인 50% / 평생학습관 1층 방문 50%, 선착순 (만 65세 이상 하남시민, 1인 2강좌)",
+      "signup_end": "2026-11-19"
     },
     {
       "id": "son-yeoleum",
@@ -784,6 +992,18 @@
       "link": "https://www.hanam.go.kr/youth/news/eduDetail/8",
       "issue": "75호",
       "signup": "매월 선착순 · 전화 신청 031-790-6680"
+    },
+    {
+      "id": "edu-talk-dream",
+      "category": "강의",
+      "title": "하남교육재단 교육공감 톡톡 '꿈을 현실로 만드는 힘' — 이지영 강사 (초·중·고 학생·학부모, 무료)",
+      "label": "이지영 강연",
+      "start": "2026-12-10",
+      "end": "2026-12-10",
+      "time": "10:00~12:00",
+      "place": "하남문화예술회관 대극장(검단홀)",
+      "link": "https://www.hdream.or.kr/experience-program/program/82",
+      "issue": "하남시 홈페이지"
     },
     {
       "id": "chemi-concert-kwill-1212",

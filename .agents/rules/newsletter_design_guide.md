@@ -56,7 +56,39 @@
 
 1. **`우리동네 국회의원 이광재` (`#lawmaker`)**
    - 프로필 아이콘: `<img src="./images/kjicon.png" style="width:48px; height:48px; border-radius:50%;">`
-   - 구성: 공약이행(`pledge-card`, 있을 때만) → 현장일지(`card-field`) → 이광재TV(`card-field`) → 언론보도(`card-press`)
+   - 구성: 공약이행(`pledge-card`, 있을 때만) → 정책반영(`pledge-card policy-card`, 있을 때만) → 현장일지(`card-field`) → 이광재TV(`card-field`) → 언론보도(`card-press`)
+   - **정책반영 카드** (2026-11-15 새 메뉴, 공약이행과 같은 디자인 — 직인 글자만 '정책/반영'). 견본:
+     ```html
+     <!-- [정책반영] -->
+     <div class="article-card card-field pledge-card policy-card" style="margin-top: 16px;">
+     <div class="badge badge-field">✅ 정책반영</div>
+     <h3><a href="블로그주소" target="_blank" style="color: inherit; text-decoration: none;">이광재의원 "핵심 발언"… 요약 제목</a></h3>
+     <div class="pledge-result">
+       <div class="pledge-stamp" role="img" aria-label="정책반영 도장 - 우리동네 국회의원 이광재">
+         <svg viewBox="0 0 100 100" aria-hidden="true">
+           <defs><path id="stamp-ring-policy" d="M 6.5,50 A 43.5,43.5 0 0 0 93.5,50"/></defs>
+           <circle cx="50" cy="50" r="47" fill="none" stroke="#c53030" stroke-width="3.5"/>
+           <circle cx="50" cy="50" r="35.8" fill="none" stroke="#c53030" stroke-width="1.2"/>
+           <text class="stamp-arc-text"><textPath href="#stamp-ring-policy" startOffset="50%" text-anchor="middle">우리동네 국회의원 이광재</textPath></text>
+           <text class="stamp-main-text" x="50" y="47.5" text-anchor="middle">정책</text>
+           <text class="stamp-main-text" x="50" y="72" text-anchor="middle">반영</text>
+         </svg>
+       </div>
+     </div>
+     <div class="summary" style="text-align: left; word-break: keep-all; letter-spacing: -0.3px;">
+     • 요점<br/>• 요점<br/>• 요점
+     <div style="margin-top: 14px; text-align: center;">
+       <img src="images/MMDDnn.jpg" alt="설명" style="width: 100%; max-width: 100%; height: auto; border-radius: 12px; border: 1px solid #cbd5e0; cursor: pointer; display: block; margin: 0 auto; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" onclick="openImageModal(this.src)" title="클릭하여 원본 보기">
+     </div>
+     <div style="margin-top: 14px; font-size: 0.9em; color: #718096;"><a href="블로그주소" target="_blank" style="color: #3182ce; font-weight: bold; text-decoration: none;">정책반영 전문 보기 (이광재 블로그) →</a></div>
+     </div>
+     <div class="source">
+     📌 출처: 이광재 공식 네이버 블로그
+     </div>
+     </div>
+     ```
+     - **정책반영 도장의 '우리동네 국회의원 이광재'는 돌지 않고 도장 아래쪽에 고정**한다 (2026-11-15 사용자 요청). 그래서 `stamp-ring-spin` 묶음이 없고, 경로가 아래쪽 반원(`M 6.5,50 A 43.5,43.5 0 0 0 93.5,50`)이다. 공약이행 도장은 그대로 돈다.
+     - 공약이행 카드와 한 호에 같이 나오면 SVG 경로 id가 겹치지 않게 정책반영은 `stamp-ring-policy`를 쓴다. 도장 CSS·스크립트(`.pledge-card`)는 그대로 함께 적용된다.
 2. **`📰 하남 지역 주요 뉴스` (`#local-news`)**
    - 제목 스타일: `<div class="section-title green">📰 하남 지역 주요 뉴스</div>`
 3. **`💬 하남 맘카페 HOT 이슈` (`#mom-cafe`)**
