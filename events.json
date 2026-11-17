@@ -814,6 +814,18 @@
       "signup_end": "2026-11-19"
     },
     {
+      "id": "hanam-school-sports-facility-fee-signup",
+      "category": "접수일정",
+      "title": "2026년 하반기 학교체육시설 사용료 지원 신청 (생활체육단체, 실제 납부 사용료 지원)",
+      "label": "학교체육시설 사용료 지원",
+      "start": "2026-11-23",
+      "end": "2026-12-11",
+      "time": "12.11(금) 마감 · 하남시청 본관 3층 체육진흥과 직접 제출",
+      "place": "하남시청 체육진흥과 체육지원팀 · 문의 031-5182-1076",
+      "link": "https://www.hanam.go.kr/www/selectBbsNttView.do?key=170&bbsNo=30&nttNo=504233",
+      "issue": "82호 공공기관 소식지"
+    },
+    {
       "id": "misa-majuchim-gallery-oneday",
       "category": "교육",
       "title": "생활문화센터 미사 마주침갤러리 전시 연계 원데이클래스 '재봉틀과 규방공예로 만드는 북커버와 실크책갈피'",
