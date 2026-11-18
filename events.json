@@ -259,6 +259,18 @@
       "issue": "하남스토리"
     },
     {
+      "id": "molit-2030-youth-panel-signup",
+      "category": "접수일정",
+      "title": "국토교통부 제5기 2030청년자문단·청년온라인패널 모집 (만 19~39세)",
+      "label": "국토부 청년자문단 모집",
+      "start": "2026-11-09",
+      "end": "2026-11-22",
+      "time": "11.9(월) 09:00 ~ 11.22(일) 18:00 · 자문단 25명 내외, 온라인패널 최대 1,000명",
+      "place": "온라인 (자문단: 청년인재DB 2030db.go.kr · 패널: 국토교통부 온통광장)",
+      "link": "https://blog.naver.com/hanam_story/224480198105",
+      "issue": "83호 공공기관 소식지"
+    },
+    {
       "id": "disabled-sports-voucher-2027-signup",
       "category": "접수일정",
       "title": "2027년 장애인스포츠강좌이용권 신청 (5~69세 등록장애인, 월 11만 원)",
@@ -683,6 +695,18 @@
       "issue": "77호"
     },
     {
+      "id": "ai-ethics-youth-signup",
+      "category": "접수일정",
+      "title": "'청소년을 위한 AI 윤리' 참가자 모집 (11.28·12.5 활동, 중학생 10명)",
+      "label": "AI 윤리 모집",
+      "start": "2026-11-18",
+      "end": "2026-11-25",
+      "time": "선착순 10명",
+      "place": "구글폼 신청 (https://forms.gle/riiVDNwCFaxVJa5c8)",
+      "link": "https://www.hnyouth.kr/sub/community/notice?category=4&postNo=247",
+      "issue": "하남시청소년수련관"
+    },
+    {
       "id": "misa-senior-travel-chinese",
       "category": "교육",
       "title": "하남시미사노인복지관 미노 배움 한마당 '여행 왕초보 중국어' (6회, 수강료 무료)",
@@ -962,6 +986,24 @@
       "signup": "11.23(월)까지 구글폼 신청 (19~39세 청년 30명, 선정자 개별 연락·소정의 출연료)"
     },
     {
+      "id": "ai-ethics-youth",
+      "category": "교육",
+      "title": "청소년수련활동인증제 '인공지능 시대의 청소년을 위한 AI 윤리' (중1~3, 총 2회)",
+      "label": "청소년 AI 윤리",
+      "start": "2026-11-28",
+      "end": "2026-12-05",
+      "dates": [
+        "2026-11-28",
+        "2026-12-05"
+      ],
+      "time": "토 10:00~12:00",
+      "place": "하남시청소년수련관 1층 메이커스페이스·2층 e스포츠실 · 하남 거주·재학 중학생 선착순 10명 · 문의 031-760-5822",
+      "link": "https://www.hnyouth.kr/sub/community/notice?category=4&postNo=247",
+      "issue": "하남시청소년수련관",
+      "signup": "11.18~11.25 구글폼 선착순 10명",
+      "signup_end": "2026-11-25"
+    },
+    {
       "id": "senior-smart-use",
       "category": "교육",
       "title": "[시니어스마트] 스마트폰 활용 (만 65세 이상, 무료)",
@@ -978,6 +1020,25 @@
       "issue": "평생학습포털",
       "signup": "11.17(화) 09:00~11.19(목) 18:00 · 평생학습포털 온라인 50% / 평생학습관 1층 방문 50%, 선착순 (만 65세 이상 하남시민, 1인 2강좌)",
       "signup_end": "2026-11-19"
+    },
+    {
+      "id": "hanseo-world-heritage",
+      "category": "교육",
+      "title": "대학연계 특강 한서대학교 「세계여행과 문화유산」 (이호 교수, 총 4회)",
+      "label": "세계여행과 문화유산",
+      "start": "2026-11-30",
+      "end": "2026-12-11",
+      "dates": [
+        "2026-11-30",
+        "2026-12-04",
+        "2026-12-07",
+        "2026-12-11"
+      ],
+      "time": "월·금 15:00~17:30",
+      "place": "하남시 평생학습관 2층 강당 · 선착순 25명",
+      "link": "https://hanam.gseek.kr/user/homepage/notice/view?seq=1882",
+      "issue": "평생학습포털",
+      "signup": "11.18(수) 12:00부터 선착순 · 하남시 평생학습포털 온라인 (25명)"
     },
     {
       "id": "son-yeoleum",
@@ -1002,6 +1063,18 @@
       "place": "시니어 헬스센터 방문 (역말로 71, 2층)",
       "link": "https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&bbsNo=109&nttNo=503898",
       "issue": "74호"
+    },
+    {
+      "id": "senior-smart-gym-2027-1-signup",
+      "category": "접수일정",
+      "title": "2027년 어르신 전용 스마트 헬스장 1기 모집 (60세 이상 하남시민, 추첨)",
+      "label": "스마트 헬스장 모집",
+      "start": "2026-12-01",
+      "end": "2026-12-10",
+      "time": "12.1(화) 09:00 ~ 12.10(목) 18:00 · 방문 접수(신분증 지참) · 무작위 추첨",
+      "place": "시니어 헬스센터 (하남시 역말로 71, 2층) · 문의 031-5182-1640",
+      "link": "https://www.hanam.go.kr/health/selectBbsNttView.do?key=915&bbsNo=109&nttNo=504213",
+      "issue": "83호 공공기관 소식지"
     },
     {
       "id": "misa-welfare-program-edu",
